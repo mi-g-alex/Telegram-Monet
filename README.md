@@ -1,5 +1,5 @@
 # Telegram Monet
-![This is an GIF](https://raw.githubusercontent.com/c3r5b8/Telegram-Monet/main/screen.gif)
+<img src=screen.gif alt=drawing width=500 />
 
 ### Thanks:
 - [TIDI](https://t.me/TIDI286)
