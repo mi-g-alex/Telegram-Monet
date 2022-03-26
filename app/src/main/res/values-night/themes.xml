@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TelegramMonet" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:background">
+            @color/system_neutral1_900
+        </item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">
+            @color/system_accent1_100
+        </item>
+        <item name="colorPrimaryVariant">
+            @color/system_neutral1_100
+        </item>
+        <item name="colorOnPrimary">
+            @color/system_neutral1_900
+        </item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">
+            @color/system_accent3_100
+        </item>
+        <item name="colorSecondaryVariant">
+            @color/system_neutral1_100
+        </item>
+        <item name="colorOnSecondary">
+            @color/system_neutral1_900
+        </item>
+        <item name="android:navigationBarColor">
+            @android:color/transparent
+        </item>
+        <item name="android:windowLightStatusBar">
+            true
+        </item>
+        <item name="android:statusBarColor" tools:targetApi="l">
+            @android:color/transparent
+        </item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.button" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:backgroundTint">
+            @color/system_accent1_200
+        </item>
+        <item name="android:textColor">
+            @color/system_neutral1_900
+        </item>
+        <item name="android:textSize">
+            21sp
+        </item>
+    </style>
+</resources>
