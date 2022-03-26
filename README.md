@@ -1,5 +1,5 @@
 # Telegram Monet
-<img src=screen.gif alt=drawing heigh=500px />
+<img src=screen.gif alt=drawing height=500px />
 
 ### Thanks:
 - [TIDI](https://t.me/TIDI286)
