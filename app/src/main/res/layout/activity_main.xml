@@ -17,12 +17,22 @@
             style="@style/Theme.button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/butt_text" />
+            android:singleLine="true"
+            android:text="@string/butt_text"
+            app:icon="@drawable/ic_outline_dark_mode_24"
+            app:iconTint="@color/system_neutral1_900"
+            app:rippleColor="@color/system_accent1_400" />
+
         <Button
             android:id="@+id/buttLight"
+            style="@style/Theme.button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:allowClickWhenDisabled="false"
+            android:singleLine="true"
             android:text="@string/light_butt"
-            style="@style/Theme.button"/>
+            app:icon="@drawable/ic_outline_light_mode_24"
+            app:iconTint="@color/system_neutral1_900"
+            app:rippleColor="@color/system_accent1_400" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

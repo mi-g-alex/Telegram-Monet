@@ -39,7 +39,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.button" parent="Widget.Material3.Button.TonalButton">
+    <style name="Theme.button" parent="Widget.Material3.Button.TonalButton.Icon">
         <item name="android:backgroundTint">
             @color/system_accent1_200
         </item>
