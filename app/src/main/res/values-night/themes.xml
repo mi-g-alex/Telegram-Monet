@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.TelegramMonet" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:background">
@@ -28,13 +28,17 @@
             @android:color/transparent
         </item>
         <item name="android:windowLightStatusBar">
-            true
+            false
         </item>
-        <item name="android:statusBarColor" tools:targetApi="l">
+        <item name="android:windowLightNavigationBar">
+            false
+        </item>
+        <item name="android:statusBarColor">
             @android:color/transparent
         </item>
         <!-- Customize your theme here. -->
     </style>
+
     <style name="Theme.button" parent="Widget.Material3.Button.TonalButton">
         <item name="android:backgroundTint">
             @color/system_accent1_200
