@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun shareTheme(MonetFile: String, outputFile : String, theme : String) {
+    private fun shareTheme(MonetFile: String, outputFile : String, theme : String) {
         val a1_0 = ContextCompat.getColor(applicationContext, R.color.system_accent1_0)
         val a1_10 = ContextCompat.getColor(applicationContext, R.color.system_accent1_10)
         val a1_50 = ContextCompat.getColor(applicationContext, R.color.system_accent1_50)
@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity() {
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
         intent.type = "document/*"
         intent.putExtra(Intent.EXTRA_STREAM, uri)
-        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK;
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
         startActivity(Intent.createChooser(intent, theme))
     }
 }

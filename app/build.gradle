@@ -10,8 +10,8 @@ android {
         applicationId "com.c3r5b8.telegram_monet"
         minSdk 31
         targetSdk 32
-        versionCode 1
-        versionName '1.0-release'
+        versionCode 200
+        versionName '2.0-release'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -29,6 +29,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildToolsVersion '30.0.3'
 }
 
 dependencies {

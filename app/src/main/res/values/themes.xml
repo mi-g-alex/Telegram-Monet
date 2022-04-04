@@ -35,7 +35,18 @@
         </item>
         <!-- Customize your theme here. -->
     </style>
-    <style name="Theme.button" parent="Widget.Material3.Button.TonalButton">
+    <style name="Theme.button.light" parent="Widget.Material3.Button.TonalButton.Icon">
+        <item name="android:backgroundTint">
+            @color/system_accent1_200
+        </item>
+        <item name="android:textColor">
+            @color/system_neutral1_900
+        </item>
+        <item name="android:textSize">
+            21sp
+        </item>
+    </style>
+    <style name="Theme.button.dark" parent="Widget.Material3.Button.TonalButton.Icon">
         <item name="android:backgroundTint">
             @color/system_accent1_200
         </item>
