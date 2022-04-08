@@ -1,12 +1,14 @@
 package com.c3r5b8.telegram_monet
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.core.content.ContextCompat //for import colors
 import androidx.core.content.FileProvider
 import androidx.core.view.WindowCompat
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
 import java.io.File
 
 
@@ -15,21 +17,37 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         WindowCompat.setDecorFitsSystemWindows(window, false)
         setContentView(R.layout.activity_main)
-        val buttDark: Button = findViewById(R.id.buttDark)
-        val buttLight: Button = findViewById(R.id.buttLight)
-        buttDark.setOnClickListener {
+        val buttonDark: ExtendedFloatingActionButton = findViewById(R.id.button_dark)
+        val buttonLight: ExtendedFloatingActionButton = findViewById(R.id.button_light)
+        val buttonGitHub : ExtendedFloatingActionButton = findViewById(R.id.button_github)
+        val buttonTelegram : ExtendedFloatingActionButton = findViewById(R.id.button_tg)
+        buttonDark.setOnClickListener {
             val darkMonetFile = "monet_dark.attheme"
             val outputFile = "MonetDark.attheme"
-            val theme = "Dark theme"
+            val theme : String = resources.getString(R.string.dark_theme)
             shareTheme(darkMonetFile, outputFile, theme)
         }
-        buttLight.setOnClickListener {
+        buttonLight.setOnClickListener {
             val lightMonetFile = "monet_light.attheme"
             val outputFile = "MonetLight.attheme"
-            val theme = "Light theme"
+            val theme : String = resources.getString(R.string.light_theme)
             shareTheme(lightMonetFile, outputFile, theme)
         }
+
+        buttonGitHub.setOnClickListener{
+            openLink("https://github.com/c3r5b8/Telegram-Monet")
+        }
+
+        buttonTelegram.setOnClickListener{
+            openLink("https://t.me/tgmonet")
+        }
     }
+    private fun openLink(link: String){
+        val i = Intent(Intent.ACTION_VIEW)
+        i.data = Uri.parse(link)
+        startActivity(i)
+    }
+
 
     private fun shareTheme(MonetFile: String, outputFile : String, theme : String) {
         val a1_0 = ContextCompat.getColor(applicationContext, R.color.system_accent1_0)

@@ -1,5 +1,10 @@
-<resources>
-    <string name="app_name">Telegram Monet</string>
-    <string name="butt_text">Create dark theme</string>
-    <string name="light_butt">Create light theme</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Telegram Monet Theme</string>
+    <string name="telegram_monet" translatable="false">Telegram Monet</string>
+    <string name="github">Source Code on GitHub</string>
+    <string name="telegram">Our Telegram Group</string>
+    <string name="create_dark_theme">Create Dark Theme</string>
+    <string name="create_light_theme">Create Light Theme</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="dark_theme">Dark Theme</string>
 </resources>

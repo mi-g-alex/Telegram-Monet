@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="github">Исходный код в GitHub</string>
+    <string name="telegram">Наш Telegram канал</string>
+    <string name="create_dark_theme">Создать тёмную тему</string>
+    <string name="create_light_theme">Создать светлую тему</string>
+    <string name="light_theme">Светлая тема</string>
+    <string name="dark_theme">Тёмная тема</string>
+</resources>

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/programming/android/Telegram-Monet/app/src/main/res/drawable/ic_foreground.xml" value="0.14" />
         <entry key="..\:/programming/android/Telegram-Monet/app/src/main/res/drawable/ic_outline_dark_mode_24.xml" value="0.14" />
         <entry key="..\:/programming/android/Telegram-Monet/app/src/main/res/drawable/ic_outline_light_mode_24.xml" value="0.14" />
         <entry key="..\:/programming/android/Telegram-Monet/app/src/main/res/layout/activity_main.xml" value="0.18541666666666667" />
