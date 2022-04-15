@@ -4,14 +4,28 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\gorgu\\Documents\\mainkey.jks')
+            storePassword '2112_Casha'
+            keyAlias 'tgma'
+            keyPassword '2112_Casha'
+        }
+        release {
+            storeFile file('C:\\Users\\gorgu\\Documents\\mainkey.jks')
+            storePassword '2112_Casha'
+            keyAlias 'tgma'
+            keyPassword '2112_Cash'
+        }
+    }
     compileSdk 32
 
     defaultConfig {
         applicationId "com.c3r5b8.telegram_monet"
         minSdk 31
         targetSdk 32
-        versionCode 312
-        versionName '3.1.2-release'
+        versionCode 320
+        versionName '3.2.0-release'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
