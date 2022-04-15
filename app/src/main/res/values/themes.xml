@@ -1,4 +1,4 @@
-<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+<resources>
     <!-- Base application theme. -->
 
     <style name="Theme.TelegramMonet" parent="Theme.Material3.Light.NoActionBar">
@@ -13,13 +13,13 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color and buttons. -->
-        <item name="android:navigationBarColor">@color/system_neutral1_10</item>
-        <item name="android:statusBarColor">@color/system_neutral1_10</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="colorAccent">@color/system_accent1_200</item>
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
         <!-- Customize your theme here. -->
     </style>
 
@@ -29,7 +29,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="button_style" >
+    <style name="button_style">
         <item name="android:backgroundTint">@color/system_accent1_600</item>
         <item name="android:textColor">@color/system_accent1_50</item>
         <item name="iconTint">@color/system_accent1_50</item>

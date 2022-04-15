@@ -16,8 +16,8 @@
         <!-- Status bar color. -->
         <item name="android:navigationBarColor">@color/system_neutral1_900</item>
         <item name="android:statusBarColor">@color/system_neutral1_900</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
         <!-- Customize your theme here. -->
     </style>
 
