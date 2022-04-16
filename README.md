@@ -3,7 +3,7 @@
 
 ### Thanks:
 - [TIDI](https://t.me/TIDI286)
-- [Tuarsev Damir](https://t.me/TierOhneNation)
+- [R4IN80W](https://t.me/TierOhneNation)
 - [DPROSAN](https://t.me/dprosan)
 - [G_Alex](https://t.me/Mi_G_alex)
 
