@@ -4,20 +4,6 @@ plugins {
 }
 
 android {
-    signingConfigs {
-        debug {
-            storeFile file('C:\\Users\\gorgu\\Documents\\mainkey.jks')
-            storePassword '2112_Casha'
-            keyAlias 'tgma'
-            keyPassword '2112_Casha'
-        }
-        release {
-            storeFile file('C:\\Users\\gorgu\\Documents\\mainkey.jks')
-            storePassword '2112_Casha'
-            keyAlias 'tgma'
-            keyPassword '2112_Cash'
-        }
-    }
     compileSdk 32
 
     defaultConfig {
