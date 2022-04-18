@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="github">Source Code en GitHub</string>
+    <string name="github">Código fuente en GitHub</string>
     <string name="telegram">Nuestro Grupo de Telegram</string>
     <string name="create_dark_theme">Crear Tema Oscuro</string>
     <string name="create_light_theme">Crear Tema Claro</string>
