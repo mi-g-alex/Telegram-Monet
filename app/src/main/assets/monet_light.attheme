@@ -257,7 +257,6 @@ chat_messageLinkOut=a1_400
 avatar_backgroundArchived=a1_600
 picker_badge=n1_50
 chat_outFileInfoSelectedText=n1_50
-chats_tabletSelectedOverlay=a1_100
 chats_tabUnreadUnactiveBackground=a1_600
 chats_tabUnreadActiveBackground=a1_600
 chat_outAudioDurationSelectedText=n1_50
