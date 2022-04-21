@@ -10,8 +10,8 @@ android {
         applicationId "com.c3r5b8.telegram_monet"
         minSdk 31
         targetSdk 32
-        versionCode 330
-        versionName '3.3.0-release'
+        versionCode 340
+        versionName '3.4.0-release'
     }
 
     buildTypes {
