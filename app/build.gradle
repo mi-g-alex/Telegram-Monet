@@ -15,7 +15,7 @@ android {
         targetSdk 32
         versionCode 340
         versionName '3.4.0-release'
-        resConfigs 'es', 'ru'
+        resConfigs 'es', 'ru', 'zh_CN'
     }
 
     buildTypes {
