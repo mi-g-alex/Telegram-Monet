@@ -168,9 +168,8 @@ class MainActivity : AppCompatActivity() {
         )
         val intent = Intent(Intent.ACTION_SEND)
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-        intent.type = "document/*"
         intent.putExtra(Intent.EXTRA_STREAM, uri)
-        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        intent.setDataAndType(uri, "document/attheme")
         startActivity(Intent.createChooser(intent, theme))
     }
 }
