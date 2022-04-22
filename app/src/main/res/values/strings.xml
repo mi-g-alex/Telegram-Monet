@@ -1,5 +1,7 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
     <string name="app_name" translatable="false">Telegram Monet Theme</string>
+    <string name="app_name_short" translatable="false">TG Monet</string>
     <string name="telegram_monet" translatable="false">Telegram Monet</string>
     <string name="github">Source Code on GitHub</string>
     <string name="telegram">Our Telegram Group</string>
