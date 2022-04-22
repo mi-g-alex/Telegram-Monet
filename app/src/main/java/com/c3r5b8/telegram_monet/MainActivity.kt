@@ -3,6 +3,8 @@ package com.c3r5b8.telegram_monet
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.View
+import android.view.WindowInsets
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
@@ -16,6 +18,16 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         window.setDecorFitsSystemWindows(false)
+        binding.root.setOnApplyWindowInsetsListener(View.OnApplyWindowInsetsListener { _, insets ->
+            val systemBarInsets = insets.getInsets(WindowInsets.Type.systemBars())
+            binding.root.setPadding(
+                systemBarInsets.left,
+                systemBarInsets.top,
+                systemBarInsets.right,
+                systemBarInsets.bottom
+            )
+            return@OnApplyWindowInsetsListener WindowInsets.CONSUMED
+        })
 
         binding.buttonDark.setOnClickListener {
             val darkMonetFile = "monet_dark.attheme"
