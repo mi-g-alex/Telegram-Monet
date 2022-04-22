@@ -1,30 +1,30 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.TelegramMonet" parent="Theme.Material3.Light.NoActionBar">
+
+    <style name="Theme.TelegramMonet" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/system_accent1_900</item>
         <item name="colorPrimaryVariant">@color/system_accent1_900</item>
         <item name="colorOnPrimary">@color/system_accent1_10</item>
         <item name="android:background">@color/system_neutral1_900</item>
-        <item name="android:color">@color/system_accent1_900</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
-        <!-- Status bar color. -->
-        <item name="android:navigationBarColor">@color/system_neutral1_900</item>
-        <item name="android:statusBarColor">@color/system_neutral1_900</item>
+
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
-        <!-- Customize your theme here. -->
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
     </style>
 
-    <style name="button_style" >
+    <style name="button_style">
         <item name="android:backgroundTint">@color/system_accent1_100</item>
         <item name="android:textColor">@color/system_accent1_700</item>
         <item name="iconTint">@color/system_accent1_700</item>
         <item name="android:textSize">18sp</item>
     </style>
+
 </resources>
