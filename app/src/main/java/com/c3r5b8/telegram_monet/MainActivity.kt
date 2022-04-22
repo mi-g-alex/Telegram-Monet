@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         window.setDecorFitsSystemWindows(false)
         binding.root.setOnApplyWindowInsetsListener(View.OnApplyWindowInsetsListener { _, insets ->
-            val systemBarInsets = insets.getInsets(WindowInsets.Type.systemBars())
+            val systemBarInsets = insets.getInsetsIgnoringVisibility(WindowInsets.Type.systemBars())
             binding.root.setPadding(
                 systemBarInsets.left,
                 systemBarInsets.top,
