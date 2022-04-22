@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="github">在 GitHub 上查看源码</string>
+    <string name="telegram">我们的 Telegram 群组</string>
+    <string name="create_dark_theme">创建暗色主题</string>
+    <string name="create_light_theme">创建亮色主题</string>
+    <string name="light_theme">亮色主题</string>
+    <string name="dark_theme">暗色主题</string>
+</resources>
