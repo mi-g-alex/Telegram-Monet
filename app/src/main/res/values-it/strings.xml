@@ -3,10 +3,10 @@
     <string name="app_name" translatable="false">Telegram Monet Theme</string>
     <string name="app_name_short" translatable="false">TG Monet</string>
     <string name="telegram_monet" translatable="false">Telegram Monet</string>
-    <string name="github">"Codice Sorgente su GitHub"</string>
-    <string name="telegram">"Il Nostro Gruppo Telegram"</string>
-    <string name="create_dark_theme">"Crea Tema Scuro"</string>
-    <string name="create_light_theme">"Crea Tema Chiaro"</string>
-    <string name="light_theme">"Tema Chiaro"</string>
-    <string name="dark_theme">"Tema Scuro"</string>
+    <string name="github">Codice Sorgente su GitHub</string>
+    <string name="telegram">Il Nostro Gruppo Telegram</string>
+    <string name="create_dark_theme">Crea Tema Scuro</string>
+    <string name="create_light_theme">Crea Tema Chiaro</string>
+    <string name="light_theme">Tema Chiaro</string>
+    <string name="dark_theme">Tema Scuro</string>
 </resources>
