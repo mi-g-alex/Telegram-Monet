@@ -14,7 +14,7 @@ android {
         minSdk 31
         targetSdk 32
         versionCode 350
-        versionName '3.5.0-beta'
+        versionName '3.5.0-release'
         resConfigs 'es', 'ru', 'zh_CN', 'it'
     }
 
