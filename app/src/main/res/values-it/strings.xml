@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Telegram Monet Theme</string>
-    <string name="app_name_short" translatable="false">TG Monet</string>
-    <string name="telegram_monet" translatable="false">Telegram Monet</string>
     <string name="github">Codice Sorgente su GitHub</string>
     <string name="telegram">Il Nostro Gruppo Telegram</string>
     <string name="create_dark_theme">Crea Tema Scuro</string>
