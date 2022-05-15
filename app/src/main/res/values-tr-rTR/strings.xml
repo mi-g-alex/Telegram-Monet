@@ -1,0 +1,9 @@
+<resources>
+    <string name="github">GitHub \'daki kaynak kodu</string>
+    <string name="telegram">Telegram Grubumuz</string>
+    <string name="create_dark_theme">Karanlık Tema Oluştur</string>
+    <string name="create_light_theme">Açık Tema Oluştur</string>
+    <string name="light_theme">Açık Tema</string>
+    <string name="dark_theme">Karanlık Tema</string>
+    <string name="title">Tema</string>
+</resources>

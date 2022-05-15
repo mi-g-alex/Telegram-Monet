@@ -6,4 +6,5 @@
     <string name="create_light_theme">Crear Tema Claro</string>
     <string name="light_theme">Tema Claro</string>
     <string name="dark_theme">Tema Oscuro</string>
+    <string name="title">Tema</string>
 </resources>

@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Programming/Android/Telegram-Monet/app/src/main/res/drawable/round_dark_mode_24.xml" value="0.2105" />
+        <entry key="..\:/Programming/Android/Telegram-Monet/app/src/main/res/drawable/round_light_mode_24.xml" value="0.169" />
+        <entry key="..\:/Programming/Android/Telegram-Monet/app/src/main/res/drawable/round_palette_24.xml" value="0.169" />
+        <entry key="..\:/Programming/Android/Telegram-Monet/app/src/main/res/layout/about_card.xml" value="0.2975630611372381" />
+        <entry key="..\:/Programming/Android/Telegram-Monet/app/src/main/res/layout/activity_main.xml" value="0.29379485014774165" />
+        <entry key="..\:/Programming/Android/Telegram-Monet/app/src/main/res/layout/dark_card.xml" value="0.2975630611372381" />
+        <entry key="..\:/Programming/Android/Telegram-Monet/app/src/main/res/layout/light_card.xml" value="0.2975630611372381" />
         <entry key="..\:/programming/android/Telegram-Monet/app/src/main/res/drawable/ic_foreground.xml" value="0.14" />
         <entry key="..\:/programming/android/Telegram-Monet/app/src/main/res/drawable/ic_outline_dark_mode_24.xml" value="0.14" />
         <entry key="..\:/programming/android/Telegram-Monet/app/src/main/res/drawable/ic_outline_light_mode_24.xml" value="0.14" />

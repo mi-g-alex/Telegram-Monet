@@ -5,5 +5,6 @@
     <string name="create_dark_theme">创建暗色主题</string>
     <string name="create_light_theme">创建亮色主题</string>
     <string name="light_theme">亮色主题</string>
+    <string name="title">色主题</string>
     <string name="dark_theme">暗色主题</string>
 </resources>
