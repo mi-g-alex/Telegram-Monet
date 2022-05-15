@@ -4,99 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:background="@drawable/background"
-    android:backgroundTint="@color/system_accent1_300"
-    android:backgroundTintMode="src_atop"
     tools:context=".MainActivity">
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        style="@style/button_style"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:clickable="false"
-        android:text="@string/telegram_monet"
-        android:textSize="20sp"
-        app:icon="@drawable/ic_foreground"
-        app:iconSize="55dp"
-        app:layout_constraintEnd_toEndOf="@id/main"
-        app:layout_constraintStart_toStartOf="@id/main"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-
-    <LinearLayout
-        android:id="@+id/main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00000000"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:id="@+id/button_light"
-            style="@style/button_style"
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_gravity="top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:contentDescription="@string/create_light_theme"
-            android:importantForAccessibility="no"
-            android:text="@string/create_light_theme"
-            android:outlineSpotShadowColor="#0000"
-            app:icon="@drawable/ic_light" />
+            android:hapticFeedbackEnabled="true"
+            android:fitsSystemWindows="true">
 
-        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:id="@+id/button_dark"
-            style="@style/button_style"
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                style="?attr/collapsingToolbarLayoutLargeStyle"
+                app:expandedTitleTextAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+                android:layout_width="match_parent"
+                android:hapticFeedbackEnabled="true"
+                android:layout_height="?attr/collapsingToolbarLayoutLargeSize"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                app:titleCollapseMode="fade">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:layout_width="match_parent"
+                    android:hapticFeedbackEnabled="true"
+                    app:layout_collapseParallaxMultiplier="@integer/material_motion_duration_short_2"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:title="@string/app_name_short" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:contentDescription="@string/create_dark_theme"
-            android:text="@string/create_dark_theme"
-            app:fabCustomSize="100dp"
-            android:outlineSpotShadowColor="#0000"
-            app:icon="@drawable/ic_dark" />
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:overScrollMode="always"
+                android:orientation="vertical">
 
+                <include layout="@layout/light_card"/>
+                <include layout="@layout/dark_card"/>
+                <include layout="@layout/about_card"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
-        android:backgroundTint="#0000"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+            </LinearLayout>
 
-        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:id="@+id/button_tg"
-            style="@style/button_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:contentDescription="@string/telegram"
-            android:outlineSpotShadowColor="#0000"
-            android:tintMode="multiply"
-            app:icon="@drawable/ic_telegram" />
+        </androidx.core.widget.NestedScrollView>
 
-
-        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:id="@+id/button_github"
-            style="@style/button_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:contentDescription="@string/github"
-            android:outlineSpotShadowColor="#0000"
-            app:icon="@drawable/ic_github" />
-
-    </LinearLayout>
-
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

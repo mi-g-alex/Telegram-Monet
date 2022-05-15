@@ -10,6 +10,7 @@
 
 
 ### Thanks:
+- [8055](https://t.me/the8055u)
 - [TIDI](https://t.me/TIDI286)
 - [R4IN80W](https://t.me/TierOhneNation)
 - [DPROSAN](https://t.me/dprosan)

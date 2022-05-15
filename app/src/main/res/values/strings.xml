@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name" translatable="false">Telegram Monet Theme</string>
+    <string name="description_title" translatable="false">Telegram Monet Theme | %s</string>
     <string name="app_name_short" translatable="false">TG Monet</string>
     <string name="telegram_monet" translatable="false">Telegram Monet</string>
     <string name="github">Source Code on GitHub</string>
@@ -9,4 +10,6 @@
     <string name="create_light_theme">Create Light Theme</string>
     <string name="light_theme">Light Theme</string>
     <string name="dark_theme">Dark Theme</string>
+    <string name="about_card_description" translatable="false">Simple telegram monet themes generator</string>
+    <string name="title">Theme</string>
 </resources>

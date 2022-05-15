@@ -13,9 +13,9 @@ android {
         applicationId "com.c3r5b8.telegram_monet"
         minSdk 31
         targetSdk 32
-        versionCode 351
-        versionName '3.5.1-release'
-        resConfigs 'es', 'ru', 'zh_CN', 'it', 'uk_UA'
+        versionCode 400
+        versionName '4.0.0'
+        resConfigs 'es', 'ru', 'zh_CN', 'it', 'uk_UA', 'tr_TR'
     }
 
     buildTypes {
@@ -49,8 +49,10 @@ android {
 }
 
 dependencies {
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21'
-    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
 }
 
 def optimizeReleaseRes = task('optimizeReleaseRes').doLast {

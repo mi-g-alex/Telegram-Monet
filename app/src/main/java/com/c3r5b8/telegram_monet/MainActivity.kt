@@ -3,13 +3,11 @@ package com.c3r5b8.telegram_monet
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.os.Environment
-import android.view.View
-import android.view.WindowInsets
+import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
-import com.c3r5b8.telegram_monet.databinding.ActivityMainBinding
 import java.io.File
 
 
@@ -17,22 +15,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Environment.getExternalStorageDirectory()
-        val binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        window.setDecorFitsSystemWindows(false)
-        binding.root.setOnApplyWindowInsetsListener(View.OnApplyWindowInsetsListener { _, insets ->
-            val systemBarInsets = insets.getInsetsIgnoringVisibility(WindowInsets.Type.systemBars())
-            binding.root.setPadding(
-                systemBarInsets.left,
-                systemBarInsets.top,
-                systemBarInsets.right,
-                systemBarInsets.bottom
-            )
-            return@OnApplyWindowInsetsListener WindowInsets.CONSUMED
-        })
 
-        binding.buttonDark.setOnClickListener {
+        val buttonDark: Button = findViewById(R.id.setup_dark_button)
+        val buttonLight: Button = findViewById(R.id.setup_light_button)
+        val buttonGithub: Button = findViewById(R.id.button_github)
+        val buttonTg: Button = findViewById(R.id.button_tg)
+        val descriptionTitle : TextView = findViewById(R.id.description_title)
+
+        descriptionTitle.text = getString(R.string.description_title, BuildConfig.VERSION_NAME)
+
+        buttonDark.setOnClickListener {
             val darkMonetFile = "monet_dark.attheme"
             val darkThemeImport = application.assets.open(darkMonetFile).bufferedReader().readText()
             val themeString = changeText(darkThemeImport)
@@ -42,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             shareTheme(themeName, fileName)
         }
 
-        binding.buttonLight.setOnClickListener {
+        buttonLight.setOnClickListener {
             val lightMonetFile = "monet_light.attheme"
             val lightThemeImport =
                 application.assets.open(lightMonetFile).bufferedReader().readText()
@@ -53,11 +45,11 @@ class MainActivity : AppCompatActivity() {
             shareTheme(themeName, fileName)
         }
 
-        binding.buttonGithub.setOnClickListener {
+        buttonGithub.setOnClickListener {
             openLink("https://github.com/c3r5b8/Telegram-Monet")
         }
 
-        binding.buttonTg.setOnClickListener {
+        buttonTg.setOnClickListener {
             openLink("https://t.me/tgmonet")
         }
     }
@@ -158,15 +150,4 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent.createChooser(intent, theme))
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 

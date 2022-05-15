@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MoneTG.DayNight" parent="Theme.Material3.DynamicColors.DayNight">
+        <!-- NavBar -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <!-- StatusBar -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- ActionBar -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+</resources>
