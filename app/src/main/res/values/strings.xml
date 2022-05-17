@@ -12,4 +12,6 @@
     <string name="dark_theme">Dark Theme</string>
     <string name="about_card_description" translatable="false">Simple telegram monet themes generator</string>
     <string name="title">Theme</string>
+    <string name="about_us">About Us</string>
+    <string name="settings">Settings</string>
 </resources>

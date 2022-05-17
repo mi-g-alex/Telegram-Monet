@@ -3,12 +3,18 @@ package com.c3r5b8.telegram_monet
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import java.io.File
+import java.util.zip.Inflater
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         val buttonGithub: Button = findViewById(R.id.button_github)
         val buttonTg: Button = findViewById(R.id.button_tg)
         val descriptionTitle : TextView = findViewById(R.id.description_title)
-
         descriptionTitle.text = getString(R.string.description_title, BuildConfig.VERSION_NAME)
 
         buttonDark.setOnClickListener {
@@ -52,6 +57,27 @@ class MainActivity : AppCompatActivity() {
         buttonTg.setOnClickListener {
             openLink("https://t.me/tgmonet")
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.topbar_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        //TODO: Waiting for implementation
+        /*
+        when(item.itemId){
+            R.id.settings_item -> {
+                Toast.makeText(this, "Hi there, you clicked the settings menu", Toast.LENGTH_SHORT)
+            return true
+            }
+            R.id.aboutus_item -> {
+                Toast.makeText(this, "Hi there, you clicked the about us menu", Toast.LENGTH_SHORT)
+                return true
+        }} */
+        return super.onOptionsItemSelected(item)
     }
 
     private fun openLink(link: String) {

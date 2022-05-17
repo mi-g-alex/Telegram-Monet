@@ -18,24 +18,33 @@
             android:hapticFeedbackEnabled="true"
             android:fitsSystemWindows="true">
 
-            <com.google.android.material.appbar.CollapsingToolbarLayout
+           <!-- <com.google.android.material.appbar.CollapsingToolbarLayout
                 style="?attr/collapsingToolbarLayoutLargeStyle"
                 app:expandedTitleTextAppearance="@style/TextAppearance.Material3.HeadlineLarge"
                 android:layout_width="match_parent"
                 android:hapticFeedbackEnabled="true"
                 android:layout_height="?attr/collapsingToolbarLayoutLargeSize"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
-                app:titleCollapseMode="fade">
+                app:titleCollapseMode="fade"> -->
 
                 <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/main_topbar"
                     android:layout_width="match_parent"
                     android:hapticFeedbackEnabled="true"
-                    app:layout_collapseParallaxMultiplier="@integer/material_motion_duration_short_2"
+                    app:layout_collapseParallaxMultiplier="@integer/material_motion_duration_short_1"
                     android:layout_height="?attr/actionBarSize"
                     app:layout_collapseMode="pin"
-                    app:title="@string/app_name_short" />
+                    app:titleCentered="true"
+                    app:title="@string/app_name"
+                    app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+                    app:subtitleCentered="true"
+                    app:subtitle="@string/about_card_description"
+                    app:subtitleTextAppearance="?android:attr/textColorSecondary"
+                    android:elevation="8dp"
+                    app:menu="@menu/topbar_menu"
+                    />
 
-            </com.google.android.material.appbar.CollapsingToolbarLayout>
+          <!--  </com.google.android.material.appbar.CollapsingToolbarLayout> -->
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -54,6 +63,7 @@
                 <include layout="@layout/light_card"/>
                 <include layout="@layout/dark_card"/>
                 <include layout="@layout/about_card"/>
+
 
             </LinearLayout>
 

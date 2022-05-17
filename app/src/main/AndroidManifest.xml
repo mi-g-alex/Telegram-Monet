@@ -9,11 +9,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TelegramMonet">
         <activity
-            android:resizeableActivity="false"
+            android:name=".AboutUsActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:screenOrientation="portrait"
             android:label="@string/app_name_short"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity,NonResizeableActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
