@@ -41,7 +41,6 @@
                     app:subtitle="@string/about_card_description"
                     app:subtitleTextAppearance="?android:attr/textColorSecondary"
                     android:elevation="8dp"
-                    app:menu="@menu/topbar_menu"
                     />
 
           <!--  </com.google.android.material.appbar.CollapsingToolbarLayout> -->

@@ -10,5 +10,12 @@
 
     <color name="card_bg">@android:color/system_neutral2_50</color>
 
+    <style name="button_style">
+        <item name="android:backgroundTint">@color/system_accent1_600</item>
+        <item name="android:textColor">@color/system_accent1_50</item>
+        <item name="iconTint">@color/system_accent1_50</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
 
 </resources>

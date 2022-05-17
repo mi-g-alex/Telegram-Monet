@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TelegramMonet">
         <activity
+            android:name=".HowToInstall"
+            android:exported="false" />
+        <activity
             android:name=".AboutUsActivity"
             android:exported="false" />
         <activity

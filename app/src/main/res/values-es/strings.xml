@@ -7,4 +7,6 @@
     <string name="light_theme">Tema Claro</string>
     <string name="dark_theme">Tema Oscuro</string>
     <string name="title">Tema</string>
+    <string name="about_us">Sobre nosotros</string>
+    <string name="settings">Ajustes</string>
 </resources>
