@@ -20,7 +20,7 @@
 [If you find bug, please create issues](https://github.com/c3r5b8/Telegram-Monet/issues/new)
 
 
-###Translators
+### Translators
 - [Arabic](https://t.me/MMETMA2)
 - [Bengali India](https://t.me/pubglover0_01)
 - [German](https://t.me/lelehier)
