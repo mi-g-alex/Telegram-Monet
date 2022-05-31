@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="github">Codice Sorgente su GitHub</string>
-    <string name="telegram">Il Nostro Gruppo Telegram</string>
-    <string name="create_dark_theme">Crea Tema Scuro</string>
-    <string name="create_light_theme">Crea Tema Chiaro</string>
-    <string name="light_theme">Tema Chiaro</string>
-    <string name="dark_theme">Tema Scuro</string>
-    <string name="title">Tema</string>
+    <string name="toolbar_title">Tema</string>
+    <string name="about_card_description">Generatore semplice di temi Monet per Telegram.</string>
+    <string name="about_card_github">Codice sorgente su GitHub</string>
+    <string name="about_card_telegram">Il nostro canale Telegram</string>
+    <string name="dark_theme">Scuro</string>
+    <string name="dark_theme_description">Crea un tema scuro usando le tonalità del sistema. Ottimo per la notte.</string>
+    <string name="light_theme">Chiaro</string>
+    <string name="light_theme_description">Crea un tema chiaro usando le tonalità del sistema. Gradevole durante il giorno.</string>
+    <string name="setup_card_button">Imposta</string>
 </resources>

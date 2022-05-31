@@ -9,7 +9,7 @@
 <img src=screen.gif alt=drawing height=500px />
 
 
-### Thanks:
+### Developers and testers:
 - [8055](https://t.me/the8055u)
 - [TIDI](https://t.me/TIDI286)
 - [R4IN80W](https://t.me/TierOhneNation)
@@ -17,4 +17,29 @@
 - [G_Alex](https://t.me/Mi_G_alex)
 
 
-[If you find bug, please create issues](https://github.com/c3r5b8/Telegram-Monet/issues/new) 
+[If you find bug, please create issues](https://github.com/c3r5b8/Telegram-Monet/issues/new)
+
+
+###Translators
+- [Arabic](https://t.me/MMETMA2)
+- [Bengali India](https://t.me/pubglover0_01)
+- [German](https://t.me/lelehier)
+- [Spanish](https://t.me/yoshijulas)
+- [Persian](https://t.me/ItsEeleeya_uwu)
+- [Filipino](https://t.me/znarfm)
+- French - Pierre
+- [Hindi](https://t.me/ShivanshVerma)
+- [Croatian](https://t.me/Haxyme)
+- Indonesian [1](https://t.me/DarmaCahyadi) & [2](https://t.me/ravaeru)
+- [Italian](https://t.me/thetruejake)
+- [Hebrew](https://t.me/Yosefhalp)
+- [Kabyle](https://t.me/mld9401)
+- [Dutch](https://t.me/TheTruePrism)
+- [Polish](https://t.me/Lambada10)
+- [Brazilian portuguese](https://t.me/Bygrilinho)
+- [Romanian](https://t.me/igram96)
+- [Tagalog](https://t.me/quantumpi6)
+- [Turkish](https://t.me/Teaqaria)
+- [Ukrainian](https://t.me/the_dise)
+- [Uzbek](https://t.me/FerNikoMF)
+- [Vietnamese](https://t.me/masarou)

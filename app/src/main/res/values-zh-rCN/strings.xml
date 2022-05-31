@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="github">在 GitHub 上查看源码</string>
-    <string name="telegram">我们的 Telegram 群组</string>
-    <string name="create_dark_theme">创建暗色主题</string>
-    <string name="create_light_theme">创建亮色主题</string>
-    <string name="light_theme">亮色主题</string>
-    <string name="title">色主题</string>
-    <string name="dark_theme">暗色主题</string>
+    <!--App Names -->
+    <string name="toolbar_title">Theme</string>
+    <!--About Card -->
+    <string name="about_card_description">Simple Telegram Monet themes generator</string>
+    <string name="about_card_github">在 GitHub 上查看源码</string>
+    <string name="about_card_telegram">我们的 Telegram 群组</string>
+    <!--Dark Theme Card -->
+    <string name="dark_theme">Dark</string>
+    <string name="dark_theme_description">Make dark theme from system shades. Great for the night.</string>
+    <!--Light Theme Card -->
+    <string name="light_theme">Light</string>
+    <string name="light_theme_description">Make light theme from system shades. Looks good during the day.</string>
+    <!--Other -->
+    <string name="setup_card_button">Set up</string>
 </resources>

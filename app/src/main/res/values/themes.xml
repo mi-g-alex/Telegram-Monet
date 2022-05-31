@@ -1,14 +1,12 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.TelegramMonet" parent="Theme.MoneTG.DayNight">
+    <style name="MonetTG" parent="MonetTG.DayNight">
         <!-- StatusBar -->
         <item name="android:windowLightStatusBar">true</item>
-        <item name="android:navigationBarColor">@color/system_neutral2_50</item>
         <!-- NavBar -->
         <item name="android:windowLightNavigationBar">true</item>
     </style>
 
     <color name="card_bg">@android:color/system_neutral2_50</color>
-
 
 </resources>

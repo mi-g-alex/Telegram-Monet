@@ -1,9 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="github">Вихідний код у GitHub</string>
-    <string name="telegram">Наш Telegram канал</string>
-    <string name="create_dark_theme">Створити темну тему</string>
-    <string name="create_light_theme">Створити світлу тему</string>
-    <string name="light_theme">Світла тема</string>
+    <string name="toolbar_title">Тема</string>
+    <string name="about_card_description">Простий генератор Monet тем для Telegram.</string>
+    <string name="about_card_github">Вихідний код на GitHub</string>
+    <string name="about_card_telegram">Наш Telegram канал</string>
     <string name="dark_theme">Темна тема</string>
-    <string name="title">Тема</string>
+    <string name="dark_theme_description">Створити темну тему із системних відтінків. Чудово виглядає вночі.</string>
+    <string name="light_theme">Світла тема </string>
+    <string name="light_theme_description">Створити світлу тему із системних відтінків.  Добре виглядає вдень.</string>
+    <string name="setup_card_button">Застосувати</string>
 </resources>

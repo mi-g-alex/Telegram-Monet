@@ -22,7 +22,6 @@
                 style="?attr/collapsingToolbarLayoutLargeStyle"
                 app:expandedTitleTextAppearance="@style/TextAppearance.Material3.HeadlineLarge"
                 android:layout_width="match_parent"
-                android:hapticFeedbackEnabled="true"
                 android:layout_height="?attr/collapsingToolbarLayoutLargeSize"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
                 app:titleCollapseMode="fade">
@@ -33,7 +32,7 @@
                     app:layout_collapseParallaxMultiplier="@integer/material_motion_duration_short_2"
                     android:layout_height="?attr/actionBarSize"
                     app:layout_collapseMode="pin"
-                    app:title="@string/app_name_short" />
+                    app:title="@string/toolbar_title" />
 
             </com.google.android.material.appbar.CollapsingToolbarLayout>
 
@@ -52,7 +51,9 @@
                 android:orientation="vertical">
 
                 <include layout="@layout/light_card"/>
+
                 <include layout="@layout/dark_card"/>
+
                 <include layout="@layout/about_card"/>
 
             </LinearLayout>

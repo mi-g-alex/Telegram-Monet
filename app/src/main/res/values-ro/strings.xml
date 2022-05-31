@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toolbar_title">Temă</string>
+    <string name="about_card_description">Generator temă Telegram Monet.</string>
+    <string name="about_card_github">Codul sursă pe GitHub</string>
+    <string name="about_card_telegram">Canalul nostru de Telegram</string>
+    <string name="dark_theme">Întunecată</string>
+    <string name="dark_theme_description">Creați o temă întunecată din nuanțe de sistem. Bun pentru noapte.</string>
+    <string name="light_theme">Luminată</string>
+    <string name="light_theme_description">Creați o temă luminată din nuanțe de sistem. Bun pentru zi.</string>
+    <string name="setup_card_button">Setează</string>
+</resources>

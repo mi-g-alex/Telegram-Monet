@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toolbar_title">Thema</string>
+    <string name="about_card_description">Einfacher Telegram Monet Themengenerator.</string>
+    <string name="about_card_github">Quelltext auf GitHub</string>
+    <string name="about_card_telegram">Unser Telegram-Kanal</string>
+    <string name="dark_theme">Nacht</string>
+    <string name="dark_theme_description">Erstellt ein dunkles Thema basierend auf Systemfarben. Perfekt für die Nacht.</string>
+    <string name="light_theme">Tag</string>
+    <string name="light_theme_description">Erstellt ein helles Thema basierend auf Systemfarben. Ideal für den Tag.</string>
+    <string name="setup_card_button">Einrichten</string>
+</resources>

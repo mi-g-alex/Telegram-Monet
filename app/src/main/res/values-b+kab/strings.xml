@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toolbar_title">Asentel</string>
+    <string name="about_card_description">Amsnulfu afessas n usentel Telegram Monet.</string>
+    <string name="about_card_github">Tangalt Aɣbalu Di GitHub</string>
+    <string name="about_card_telegram">Abadu Nneɣ Di Telegram</string>
+    <string name="dark_theme">Aberkan</string>
+    <string name="dark_theme_description">Rnu isental ubriken seg iɣaniben n unagraw. Ilha i yiḍ.</string>
+    <string name="light_theme">Aceɛlal</string>
+    <string name="light_theme_description">Rnu isental iceɛlalen seg iɣaniben n unagraw. Ilha i wass.</string>
+    <string name="setup_card_button">Sebded</string>
+</resources>

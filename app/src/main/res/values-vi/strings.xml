@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toolbar_title">Chủ đề</string>
+    <string name="about_card_description">Trình tạo chủ đề monet đơn giản cho Telegram.</string>
+    <string name="about_card_github">Mã nguồn trên GitHub</string>
+    <string name="about_card_telegram">Kênh Telegram của chúng tôi</string>
+    <string name="dark_theme">Nền tối</string>
+    <string name="dark_theme_description">Tạo chủ đề nền tối từ màu hệ thống.</string>
+    <string name="light_theme">Nền sáng</string>
+    <string name="light_theme_description">Tạo chủ đề nền sáng từ màu hệ thống.</string>
+    <string name="setup_card_button">Thiết lập</string>
+</resources>

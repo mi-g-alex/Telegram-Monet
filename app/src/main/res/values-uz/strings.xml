@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toolbar_title">Tema</string>
+    <string name="about_card_description">Oddiy Telegram Monet temalar generatori.</string>
+    <string name="about_card_github">GitHub bo\'yicha manba kodi</string>
+    <string name="about_card_telegram">Biznig Telegram kanalimiz</string>
+    <string name="dark_theme">Qora Tema</string>
+    <string name="dark_theme_description">Tizim shaderlari yordamida qora team yarating. Kechki vaqt uchun juda mos kelade.</string>
+    <string name="light_theme">Yorqin tema</string>
+    <string name="light_theme_description">Tizim shaderlari yordamida yorqin team yarating. Kun davomida yaxshi ko\'rinadi.</string>
+    <string name="setup_card_button">O\'rnatish</string>
+</resources>

@@ -7,7 +7,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TelegramMonet">
+        android:theme="@style/MonetTG">
         <activity
             android:resizeableActivity="false"
             android:name=".MainActivity"

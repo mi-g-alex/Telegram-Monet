@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="github">Исходный код в GitHub</string>
-    <string name="telegram">Наш Telegram канал</string>
-    <string name="create_dark_theme">Создать тёмную тему</string>
-    <string name="create_light_theme">Создать светлую тему</string>
-    <string name="light_theme">Светлая тема</string>
-    <string name="dark_theme">Тёмная тема</string>
-    <string name="title">Тема</string>
+    <!--App Names -->
+    <string name="toolbar_title">Тема</string>
+    <!--About Card -->
+    <string name="about_card_description">Лёгкий генератор тем в цветах Monet Engine.</string>
+    <string name="about_card_github">Исходный код в GitHub</string>
+    <string name="about_card_telegram">Наш Telegram канал</string>
+    <!--Dark Theme Card -->
+    <string name="dark_theme">Тёмная</string>
+    <string name="dark_theme_description">Создай тёмную тему из системных оттенков. Отлично подходит для ночи.</string>
+    <!--Light Theme Card -->
+    <string name="light_theme">Светлая</string>
+    <string name="light_theme_description">Создайте свелую тему из системных оттенков. Отлично подходит для светлого времени суток.</string>
+    <!--Other -->
+    <string name="setup_card_button">Установить</string>
 </resources>

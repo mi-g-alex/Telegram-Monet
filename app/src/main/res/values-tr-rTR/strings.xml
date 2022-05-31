@@ -1,9 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="github">GitHub \'daki kaynak kodu</string>
-    <string name="telegram">Telegram Grubumuz</string>
-    <string name="create_dark_theme">Karanlık Tema Oluştur</string>
-    <string name="create_light_theme">Açık Tema Oluştur</string>
-    <string name="light_theme">Açık Tema</string>
-    <string name="dark_theme">Karanlık Tema</string>
-    <string name="title">Tema</string>
+    <string name="toolbar_title">Tema</string>
+    <string name="about_card_description">Telegram için Basit Monet Temalar Oluştur.</string>
+    <string name="about_card_github">GitHub\'daki Kaynak Kodu</string>
+    <string name="about_card_telegram">Telegram Kanalımız</string>
+    <string name="dark_theme">Karanlık</string>
+    <string name="dark_theme_description">Sistem gölgelerinden koyu tema yapın.  Gece için Harika.</string>
+    <string name="light_theme">Aydınlık</string>
+    <string name="light_theme_description">Sistem gölgelerinden hafif tema yapın.  Gün içinde iyi görünüyor.</string>
+    <string name="setup_card_button">Kur</string>
 </resources>

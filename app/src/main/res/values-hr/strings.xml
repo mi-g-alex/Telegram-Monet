@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toolbar_title">Tema</string>
+    <string name="about_card_description">Jednostavni Telegram Monet generator tema.</string>
+    <string name="about_card_github">Izvorni Kod na GitHub</string>
+    <string name="about_card_telegram">Naš Telegram Kanal</string>
+    <string name="dark_theme">Tamna</string>
+    <string name="dark_theme_description">Napravi tamnu temu od sistemskih nijansi. Odlično za noć.</string>
+    <string name="light_theme">Svijetla</string>
+    <string name="light_theme_description">Napravi svijetlu temu od sistemskih nijansi. Izgleda dobro tokom dana.</string>
+    <string name="setup_card_button">Postavi</string>
+</resources>

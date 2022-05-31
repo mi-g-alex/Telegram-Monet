@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toolbar_title">Tema</string>
+    <string name="about_card_description">Simpleng aplikasyon para gumawa ng Monet Theme sa Telegram.</string>
+    <string name="about_card_github">Source Code sa GitHub</string>
+    <string name="about_card_telegram">Ang aming Telegram Channel</string>
+    <string name="dark_theme">Madilim</string>
+    <string name="dark_theme_description">Gumawa ng madilim na tema mula sa kulay ng system. Maganda para sa gabi.</string>
+    <string name="light_theme">Maliwanag</string>
+    <string name="light_theme_description">Gumawa ng maliwanag na tema mula sa kulay ng system. Maganda para sa araw o umaga.</string>
+    <string name="setup_card_button">I-set up</string>
+</resources>

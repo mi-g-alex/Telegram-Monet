@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toolbar_title">Motyw</string>
+    <string name="about_card_description">Prosty generator motywów Monet dla Telegrama.</string>
+    <string name="about_card_github">Kod źródłowy na GitHub</string>
+    <string name="about_card_telegram">Nasz kanał Telegram</string>
+    <string name="dark_theme">Ciemny</string>
+    <string name="dark_theme_description">Stwórz ciemny motyw z kolorów systemowych. Idealne w nocy.</string>
+    <string name="light_theme">Jasny</string>
+    <string name="light_theme_description">Stwórz jasny motyw z kolorów systemowych. Wygląda dobrze za dnia.</string>
+    <string name="setup_card_button">Ustaw</string>
+</resources>

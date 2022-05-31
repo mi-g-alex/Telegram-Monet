@@ -8,8 +8,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
+import com.c3r5b8.telegram_monet.BuildConfig.APPLICATION_ID
 import java.io.File
-
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         val buttonTg: Button = findViewById(R.id.button_tg)
         val descriptionTitle : TextView = findViewById(R.id.description_title)
 
-        descriptionTitle.text = getString(R.string.description_title, BuildConfig.VERSION_NAME)
+        descriptionTitle.text = getString(R.string.about_card_title, BuildConfig.VERSION_NAME)
 
         buttonDark.setOnClickListener {
             val darkMonetFile = "monet_dark.attheme"
@@ -139,7 +139,7 @@ class MainActivity : AppCompatActivity() {
         val file = File(applicationContext.cacheDir, file_name)
         val uri = FileProvider.getUriForFile(
             applicationContext,
-            BuildConfig.APPLICATION_ID + ".provider",
+            "$APPLICATION_ID.provider",
             file
         )
         val intent = Intent(Intent.ACTION_SEND)
@@ -150,4 +150,3 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent.createChooser(intent, theme))
     }
 }
-
