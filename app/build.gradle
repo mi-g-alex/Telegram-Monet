@@ -13,9 +13,9 @@ android {
         applicationId "com.c3r5b8.telegram_monet"
         minSdk 31
         targetSdk 32
-        versionCode 401
-        versionName '4.0.1'
-        resConfigs 'ar', 'bn_IN', 'de', 'es', 'fa_IR', 'fil', 'fr', 'hi', 'hr', 'in', 'it', 'iw', 'kab', 'nl', 'pl', 'pt_BR', 'ro', 'ru', 'tl', 'tr_TR', 'uk_UA', 'uz', 'vi', 'zh_CN'
+        versionCode 402
+        versionName '4.0.2'
+        resConfigs 'ar', 'bn_IN', 'de', 'es', 'fa_IR', 'fil', 'fr', 'hi', 'hr', 'in', 'it', 'iw', 'kab', 'nl', 'pl', 'pt', 'pt_BR', 'ro', 'ru', 'tl', 'tr_TR', 'uk_UA', 'uz', 'vi', 'zh_CN'
     }
 
     buildTypes {

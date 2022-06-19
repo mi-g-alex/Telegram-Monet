@@ -36,6 +36,7 @@
 - [Kabyle](https://t.me/mld9401)
 - [Dutch](https://t.me/TheTruePrism)
 - [Polish](https://t.me/Lambada10)
+- [Europe Portuguese](https://github.com/ReduxFlakes)
 - [Brazilian portuguese](https://t.me/Bygrilinho)
 - [Romanian](https://t.me/igram96)
 - [Tagalog](https://t.me/quantumpi6)
