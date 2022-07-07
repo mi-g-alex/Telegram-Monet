@@ -62,6 +62,7 @@
 
             <Button
                 android:id="@+id/button_tg"
+                style="@style/MonetTG.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -69,6 +70,7 @@
 
             <Button
                 android:id="@+id/button_github"
+                style="@style/MonetTG.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"

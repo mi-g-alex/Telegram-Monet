@@ -1,0 +1,382 @@
+!
+name: "monet dark"
+@
+bubbleOutline, replaceShadowsWithSeparators: 1
+bubbleOutlineSize: 0
+parentTheme: 2
+#
+
+<!--- CONTENT --->
+filling: n1_900
+separator: #0000
+fillingPressed: n2_800
+placeholder: #FFFFFF0F
+previewBackground: #0009
+overlayFilling: n1_900
+fillingNegative: a3_600
+fillingPositive: a1_100
+fillingPositiveContent: n1_900
+
+<!--- Text --->
+text: n1_50
+textSelectionHighlight: n1_600
+textLight: n1_200
+textSecure: a1_100
+textLink: a3_100
+textLinkPressHighlight: n1_600
+textNeutral: a2_200
+textNegative: a3_100
+textSearchQueryHighlight: a2_200
+
+<!--- Background --->
+background: n1_900
+background_text: n1_200
+background_textLight: n1_200
+background_icon: n1_300
+
+<!--- Icons --->
+icon: a1_100
+iconLight: n1_200
+iconActive: a1_100
+iconPositive: a1_100
+iconNegative: a3_100
+
+
+
+
+
+<!--- HEADER --->
+headerBackground: n1_900
+headerText: n1_50
+headerIcon: a1_100
+
+headerTabActive: a1_100
+headerTabActiveText: a1_100
+headerTabInactiveText: n1_200
+
+headerLightBackground: n1_900
+headerLightText: a1_100
+headerLightIcon: a1_100
+
+headerButton: a1_200
+headerButtonIcon: a1_800
+
+headerRemoveBackground: a3_600
+headerRemoveBackgroundHighlight: a3_600
+
+headerBarCallIncoming: a1_600
+headerBarCallActive: n1_600
+headerBarCallMuted: n2_800
+
+statusBar: #0000
+
+profileSectionActive: a1_100
+profileSectionActiveContent: a1_100
+
+passcode: n1_900
+passcodeIcon: a1_100
+passcodeText: n1_50
+
+notification: a1_100
+notificationPlayer: a1_100
+notificationSecure: a1_100
+
+
+
+
+
+<!--- CONTROLS --->
+progress: a1_100
+
+controlInactive: a1_100
+controlActive: a1_100
+controlContent: n1_900
+
+checkActive: a1_100
+checkContent: n1_900
+
+sliderActive: a1_100
+sliderInactive: a2_300
+
+togglerActive: a1_100
+togglerActiveBackground: a1_600
+
+togglerInactive: n1_200
+togglerInactiveBackground: n1_600
+
+togglerPositive: a1_100
+togglerPositiveBackground: a1_600
+togglerPositiveContent: n1_900
+
+togglerNegative: a3_100
+togglerNegativeBackground: a3_600
+togglerNegativeContent: n1_900
+
+inputInactive: a1_200
+inputActive: a1_100
+inputPositive: a1_100
+inputNegative: a3_100
+textPlaceholder: n1_300
+
+inlineOutline: a1_100
+inlineText: a1_100
+inlineIcon: a1_100
+inlineContentActive: n1_900
+
+circleButtonRegular: a1_400
+circleButtonRegularIcon: a1_10
+circleButtonNewChat: n2_800
+circleButtonNewChatIcon: a1_100
+circleButtonNewGroup: n2_800
+circleButtonNewGroupIcon: a1_100
+circleButtonNewChannel: n2_800
+circleButtonNewChannelIcon: a1_100
+circleButtonNewSecret: n2_800
+circleButtonNewSecretIcon: a1_100
+circleButtonPositive: a1_400
+circleButtonPositiveIcon: a1_10
+circleButtonNegative: a3_400
+circleButtonNegativeIcon: a3_10
+circleButtonOverlay: n2_800
+circleButtonOverlayIcon: n1_50
+circleButtonChat: n2_800
+circleButtonChatIcon: n1_50
+circleButtonTheme: a1_400
+circleButtonThemeIcon: a1_10
+
+online: a1_100
+promo: a1_100
+promoContent: n1_900
+
+introSectionActive: a1_100
+introSection: a2_300
+
+<!--- Music Player --->
+seekDone: a1_100
+seekReady: a2_300
+seekEmpty: n2_800
+playerButtonActive: a1_100
+playerButton: n1_200
+playerCoverIcon: a1_100
+playerCoverPlaceholder: n2_800
+
+
+
+
+
+<!--- MEDIA --->
+avatar_content: a1_100
+avatarArchive: n2_800
+avatarArchivePinned: n2_800
+avatarSavedMessages: n2_800
+avatarSavedMessages_big: n2_800
+avatarReplies: n2_800
+avatarReplies_big: n2_800
+avatarInactive: n2_800
+avatarInactive_big: n2_800
+nameInactive: a2_400
+avatarRed: n2_800
+avatarRed_big: n2_800
+nameRed: a1_400
+avatarOrange: n2_800
+avatarOrange_big: n2_800
+nameOrange: a1_400
+avatarYellow: n2_800
+avatarYellow_big: n2_800
+nameYellow: a1_400
+avatarGreen: n2_800
+avatarGreen_big: n2_800
+nameGreen: a1_400
+avatarCyan: n2_800
+avatarCyan_big: n2_800
+nameCyan: a1_400
+avatarBlue: n2_800
+avatarBlue_big: n2_800
+nameBlue: a1_400
+avatarViolet: n2_800
+avatarViolet_big: n2_800
+nameViolet: a1_400
+avatarPink: n2_800
+avatarPink_big: n2_800
+namePink: a1_400
+
+<!--- Media --->
+file: a2_500
+fileYellow: a2_500
+fileGreen: a2_500
+fileRed: a2_500
+
+waveformActive: a1_100
+waveformInactive: a2_300
+
+<!--- Attach Menu --->
+attachPhoto: a1_500
+attachFile: a1_500
+attachLocation: a1_500
+attachContact: a1_500
+attachInlineBot: a1_500
+attachText: a1_10
+fileAttach: a1_500
+
+
+
+
+
+<!--- CHATS --->
+chatListAction: a1_100
+chatListMute: n1_200
+chatListIcon: a1_100
+chatListVerify: a1_100
+ticks: a2_100
+ticksRead: a2_100
+badge: a1_100
+badgeText: n1_900
+badgeFailed: a3_200
+badgeFailedText: n1_900
+badgeMuted: a2_600
+badgeMutedText: n1_900
+
+chatSendButton: a1_100
+chatKeyboard: n1_900
+chatKeyboardButton: n1_500
+
+chatBackground: n1_900
+chatSeparator: #0000
+unread: n1_900
+unreadText: a1_100
+messageVerticalLine: a1_100
+messageSelection: a2_700
+messageSwipeBackground: n2_800
+messageSwipeContent: a1_100
+messageAuthor: n1_50
+messageAuthorPsa: a1_100
+
+shareSeparator: #0000
+
+
+
+
+
+<!--- BUBBLES --->
+bubble_chatSeparator: #0000
+bubble_messageSelectionNoWallpaper: a2_700
+bubble_messageCheckOutline: n1_50
+bubble_messageCheckOutlineNoWallpaper: a1_100
+
+bubbleIn_background: n2_800
+bubbleIn_time: n1_50
+bubbleIn_progress: a1_100
+bubbleIn_text: n1_50
+bubbleIn_textLink: a3_100
+bubbleIn_textLinkPressHighlight: n1_600
+bubbleIn_pressed: n2_700
+bubbleIn_separator: n1_600
+
+bubbleOut_background: a1_100
+bubbleOut_ticks: a1_600
+bubbleOut_ticksRead: a1_600
+bubbleOut_time: n1_900
+bubbleOut_progress: n1_900
+bubbleOut_text: n1_900
+bubbleOut_textLink: a3_500
+bubbleOut_textLinkPressHighlight: a2_300
+bubbleOut_messageAuthor: n1_900
+bubbleOut_messageAuthorPsa: a1_600
+bubbleOut_chatVerticalLine: n1_900
+bubbleOut_inlineOutline: n1_900
+bubbleOut_inlineText: n1_900
+bubbleOut_inlineIcon: n1_900
+bubbleOut_waveformActive: n1_900
+bubbleOut_waveformInactive: a2_500
+bubbleOut_file: a2_500
+bubbleOut_pressed: a2_200
+bubbleOut_separator: a2_500
+
+bubble_mediaOverlay: #0005
+
+bubble_unread_noWallpaper: n1_900
+bubble_unreadText_noWallpaper: a1_100
+bubble_date_noWallpaper: n2_800
+bubble_dateText_noWallpaper: a1_100
+bubble_button_noWallpaper: n2_800
+bubble_buttonRipple_noWallpaper: n1_900
+bubble_buttonText_noWallpaper: a1_100
+bubble_mediaReply_noWallpaper: n2_800
+bubble_mediaReplyText_noWallpaper: a1_100
+bubble_mediaTime_noWallpaper: n2_800
+bubble_mediaTimeText_noWallpaper: a1_100
+bubble_overlay_noWallpaper: n2_800
+bubble_overlayText_noWallpaper: a1_100
+
+
+
+
+
+<!--- INSTANT VIEW --->
+iv_pageTitle: n1_50
+iv_pageSubtitle: n1_200
+iv_text: n1_50
+iv_textLink: a3_100
+iv_textLinkPressHighlight: n1_600
+iv_textMarked: n1_50
+iv_textMarkedBackground: n1_600
+iv_textMarkedLink: a3_100
+iv_textMarkedLinkPressHighlight: n1_400
+iv_textReference: n1_50
+iv_textCode: n1_200
+iv_pageAuthor: n1_300
+iv_caption: n1_300
+iv_pageFooter: n1_300
+iv_header: n1_50
+iv_pullQuote: n1_200
+iv_blockQuote: n1_200
+iv_blockQuoteLine: n1_200
+iv_preBlockBackground: n2_800
+iv_textCodeBackground: n2_800
+iv_textCodeBackgroundPressed: n1_600
+iv_separator: n2_700
+ivHeaderIcon: n1_200
+ivHeader: n2_800
+
+
+
+
+
+<!--- OTHER --->
+sectionedScrollBar: n1_200
+sectionedScrollBarActive: a1_100
+sectionedScrollBarActiveContent: n1_900
+
+snackbarUpdate: a1_100
+snackbarUpdateAction: n1_900
+snackbarUpdateText: n1_900
+
+tooltip: n2_800
+tooltip_text: a1_100
+tooltip_textLink: a3_100
+tooltip_textLinkPressHighlight: n1_600
+tooltip_outline: #0000
+
+circleButtonActive: a1_400
+circleButtonActiveIcon: a1_10
+
+notificationLink: a3_100
+
+messageNeutralFillingContent: n1_900
+messageCorrectFilling: a1_100
+messageCorrectFillingContent: n1_900
+messageCorrectChosenFilling: a1_100
+messageCorrectChosenFillingContent: n1_900
+messageNegativeLine: a3_100
+messageNegativeLineContent: n1_900
+
+bubbleOut_chatNeutralFillingContent: a1_100
+bubbleOut_chatCorrectFilling: n1_900
+bubbleOut_chatCorrectFillingContent: a1_100
+bubbleOut_chatCorrectChosenFilling: n1_900
+bubbleOut_chatCorrectChosenFillingContent: a1_100
+bubbleOut_chatNegativeFilling: a3_700
+bubbleOut_chatNegativeFillingContent: a1_100
+
+iv_icon: n1_200
+iv_chatLinkBackground: n2_800

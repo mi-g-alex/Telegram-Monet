@@ -11,10 +11,13 @@
     <string name="about_card_telegram">Our Telegram Channel</string>
     <!--Dark Theme Card -->
     <string name="dark_theme">Dark</string>
+    <string name="dark_theme_amoled_mode" translatable="false">Amoled mode</string>
     <string name="dark_theme_description">Make dark theme from system shades. Great for the night.</string>
     <!--Light Theme Card -->
     <string name="light_theme">Light</string>
     <string name="light_theme_description">Make light theme from system shades. Looks good during the day.</string>
     <!--Other -->
     <string name="setup_card_button">Set up</string>
+    <string name="setup_telegram" translatable="false">Telegram</string>
+    <string name="setup_telegram_x" translatable="false">Telegram X</string>
 </resources>

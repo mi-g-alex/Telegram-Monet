@@ -3,11 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
 
     <com.google.android.material.card.MaterialCardView
-        style="@style/MonetTG.Card"
         android:id="@+id/light_card"
+        style="@style/MonetTG.Card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/card_bg"
@@ -29,18 +30,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/round_dark_mode_24"
-                    tools:ignore="RtlHardcoded">
-                </Button>
+                    tools:ignore="RtlHardcoded" />
 
                 <TextView
-                    android:layout_gravity="center"
-                    android:layout_margin="8dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/google_sans_medium"
                     android:text="@string/dark_theme"
                     android:textAppearance="?attr/textAppearanceTitleLarge"
-                    android:textSize="18sp"/>
-
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
@@ -48,18 +48,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:fontFamily="@font/google_sans"
                 android:text="@string/dark_theme_description"
                 android:textAppearance="?attr/textAppearanceBodyMedium"
                 android:textColor="?android:attr/textColorSecondary" />
 
-            <Button
-                android:id="@+id/setup_dark_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="@string/setup_card_button" />
-        </LinearLayout>
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchAmoledPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/google_sans_medium"
+                android:text="@string/dark_theme_amoled_mode"
+                android:textSize="16sp" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/setup_dark_button"
+                    style="@style/MonetTG.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/setup_telegram" />
+
+                <Button
+                    android:id="@+id/setup_x_dark_button"
+                    style="@style/MonetTG.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/setup_telegram_x" />
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
 
