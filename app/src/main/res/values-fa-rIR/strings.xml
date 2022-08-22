@@ -2,11 +2,12 @@
 <resources>
     <string name="toolbar_title">مضمون</string>
     <string name="about_card_description">سازنده مضمون سازگار با پس زمینه برای تلگرام</string>
-    <string name="about_card_github">کد منبع در گیت هاب</string>
     <string name="about_card_telegram">کانال تلگرام ما</string>
     <string name="dark_theme">تیره</string>
     <string name="dark_theme_description">ساخت مضمون تیره از رنگ های تصویر پس زمینه. مناسب برای شب</string>
     <string name="light_theme">روشن</string>
     <string name="light_theme_description">ساخت مضمون روشن از رنگ های تصویر پس زمینه. مناسب برای روز</string>
     <string name="setup_card_button">نصب</string>
+    <string name="settings_card_title">تنظیمات</string>
+    <string name="settings_card_use_gradient">فعال کردن گرادینت (تلگرام)</string>
 </resources>

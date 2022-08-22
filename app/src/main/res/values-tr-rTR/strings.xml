@@ -2,11 +2,12 @@
 <resources>
     <string name="toolbar_title">Tema</string>
     <string name="about_card_description">Telegram için Basit Monet Temalar Oluştur.</string>
-    <string name="about_card_github">GitHub\'daki Kaynak Kodu</string>
     <string name="about_card_telegram">Telegram Kanalımız</string>
     <string name="dark_theme">Karanlık</string>
     <string name="dark_theme_description">Sistem gölgelerinden koyu tema yapın.  Gece için Harika.</string>
     <string name="light_theme">Aydınlık</string>
     <string name="light_theme_description">Sistem gölgelerinden hafif tema yapın.  Gün içinde iyi görünüyor.</string>
     <string name="setup_card_button">Kur</string>
+    <string name="settings_card_title">Ayarlar</string>
+    <string name="settings_card_use_gradient">Gradyanı etkinleştir (Telegram)</string>
 </resources>

@@ -2,11 +2,12 @@
 <resources>
     <string name="toolbar_title">سمة</string>
     <string name="about_card_description">تطبيق بسيط لإنشاء سمات تليجرام</string>
-    <string name="about_card_github">كود المصدر علي GitHub</string>
     <string name="about_card_telegram">قناتنا علي تليجرام</string>
     <string name="dark_theme">داكن</string>
     <string name="dark_theme_description">انشاء سمه بألوان داكنة. جيد للاستخدام في الليل</string>
     <string name="light_theme">فاتح</string>
     <string name="light_theme_description">انشاء سمة تليجرام بألوان فاتحة. جيد للاستخدام اثناء اليوم</string>
     <string name="setup_card_button">ضبط</string>
+    <string name="settings_card_title">الإعدادات</string>
+    <string name="settings_card_use_gradient">تمكين التدرج (Telegram)</string>
 </resources>

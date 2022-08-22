@@ -4,7 +4,6 @@
     <string name="toolbar_title">Тема</string>
     <!--About Card -->
     <string name="about_card_description">Лёгкий генератор тем в цветах Monet Engine.</string>
-    <string name="about_card_github">Исходный код в GitHub</string>
     <string name="about_card_telegram">Наш Telegram канал</string>
     <!--Dark Theme Card -->
     <string name="dark_theme">Тёмная</string>
@@ -14,4 +13,6 @@
     <string name="light_theme_description">Создайте свелую тему из системных оттенков. Отлично подходит для светлого времени суток.</string>
     <!--Other -->
     <string name="setup_card_button">Установить</string>
+    <string name="settings_card_title">Настройки</string>
+    <string name="settings_card_use_gradient">Включить градиент (Telegram)</string>
 </resources>

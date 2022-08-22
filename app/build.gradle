@@ -13,15 +13,15 @@ android {
         applicationId "com.c3r5b8.telegram_monet"
         minSdk 31
         targetSdk 32
-        versionCode 22081910
-        versionName '8.9.0'
+        versionCode 22082220
+        versionName '8.9.1'
         resConfigs 'ar', 'bn_IN', 'de', 'es', 'fa_IR', 'fil', 'fr', 'hi', 'hr', 'in', 'it', 'iw', 'kab', 'nl', 'pl', 'pt', 'pt_BR', 'ro', 'ru', 'tl', 'tr_TR', 'uk_UA', 'uz', 'vi', 'zh_CN'
     }
 
     buildTypes {
         release {
             minifyEnabled true
-            shrinkResources true
+            shrinkResources false
             proguardFiles 'proguard-rules.pro'
         }
     }

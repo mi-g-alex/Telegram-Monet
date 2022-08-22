@@ -2,11 +2,12 @@
 <resources>
     <string name="toolbar_title">Tema</string>
     <string name="about_card_description">Generator tema Telegram Monet sederhana.</string>
-    <string name="about_card_github">Kode Sumber di GitHub</string>
     <string name="about_card_telegram">Saluran Telegram kami</string>
     <string name="dark_theme">Gelap</string>
     <string name="dark_theme_description">Buat tema gelap dari nuansa sistem.  Bagus untuk malam hari.</string>
     <string name="light_theme">Cerah</string>
     <string name="light_theme_description">Buat tema cerah dari nuansa sistem.  Terlihat bagus di siang hari.</string>
     <string name="setup_card_button">Buat</string>
+    <string name="settings_card_title">Pengaturan</string>
+    <string name="settings_card_use_gradient">Aktifkan gradien (Telegram)</string>
 </resources>

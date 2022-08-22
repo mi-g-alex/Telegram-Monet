@@ -2,11 +2,12 @@
 <resources>
     <string name="toolbar_title">Thème</string>
     <string name="about_card_description">Générateur de themes Monet pour Telegram.</string>
-    <string name="about_card_github">Code source sur GitHub</string>
     <string name="about_card_telegram">Notre canal Telegram</string>
     <string name="dark_theme">Sombre</string>
     <string name="dark_theme_description">Crée un thème sombre à partir des couleurs du système. Idéal pour la nuit.</string>
     <string name="light_theme">Clair</string>
     <string name="light_theme_description">Crée un thème clair à partir des couleurs du système. Idéal pour la journée.</string>
     <string name="setup_card_button">Appliquer</string>
+    <string name="settings_card_title">Réglages</string>
+    <string name="settings_card_use_gradient">Activer le dégradé (Telegram)</string>
 </resources>

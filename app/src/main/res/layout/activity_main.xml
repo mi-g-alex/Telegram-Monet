@@ -54,6 +54,8 @@
 
                 <include layout="@layout/dark_card"/>
 
+                <include layout="@layout/settings_card"/>
+
                 <include layout="@layout/about_card"/>
 
             </LinearLayout>

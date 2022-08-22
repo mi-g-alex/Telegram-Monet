@@ -1,13 +1,13 @@
 package com.c3r5b8.telegram_monet
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
-import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import com.c3r5b8.telegram_monet.BuildConfig.APPLICATION_ID
 import java.io.File
@@ -18,9 +18,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //set switches
+        getData()
+
         //Buttons Telegram
         val buttonTelegramDark: Button = findViewById(R.id.setup_dark_button)
         val buttonTelegramLight: Button = findViewById(R.id.setup_light_button)
+        val useGradient : SwitchCompat = findViewById(R.id.switchGradient)
 
         //Buttons TelegramX
         val buttonTelegramXDark: Button = findViewById(R.id.setup_x_dark_button)
@@ -39,25 +43,42 @@ class MainActivity : AppCompatActivity() {
             var darkThemeImport = application.assets.open(darkMonetFile).bufferedReader().readText()
             val isAmoledMode: SwitchCompat = findViewById(R.id.switchAmoledPhone)
             var fileName = "Dark Theme.attheme"
+
             if (isAmoledMode.isChecked) {
                 darkThemeImport = darkThemeImport.replace("n1_900", "n1_1000")
                 fileName = "Amoled Theme.attheme"
             }
+
+            if (useGradient.isChecked) {
+                darkThemeImport = darkThemeImport.replace("noGradient", "chat_outBubbleGradient")
+            }
+
             val themeString = changeTextTelegram(darkThemeImport, applicationContext)
+
             File(applicationContext.cacheDir, fileName).writeText(text = themeString)
+
             val themeName: String = resources.getString(R.string.dark_theme)
+
             shareTheme(themeName, fileName)
         }
 
         //Create telegram Light theme
         buttonTelegramLight.setOnClickListener {
             val lightMonetFile = "monet_light.attheme"
-            val lightThemeImport =
-                application.assets.open(lightMonetFile).bufferedReader().readText()
-            val themeString = changeTextTelegram(lightThemeImport, applicationContext)
+            var lightThemeImport = application.assets.open(lightMonetFile).bufferedReader().readText()
+
             val fileName = "Light Theme.attheme"
+
+            if (useGradient.isChecked) {
+                lightThemeImport = lightThemeImport.replace("noGradient", "chat_outBubbleGradient")
+            }
+
+            val themeString = changeTextTelegram(lightThemeImport, applicationContext)
+
             File(applicationContext.cacheDir, fileName).writeText(text = themeString)
+
             val themeName: String = resources.getString(R.string.light_theme)
+
             shareTheme(themeName, fileName)
         }
 
@@ -67,25 +88,32 @@ class MainActivity : AppCompatActivity() {
             var darkThemeImport = application.assets.open(darkMonetFile).bufferedReader().readText()
             val isAmoledMode: SwitchCompat = findViewById(R.id.switchAmoledPhone)
             var fileName = "Dark Theme.tgx-theme"
+
             if (isAmoledMode.isChecked) {
                 darkThemeImport = darkThemeImport.replace("n1_900", "n1_1000")
                 fileName = "Amoled Theme.tgx-theme"
             }
+
             val themeString = changeTextTelegramX(darkThemeImport, applicationContext)
+
             File(applicationContext.cacheDir, fileName).writeText(text = themeString)
+
             val themeName: String = resources.getString(R.string.dark_theme)
+
             shareTheme(themeName, fileName)
         }
 
         //Create telegramX Light theme
         buttonTelegramXLight.setOnClickListener {
             val lightMonetFile = "monet_x_light.tgx-theme"
-            val lightThemeImport =
-                application.assets.open(lightMonetFile).bufferedReader().readText()
+            val lightThemeImport = application.assets.open(lightMonetFile).bufferedReader().readText()
             val themeString = changeTextTelegramX(lightThemeImport, applicationContext)
             val fileName = "Light Theme.tgx-theme"
+
             File(applicationContext.cacheDir, fileName).writeText(text = themeString)
+
             val themeName: String = resources.getString(R.string.light_theme)
+
             shareTheme(themeName, fileName)
         }
 
@@ -121,6 +149,33 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra(Intent.EXTRA_STREAM, uri)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
         startActivity(Intent.createChooser(intent, theme))
+    }
+
+    private fun putData(){
+        val sharedPreferences: SharedPreferences = getSharedPreferences("switchSettings", MODE_PRIVATE)
+        val sharedPreferencesEditor: SharedPreferences.Editor = sharedPreferences.edit()
+
+        val useGradient : SwitchCompat = findViewById(R.id.switchGradient)
+        val isAmoledMode: SwitchCompat = findViewById(R.id.switchAmoledPhone)
+
+        sharedPreferencesEditor.putBoolean("useGradient", useGradient.isChecked)
+        sharedPreferencesEditor.putBoolean("isAmoledMode", isAmoledMode.isChecked)
+        sharedPreferencesEditor.apply()
+    }
+
+    private fun getData(){
+        val sharedPreferences: SharedPreferences = getSharedPreferences("switchSettings", MODE_PRIVATE)
+
+        val useGradient : SwitchCompat = findViewById(R.id.switchGradient)
+        val isAmoledMode: SwitchCompat = findViewById(R.id.switchAmoledPhone)
+
+        useGradient.isChecked =sharedPreferences.getBoolean("useGradient", false)
+        isAmoledMode.isChecked =sharedPreferences.getBoolean("isAmoledMode", false)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        putData()
     }
 
 }
