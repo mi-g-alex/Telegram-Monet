@@ -15,7 +15,7 @@ android {
         targetSdk 32
         versionCode 22082220
         versionName '8.9.1'
-        resConfigs 'ar', 'bn_IN', 'de', 'es', 'fa_IR', 'fil', 'fr', 'hi', 'hr', 'in', 'it', 'iw', 'kab', 'nl', 'pl', 'pt', 'pt_BR', 'ro', 'ru', 'tl', 'tr_TR', 'uk_UA', 'uz', 'vi', 'zh_CN'
+        resConfigs 'ar', 'bn_IN', 'de', 'es', 'fa_IR', 'fil', 'fr', 'hi', 'hr', 'in', 'it', 'iw', 'kab', 'ml', 'nl', 'pl', 'pt', 'pt_BR', 'ro', 'ru', 'tl', 'tr_TR', 'uk_UA', 'uz', 'vi', 'zh_CN'
     }
 
     buildTypes {
