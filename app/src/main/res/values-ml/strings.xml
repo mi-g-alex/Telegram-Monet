@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toolbar_title">തീം</string>
+    <string name="about_card_description">ലളിതമായ ടെലിഗ്രാം മോനെറ്റ് തീം ജനറേറ്റർ.</string>
+    <string name="about_card_telegram">ടെലിഗ്രാം</string>
+    <string name="dark_theme">ഡാർക്ക്</string>
+    <string name="dark_theme_description">സിസ്റ്റം ഷേഡുകളിൽ നിന്ന് ഡാർക്ക് നിറമുള്ള തീം സൃഷ്ടിക്കുക. രാത്രി സമയത്തിന് അനുയോജ്യം.</string>
+    <string name="light_theme">ലൈറ്റ്</string>
+    <string name="light_theme_description">സിസ്റ്റം ഷേഡുകളിൽ നിന്ന് ലൈറ്റ് നിറമുള്ള തീം സൃഷ്ടിക്കുക. പകൽ സമയത്തിന് അനുയോജ്യം.</string>
+    <string name="setup_card_button">സജ്ജമാക്കുക</string>
+    <string name="settings_card_title">ക്രമീകരണങ്ങൾ</string>
+    <string name="settings_card_use_gradient">ഗ്രേഡിയന്റ് പ്രവർത്തനക്ഷമമാക്കുക (ടെലിഗ്രാം)</string>
+</resources>
