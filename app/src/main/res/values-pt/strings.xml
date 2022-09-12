@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--App Names -->
+    <string name="app_name" translatable="false">Telegram Monet Theme</string>
+    <string name="app_name_short" translatable="false">TG Monet</string>
     <string name="toolbar_title">Tema</string>
+    <!--About Card -->
     <string name="about_card_description">Gerador simples de temas Monet para o Telegram.</string>
+    <string name="about_card_title" translatable="false">Telegram Monet Theme | %s</string>
     <string name="about_card_telegram">O nosso canal do Telegram</string>
+    <!--Dark Theme Card -->
     <string name="dark_theme">Escuro</string>
+    <string name="settings_card_switch_amoled" translatable="false">Amoled mode</string>
     <string name="dark_theme_description">Criar um tema escuro a partir das cores do sistema. Bom para uso de noite.</string>
+    <!--Light Theme Card -->
     <string name="light_theme">Claro</string>
     <string name="light_theme_description">Criar um tema claro a partir das cores do sistema. Bom para uso de dia.</string>
+    <!--Other -->
     <string name="setup_card_button">Configurar</string>
+    <string name="setup_telegram" translatable="false">Telegram</string>
+    <string name="setup_telegram_x" translatable="false">Telegram X</string>
+    <string name="about_card_github" translatable="false">GitHub</string>
     <string name="settings_card_title">Definições</string>
     <string name="settings_card_use_gradient">Ativar gradiente (Telegram)</string>
 </resources>
