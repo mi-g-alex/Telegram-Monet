@@ -10,4 +10,5 @@
     <string name="setup_card_button">Застосувати</string>
     <string name="settings_card_title">Налаштування</string>
     <string name="settings_card_use_gradient">Увімкнути градієнт (Telegram)</string>
+    <string name="settings_card_use_gradient_avatars">Включити градієнт для аватарів</string>
 </resources>

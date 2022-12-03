@@ -10,4 +10,5 @@
     <string name="setup_card_button">להגדיר</string>
     <string name="settings_card_title">הגדרות</string>
     <string name="settings_card_use_gradient">אפשר שיפוע (Telegram)</string>
+    <string name="settings_card_use_gradient_avatars">אפשר מעבר צבע עבור אווטרים</string>
 </resources>

@@ -64,6 +64,16 @@
                 android:text="@string/settings_card_use_gradient"
                 android:textSize="16sp" />
 
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchGradientAvatars"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/google_sans_medium"
+                android:text="@string/settings_card_use_gradient_avatars"
+                android:textSize="16sp" />
+
 
         </LinearLayout>
 

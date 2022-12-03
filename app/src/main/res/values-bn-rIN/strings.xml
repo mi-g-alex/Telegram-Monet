@@ -10,4 +10,5 @@
     <string name="setup_card_button">সেট করা</string>
     <string name="settings_card_title">সেটিংস</string>
     <string name="settings_card_use_gradient">গ্রেডিয়েন্ট সক্ষম করুন (টেলিগ্রাম)</string>
+    <string name="settings_card_use_gradient_avatars">অবতারের জন্য গ্রেডিয়েন্ট সক্ষম করুন</string>
 </resources>

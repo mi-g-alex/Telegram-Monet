@@ -10,4 +10,5 @@
     <string name="setup_card_button">Thiết lập</string>
     <string name="settings_card_title">Cài đặt</string>
     <string name="settings_card_use_gradient">Bật gradient (Telegram)</string>
+    <string name="settings_card_use_gradient_avatars">Bật gradient cho avatar</string>
 </resources>
