@@ -1,0 +1,33 @@
+name: Build debug APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  debug-builds:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+    
+      - name: set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: 11
+          distribution: "temurin"
+
+      - name: Change wrapper permissions
+        run: chmod +x ./gradlew
+
+      - name: Build debug APK
+        run: ./gradlew assembleDebug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-debug
+          path: app/build/outputs/apk/debug/*.apk
+  
