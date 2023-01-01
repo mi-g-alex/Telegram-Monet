@@ -17,6 +17,25 @@ fillingNegative: a3_600
 fillingPositive: a1_100
 fillingPositiveContent: n1_900
 
+<!--- Reactions --->
+bubbleIn_fillingActive: a2_700
+bubbleIn_fillingActiveContent: n1_50
+
+bubbleIn_fillingPositive: a1_300
+bubbleIn_fillingPositiveContent: n1_900
+
+bubbleIn_fillingPositive_overlay: a1_300
+bubbleIn_fillingPositiveContent_overlay: n1_900
+
+bubbleOut_fillingActive: a1_300
+bubbleOut_fillingActiveContent: n1_1000
+
+bubbleOut_fillingPositive: a1_500
+bubbleOut_fillingPositiveContent: n1_0
+
+bubbleOut_fillingPositive_overlay: a1_300
+bubbleOut_fillingPositiveContent_overlay: n1_900
+
 <!--- Text --->
 text: n1_50
 textSelectionHighlight: n1_600
@@ -38,11 +57,8 @@ background_icon: n1_300
 icon: a1_100
 iconLight: n1_200
 iconActive: a1_100
-iconPositive: a1_100
-iconNegative: a3_100
-
-
-
+iconPositive: monetGreenCall
+iconNegative: monetRedCall
 
 
 <!--- HEADER --->

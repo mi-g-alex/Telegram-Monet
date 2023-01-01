@@ -13,8 +13,8 @@ android {
         applicationId "com.c3r5b8.telegram_monet"
         minSdk 31
         targetSdk 33
-        versionCode 22120302
-        versionName '9.1.4'
+        versionCode 23010101
+        versionName '9.3.0'
         resConfigs 'ar', 'bn_IN', 'de', 'es', 'fa_IR', 'fil', 'fr', 'hi', 'hr', 'in', 'it', 'iw', 'kab', 'ml', 'nl', 'pl', 'pt', 'pt_BR', 'ro', 'ru', 'tl', 'tr_TR', 'uk_UA', 'uz', 'vi', 'zh_CN'
     }
 

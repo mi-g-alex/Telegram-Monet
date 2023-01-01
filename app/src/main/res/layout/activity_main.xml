@@ -47,16 +47,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
-                android:overScrollMode="always"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:overScrollMode="always">
 
-                <include layout="@layout/light_card"/>
+                <include layout="@layout/light_card" />
 
-                <include layout="@layout/dark_card"/>
+                <include layout="@layout/dark_card" />
 
-                <include layout="@layout/settings_card"/>
+                <include layout="@layout/settings_card" />
 
-                <include layout="@layout/about_card"/>
+                <include layout="@layout/about_card" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
 
             </LinearLayout>
 
