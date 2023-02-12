@@ -28,10 +28,10 @@
 
                 <com.google.android.material.appbar.MaterialToolbar
                     android:layout_width="match_parent"
-                    android:hapticFeedbackEnabled="true"
-                    app:layout_collapseParallaxMultiplier="@integer/material_motion_duration_short_2"
                     android:layout_height="?attr/actionBarSize"
+                    android:hapticFeedbackEnabled="true"
                     app:layout_collapseMode="pin"
+                    app:layout_collapseParallaxMultiplier="@integer/material_motion_duration_short_2"
                     app:title="@string/toolbar_title" />
 
             </com.google.android.material.appbar.CollapsingToolbarLayout>

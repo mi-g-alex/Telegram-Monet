@@ -53,7 +53,7 @@ background_textLight: n1_600
 background_icon: n1_500
 
 <!--- Icons --->
-icon: n1_600
+icon: n1_500
 iconLight: n1_600
 iconActive: a1_600
 iconPositive: monetGreenCall
@@ -314,7 +314,7 @@ bubble_unreadText_noWallpaper: a1_600
 bubble_date_noWallpaper: n1_100
 bubble_dateText_noWallpaper: n1_600
 bubble_button_noWallpaper: n1_100
-bubble_buttonRipple_noWallpaper: n1_200
+bubble_buttonRipple_noWallpaper: n1_20091
 bubble_buttonText_noWallpaper: n1_600
 bubble_mediaReply_noWallpaper: n1_100
 bubble_mediaReplyText_noWallpaper: n1_600
