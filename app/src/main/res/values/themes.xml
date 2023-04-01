@@ -5,7 +5,6 @@
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightNavigationBar">true</item>
-        <item name="switchStyle">@style/MonetTG.Switches</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
     </style>
@@ -22,15 +21,6 @@
         <item name="android:windowLightStatusBar">true</item>
         <!-- NavBar -->
         <item name="android:windowLightNavigationBar">true</item>
-        <!-- Switch -->
-        <item name="switchStyle">@style/MonetTG.Switches</item>
-    </style>
-
-    <style name="MonetTG.Switches" parent="Widget.Material3.CompoundButton.Switch">
-        <item name="android:switchMinWidth">52dp</item>
-        <item name="android:minHeight">48dp</item>
-        <item name="track">@drawable/switch_track</item>
-        <item name="android:thumb">@drawable/switch_thumb</item>
     </style>
 
     <color name="card_bg">@android:color/system_neutral2_50</color>
