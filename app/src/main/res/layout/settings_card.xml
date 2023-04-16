@@ -76,6 +76,17 @@
                 android:fontFamily="@font/google_sans_medium"
                 android:text="@string/settings_card_use_gradient_avatars"
                 android:textSize="16sp" />
+            
+            <com.google.android.material.materialswitch.MaterialSwitch
+                style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
+                android:id="@+id/switchOldServiceBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/google_sans_medium"
+                android:text="@string/settings_card_use_old_service_background"
+                android:textSize="16sp" />
 
 
         </LinearLayout>

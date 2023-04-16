@@ -23,4 +23,5 @@
     <string name="settings_card_title">Settings</string>
     <string name="settings_card_use_gradient">Enable gradient (Telegram)</string>
     <string name="settings_card_use_gradient_avatars">Enable gradient for avatars</string>
+    <string name="settings_card_use_old_service_background">Enable old service background</string>
 </resources>

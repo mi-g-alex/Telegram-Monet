@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val buttonTelegramLight: Button = findViewById(R.id.setup_light_button)
         val useGradient: SwitchCompat = findViewById(R.id.switchGradient)
         val useGradientAvatars: SwitchCompat = findViewById(R.id.switchGradientAvatars)
+        val useOldServiceBackground: SwitchCompat = findViewById(R.id.switchOldServiceBackground)
 
         //Buttons TelegramX
         val buttonTelegramXDark: Button = findViewById(R.id.setup_x_dark_button)
@@ -63,6 +64,10 @@ class MainActivity : AppCompatActivity() {
                 darkThemeImport = darkThemeImport.replace("avatar_backgroundRed=n2_800", "avatar_backgroundRed=n2_700")
                 darkThemeImport = darkThemeImport.replace("avatar_backgroundSaved=n2_800", "avatar_backgroundSaved=n2_700")
                 darkThemeImport = darkThemeImport.replace("avatar_backgroundViolet=n2_800", "avatar_backgroundViolet=n2_700")
+            }
+
+            if(useOldServiceBackground.isChecked) {
+                darkThemeImport = darkThemeImport.replace("chat_serviceBackground=n1_700", "chat_serviceBackground=n2_800")
             }
 
             val themeString = changeTextTelegram(darkThemeImport, applicationContext)
@@ -183,10 +188,12 @@ class MainActivity : AppCompatActivity() {
 
         val useGradient: SwitchCompat = findViewById(R.id.switchGradient)
         val useGradientAvatars: SwitchCompat = findViewById(R.id.switchGradientAvatars)
+        val useOldServiceBackground: SwitchCompat = findViewById(R.id.switchOldServiceBackground)
         val isAmoledMode: SwitchCompat = findViewById(R.id.switchAmoledPhone)
 
         sharedPreferencesEditor.putBoolean("useGradient", useGradient.isChecked)
         sharedPreferencesEditor.putBoolean("useGradientAvatars", useGradientAvatars.isChecked)
+        sharedPreferencesEditor.putBoolean("useOldServiceBackground", useOldServiceBackground.isChecked)
         sharedPreferencesEditor.putBoolean("isAmoledMode", isAmoledMode.isChecked)
         sharedPreferencesEditor.apply()
     }
@@ -197,10 +204,12 @@ class MainActivity : AppCompatActivity() {
 
         val useGradient: SwitchCompat = findViewById(R.id.switchGradient)
         val useGradientAvatars: SwitchCompat = findViewById(R.id.switchGradientAvatars)
+        val useOldServiceBackground: SwitchCompat = findViewById(R.id.switchOldServiceBackground)
         val isAmoledMode: SwitchCompat = findViewById(R.id.switchAmoledPhone)
 
         useGradient.isChecked = sharedPreferences.getBoolean("useGradient", false)
         useGradientAvatars.isChecked = sharedPreferences.getBoolean("useGradientAvatars", false)
+        useOldServiceBackground.isChecked = sharedPreferences.getBoolean("useOldServiceBackground", false)
         isAmoledMode.isChecked = sharedPreferences.getBoolean("isAmoledMode", false)
     }
 
