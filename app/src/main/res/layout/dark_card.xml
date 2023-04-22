@@ -29,6 +29,8 @@
                     style="@style/Widget.Material3.Button.IconButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:contentDescription="@string/dark_theme_description"
                     android:drawableLeft="@drawable/round_dark_mode_24"
                     tools:ignore="RtlHardcoded" />
 

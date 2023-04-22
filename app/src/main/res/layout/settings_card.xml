@@ -29,6 +29,8 @@
                     style="@style/Widget.Material3.Button.IconButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:contentDescription="@string/settings_card_title"
                     android:drawableLeft="@drawable/ic_baseline_settings_24"
                     tools:ignore="RtlHardcoded" />
 
@@ -45,8 +47,8 @@
             </LinearLayout>
 
             <com.google.android.material.materialswitch.MaterialSwitch
-                style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
                 android:id="@+id/switchAmoledPhone"
+                style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="end"
@@ -56,8 +58,8 @@
                 android:textSize="16sp" />
 
             <com.google.android.material.materialswitch.MaterialSwitch
-                style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
                 android:id="@+id/switchGradient"
+                style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="end"
@@ -67,8 +69,8 @@
                 android:textSize="16sp" />
 
             <com.google.android.material.materialswitch.MaterialSwitch
-                style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
                 android:id="@+id/switchGradientAvatars"
+                style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="end"
