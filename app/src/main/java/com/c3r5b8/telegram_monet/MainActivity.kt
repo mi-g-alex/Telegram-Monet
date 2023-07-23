@@ -2,7 +2,11 @@ package com.c3r5b8.telegram_monet
 
 import android.content.Intent
 import android.content.SharedPreferences
+import android.content.pm.PackageManager
+import android.content.pm.PackageManager.ResolveInfoFlags
+import android.content.pm.ResolveInfo
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -10,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
 import androidx.core.content.FileProvider
 import com.c3r5b8.telegram_monet.BuildConfig.APPLICATION_ID
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import java.io.File
 
 class MainActivity : AppCompatActivity() {
@@ -168,7 +173,44 @@ class MainActivity : AppCompatActivity() {
             "$APPLICATION_ID.provider",
             file
         )
-        val intent = Intent(Intent.ACTION_SEND)
+        val intent = Intent("org.telegram.messenger.IMPORT_THEME")
+        intent.addCategory(Intent.CATEGORY_DEFAULT)
+        intent.type = "*/*"
+
+        val flags = PackageManager.MATCH_DEFAULT_ONLY
+        val resolveInfos : List<ResolveInfo>
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            resolveInfos = packageManager.queryIntentActivities(intent, ResolveInfoFlags.of(flags.toLong()))
+        } else {
+            resolveInfos = packageManager.queryIntentActivities(intent, flags)
+        }
+        if (!resolveInfos.isEmpty()) {
+            MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.fast_import_choose_method)
+                .setMessage(R.string.fast_import_description)
+                .setPositiveButton(R.string.fast_import_method_fast_import) { dialog, which ->
+                    resolveInfos.forEach {
+                        grantUriPermission(it.activityInfo.packageName, uri, Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                    }
+
+                    val runIntent = Intent("org.telegram.messenger.IMPORT_THEME")
+                    runIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                    runIntent.type = "*/*"
+                    runIntent.putExtra(Intent.EXTRA_STREAM, uri)
+                    runIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                    startActivity(Intent.createChooser(runIntent, theme))
+                }
+                .setNegativeButton(R.string.fast_import_method_regular) { dialog, which -> shareThemeRegular(theme, uri) }
+                .show()
+
+            return
+        }
+
+        shareThemeRegular(theme, uri)
+    }
+
+    private fun shareThemeRegular(theme: String, uri: Uri) {
+        intent = Intent(Intent.ACTION_SEND)
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
         intent.type = "*/*"
         intent.putExtra(Intent.EXTRA_STREAM, uri)
