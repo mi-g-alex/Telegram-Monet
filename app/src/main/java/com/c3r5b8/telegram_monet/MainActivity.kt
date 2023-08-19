@@ -149,7 +149,7 @@ class MainActivity : AppCompatActivity() {
 
         //Button - go to GitHub
         buttonAboutGithub.setOnClickListener {
-            openLink("https://github.com/c3r5b8/Telegram-Monet")
+            openLink("https://github.com/mi-g-alex/Telegram-Monet")
         }
 
         //Button - go to Telegram
