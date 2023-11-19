@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="toolbar_title">נושא</string>
-    <string name="about_card_description">מחולל ערכות נושא פשוט של Telegram Monet</string>
+    <string name="toolbar_title">ערכת נושא</string>
+    <string name="about_card_description">מחולל ערכת נושא פשוט של Telegram Monet.</string>
     <string name="about_card_telegram">ערוץ הטלגרם שלנו</string>
-    <string name="dark_theme">אפל</string>
-    <string name="dark_theme_description">צור נושא כהה מגווני מערכת. נהדר ללילה</string>
-    <string name="light_theme">אוֹר</string>
-    <string name="light_theme_description">צור נושא קל מגוני מערכת. נראה טוב במהלך היום</string>
-    <string name="setup_card_button">להגדיר</string>
+    <string name="dark_theme">כהה</string>
+    <string name="dark_theme_description">צור ערכת נושא מגווני המערכת. מתאים לשעות הלילה.</string>
+    <string name="light_theme">בהיר</string>
+    <string name="light_theme_description">צור ערכת נושא מגווני המערכת. מתאים לשעות היום.</string>
+    <string name="setup_card_button">הגדר</string>
     <string name="settings_card_title">הגדרות</string>
-    <string name="settings_card_use_gradient">אפשר שיפוע (Telegram)</string>
-    <string name="settings_card_use_gradient_avatars">אפשר מעבר צבע עבור אווטרים</string>
+    <string name="settings_card_use_gradient">אפשר מעבר צבע הדרגתי (Telegram)</string>
+    <string name="settings_card_use_gradient_avatars">אפשר מעבר צבע עבור אווטארים</string>
+    <string name="settings_card_monet_nick">אפשר מעברי צבע עבור שמות אנשי קשר</string>
+    <string name="fast_import_choose_method">במה להשתמש?</string>
+    <string name="fast_import_description">האפליקציה זיהתה אפליקציות טלגרם התומכות בייבוא מהיר של ערכות נושא.</string>
+    <string name="fast_import_method_fast_import">ייבוא מהיר</string>
+    <string name="fast_import_method_regular">רגיל (שיתוף)</string>
 </resources>

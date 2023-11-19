@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         val buttonTelegramLight: Button = findViewById(R.id.setup_light_button)
         val useGradient: SwitchCompat = findViewById(R.id.switchGradient)
         val useGradientAvatars: SwitchCompat = findViewById(R.id.switchGradientAvatars)
+        val useColorNick: SwitchCompat = findViewById(R.id.switchColorsOfNickNames)
 
         //Buttons TelegramX
         val buttonTelegramXDark: Button = findViewById(R.id.setup_x_dark_button)
@@ -59,15 +60,52 @@ class MainActivity : AppCompatActivity() {
                 darkThemeImport = darkThemeImport.replace("noGradient", "chat_outBubbleGradient")
             }
 
-            if(useGradientAvatars.isChecked) {
-                darkThemeImport = darkThemeImport.replace("avatar_backgroundBlue=n2_800", "avatar_backgroundBlue=n2_700")
-                darkThemeImport = darkThemeImport.replace("avatar_backgroundCyan=n2_800", "avatar_backgroundCyan=n2_700")
-                darkThemeImport = darkThemeImport.replace("avatar_backgroundGreen=n2_800", "avatar_backgroundGreen=n2_700")
-                darkThemeImport = darkThemeImport.replace("avatar_backgroundOrange=n2_800", "avatar_backgroundOrange=n2_700")
-                darkThemeImport = darkThemeImport.replace("avatar_backgroundPink=n2_800", "avatar_backgroundPink=n2_700")
-                darkThemeImport = darkThemeImport.replace("avatar_backgroundRed=n2_800", "avatar_backgroundRed=n2_700")
-                darkThemeImport = darkThemeImport.replace("avatar_backgroundSaved=n2_800", "avatar_backgroundSaved=n2_700")
-                darkThemeImport = darkThemeImport.replace("avatar_backgroundViolet=n2_800", "avatar_backgroundViolet=n2_700")
+            if (useColorNick.isChecked) {
+                darkThemeImport = darkThemeImport.replace(
+                    "\nend",
+                    "\navatar_nameInMessageBlue=a1_400\n" +
+                            "avatar_nameInMessageCyan=a1_400\n" +
+                            "avatar_nameInMessageGreen=a1_400\n" +
+                            "avatar_nameInMessageOrange=a1_400\n" +
+                            "avatar_nameInMessagePink=a1_400\n" +
+                            "avatar_nameInMessageRed=a1_400\n" +
+                            "avatar_nameInMessageViolet=a1_400\nend"
+                )
+            }
+
+            if (useGradientAvatars.isChecked) {
+                darkThemeImport = darkThemeImport.replace(
+                    "avatar_backgroundBlue=n2_800",
+                    "avatar_backgroundBlue=n2_700"
+                )
+                darkThemeImport = darkThemeImport.replace(
+                    "avatar_backgroundCyan=n2_800",
+                    "avatar_backgroundCyan=n2_700"
+                )
+                darkThemeImport = darkThemeImport.replace(
+                    "avatar_backgroundGreen=n2_800",
+                    "avatar_backgroundGreen=n2_700"
+                )
+                darkThemeImport = darkThemeImport.replace(
+                    "avatar_backgroundOrange=n2_800",
+                    "avatar_backgroundOrange=n2_700"
+                )
+                darkThemeImport = darkThemeImport.replace(
+                    "avatar_backgroundPink=n2_800",
+                    "avatar_backgroundPink=n2_700"
+                )
+                darkThemeImport = darkThemeImport.replace(
+                    "avatar_backgroundRed=n2_800",
+                    "avatar_backgroundRed=n2_700"
+                )
+                darkThemeImport = darkThemeImport.replace(
+                    "avatar_backgroundSaved=n2_800",
+                    "avatar_backgroundSaved=n2_700"
+                )
+                darkThemeImport = darkThemeImport.replace(
+                    "avatar_backgroundViolet=n2_800",
+                    "avatar_backgroundViolet=n2_700"
+                )
             }
 
             val themeString = changeTextTelegram(darkThemeImport, applicationContext)
@@ -91,15 +129,52 @@ class MainActivity : AppCompatActivity() {
                 lightThemeImport = lightThemeImport.replace("noGradient", "chat_outBubbleGradient")
             }
 
-            if(useGradientAvatars.isChecked) {
-                lightThemeImport = lightThemeImport.replace("avatar_backgroundBlue=a1_600", "avatar_backgroundBlue=a1_500")
-                lightThemeImport = lightThemeImport.replace("avatar_backgroundCyan=a1_600", "avatar_backgroundCyan=a1_500")
-                lightThemeImport = lightThemeImport.replace("avatar_backgroundGreen=a1_600", "avatar_backgroundGreen=a1_500")
-                lightThemeImport = lightThemeImport.replace("avatar_backgroundOrange=a1_600", "avatar_backgroundOrange=a1_500")
-                lightThemeImport = lightThemeImport.replace("avatar_backgroundPink=a1_600", "avatar_backgroundPink=a1_500")
-                lightThemeImport = lightThemeImport.replace("avatar_backgroundRed=a1_600", "avatar_backgroundRed=a1_500")
-                lightThemeImport = lightThemeImport.replace("avatar_backgroundSaved=a1_600", "avatar_backgroundSaved=a1_500")
-                lightThemeImport = lightThemeImport.replace("avatar_backgroundViolet=a1_600", "avatar_backgroundViolet=a1_500")
+            if (useColorNick.isChecked) {
+                lightThemeImport = lightThemeImport.replace(
+                    "\nend",
+                    "\navatar_nameInMessageBlue=a1_400\n" +
+                            "avatar_nameInMessageCyan=a1_400\n" +
+                            "avatar_nameInMessageGreen=a1_400\n" +
+                            "avatar_nameInMessageOrange=a1_400\n" +
+                            "avatar_nameInMessagePink=a1_400\n" +
+                            "avatar_nameInMessageRed=a1_400\n" +
+                            "avatar_nameInMessageViolet=a1_400\nend"
+                )
+            }
+
+            if (useGradientAvatars.isChecked) {
+                lightThemeImport = lightThemeImport.replace(
+                    "avatar_backgroundBlue=a1_600",
+                    "avatar_backgroundBlue=a1_500"
+                )
+                lightThemeImport = lightThemeImport.replace(
+                    "avatar_backgroundCyan=a1_600",
+                    "avatar_backgroundCyan=a1_500"
+                )
+                lightThemeImport = lightThemeImport.replace(
+                    "avatar_backgroundGreen=a1_600",
+                    "avatar_backgroundGreen=a1_500"
+                )
+                lightThemeImport = lightThemeImport.replace(
+                    "avatar_backgroundOrange=a1_600",
+                    "avatar_backgroundOrange=a1_500"
+                )
+                lightThemeImport = lightThemeImport.replace(
+                    "avatar_backgroundPink=a1_600",
+                    "avatar_backgroundPink=a1_500"
+                )
+                lightThemeImport = lightThemeImport.replace(
+                    "avatar_backgroundRed=a1_600",
+                    "avatar_backgroundRed=a1_500"
+                )
+                lightThemeImport = lightThemeImport.replace(
+                    "avatar_backgroundSaved=a1_600",
+                    "avatar_backgroundSaved=a1_500"
+                )
+                lightThemeImport = lightThemeImport.replace(
+                    "avatar_backgroundViolet=a1_600",
+                    "avatar_backgroundViolet=a1_500"
+                )
             }
 
             val themeString = changeTextTelegram(lightThemeImport, applicationContext)
@@ -178,9 +253,10 @@ class MainActivity : AppCompatActivity() {
         intent.type = "*/*"
 
         val flags = PackageManager.MATCH_DEFAULT_ONLY
-        val resolveInfos : List<ResolveInfo>
+        val resolveInfos: List<ResolveInfo>
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            resolveInfos = packageManager.queryIntentActivities(intent, ResolveInfoFlags.of(flags.toLong()))
+            resolveInfos =
+                packageManager.queryIntentActivities(intent, ResolveInfoFlags.of(flags.toLong()))
         } else {
             resolveInfos = packageManager.queryIntentActivities(intent, flags)
         }
@@ -190,7 +266,11 @@ class MainActivity : AppCompatActivity() {
                 .setMessage(R.string.fast_import_description)
                 .setPositiveButton(R.string.fast_import_method_fast_import) { dialog, which ->
                     resolveInfos.forEach {
-                        grantUriPermission(it.activityInfo.packageName, uri, Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                        grantUriPermission(
+                            it.activityInfo.packageName,
+                            uri,
+                            Intent.FLAG_GRANT_READ_URI_PERMISSION
+                        )
                     }
 
                     val runIntent = Intent("org.telegram.messenger.IMPORT_THEME")
@@ -200,7 +280,12 @@ class MainActivity : AppCompatActivity() {
                     runIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
                     startActivity(Intent.createChooser(runIntent, theme))
                 }
-                .setNegativeButton(R.string.fast_import_method_regular) { dialog, which -> shareThemeRegular(theme, uri) }
+                .setNegativeButton(R.string.fast_import_method_regular) { dialog, which ->
+                    shareThemeRegular(
+                        theme,
+                        uri
+                    )
+                }
                 .show()
 
             return
@@ -226,10 +311,13 @@ class MainActivity : AppCompatActivity() {
         val useGradient: SwitchCompat = findViewById(R.id.switchGradient)
         val useGradientAvatars: SwitchCompat = findViewById(R.id.switchGradientAvatars)
         val isAmoledMode: SwitchCompat = findViewById(R.id.switchAmoledPhone)
+        val useColorNick: SwitchCompat = findViewById(R.id.switchColorsOfNickNames)
+
 
         sharedPreferencesEditor.putBoolean("useGradient", useGradient.isChecked)
         sharedPreferencesEditor.putBoolean("useGradientAvatars", useGradientAvatars.isChecked)
         sharedPreferencesEditor.putBoolean("isAmoledMode", isAmoledMode.isChecked)
+        sharedPreferencesEditor.putBoolean("useColorNick", useColorNick.isChecked)
         sharedPreferencesEditor.apply()
     }
 
@@ -240,10 +328,12 @@ class MainActivity : AppCompatActivity() {
         val useGradient: SwitchCompat = findViewById(R.id.switchGradient)
         val useGradientAvatars: SwitchCompat = findViewById(R.id.switchGradientAvatars)
         val isAmoledMode: SwitchCompat = findViewById(R.id.switchAmoledPhone)
+        val useColorNick: SwitchCompat = findViewById(R.id.switchColorsOfNickNames)
 
         useGradient.isChecked = sharedPreferences.getBoolean("useGradient", false)
         useGradientAvatars.isChecked = sharedPreferences.getBoolean("useGradientAvatars", false)
         isAmoledMode.isChecked = sharedPreferences.getBoolean("isAmoledMode", false)
+        useColorNick.isChecked = sharedPreferences.getBoolean("useColorNick", true)
     }
 
     override fun onPause() {

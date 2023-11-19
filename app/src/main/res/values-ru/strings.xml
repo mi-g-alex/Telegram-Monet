@@ -16,4 +16,10 @@
     <string name="settings_card_title">Настройки</string>
     <string name="settings_card_use_gradient">Включить градиент (Telegram)</string>
     <string name="settings_card_use_gradient_avatars">Включить градиент для аватарок</string>
+    <string name="settings_card_monet_nick">Использовать Monet для ников</string>
+    <!--Fast import-->
+    <string name="fast_import_choose_method">Что использовать?</string>
+    <string name="fast_import_description">У Вас установлен Telegram, который поддерживает быстрый импорт тем</string>
+    <string name="fast_import_method_fast_import">Быстрый импорт</string>
+    <string name="fast_import_method_regular">Обычный (поделиться)</string>
 </resources>

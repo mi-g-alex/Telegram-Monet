@@ -6,15 +6,14 @@ plugins {
 }
 
 android {
-    compileSdk 33
-    buildToolsVersion '30.0.3'
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.c3r5b8.telegram_monet"
         minSdk 31
-        targetSdk 33
-        versionCode 23081901
-        versionName '9.9.9'
+        targetSdk 34
+        versionCode 23111901
+        versionName '10.2.0'
         resConfigs 'ar', 'bn_IN', 'de', 'es', 'fa_IR', 'fil', 'fr', 'hi', 'hr', 'in', 'it', 'iw', 'kab', 'ml', 'nl', 'pl', 'pt', 'pt_BR', 'ro', 'ru', 'tl', 'tr_TR', 'uk_UA', 'uz', 'vi', 'zh_CN'
     }
 
