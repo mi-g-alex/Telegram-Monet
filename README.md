@@ -32,7 +32,7 @@
 - [Croatian](https://t.me/Haxyme)
 - Indonesian [1](https://t.me/DarmaCahyadi) & [2](https://t.me/ravaeru)
 - [Italian](https://t.me/thetruejake)
-- [Hebrew](https://t.me/Yosefhalp)
+- [Hebrew](https://t.me/MeniViner)
 - [Kabyle](https://t.me/mld9401)
 - [Dutch](https://t.me/TheTruePrism)
 - [Polish](https://t.me/Lambada10)
