@@ -1,4 +1,4 @@
-# Telegram Monet
+# Telegram Monet (Android 12 or above)
 
 <p>
     <a href="https://github.com/c3r5b8/Telegram-Monet/stargazers"><img src="https://img.shields.io/github/stars/c3r5b8/Telegram-Monet?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship style=for-the-badge"></a>
