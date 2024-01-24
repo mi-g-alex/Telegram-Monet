@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="toolbar_title">Tema</string>
-    <string name="about_card_description">Gerador simples de temas Monet para o Telegram.</string>
-    <string name="about_card_telegram">Nosso Canal do Telegram</string>
+    <string name="about_card_description">Gerador simples de temas monet para o Telegram.</string>
+    <string name="about_card_telegram">Nosso canal do Telegram</string>
     <string name="dark_theme">Escuro</string>
-    <string name="dark_theme_description">Criar um tema escuro a partir das cores do sistema. Bom para a noite.</string>
+    <string name="dark_theme_description">Crie um tema escuro a partir das cores do sistema. Ótimo para a noite.</string>
     <string name="light_theme">Claro</string>
-    <string name="light_theme_description">Criar um tema claro a partir das cores do sistema. Fica bonito durante o dia.</string>
+    <string name="light_theme_description">Crie um tema claro a partir das cores do sistema. Parece bom durante o dia.</string>
     <string name="setup_card_button">Configurar</string>
-    <string name="settings_card_title">Definições</string>
+    <string name="settings_card_title">Configurações</string>
     <string name="settings_card_use_gradient">Ativar gradiente (Telegram)</string>
-    <string name="settings_card_use_gradient_avatars">Ativar gradiente para Avatares</string>
+    <string name="settings_card_use_gradient_avatars">Ativar gradiente para avatares</string>
+    <string name="settings_card_monet_nick">Ativar monet para apelidos</string>
+    <string name="fast_import_choose_method">O que usar?</string>
+    <string name="fast_import_description">O app detectou apps do Telegram que suportam a importação rápida de temas.</string>
+    <string name="fast_import_method_fast_import">Importação rápida</string>
+    <string name="fast_import_method_regular">Regular (Compartilhamento)</string>
 </resources>
