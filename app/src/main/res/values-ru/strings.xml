@@ -22,4 +22,6 @@
     <string name="fast_import_description">У Вас установлен Telegram, который поддерживает быстрый импорт тем</string>
     <string name="fast_import_method_fast_import">Быстрый импорт</string>
     <string name="fast_import_method_regular">Обычный (поделиться)</string>
+    <string name="how_to_use">Как использовать?</string>
+    <string name="something_went_wrong">Что-то пошло не так.\\nПроверьте интернет соединение.</string>
 </resources>
