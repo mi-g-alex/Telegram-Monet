@@ -2,11 +2,11 @@
 <resources>
     <string name="toolbar_title">Tema</string>
     <string name="about_card_description">Gerador simples de temas monet para o Telegram.</string>
-    <string name="about_card_telegram">Nosso canal do Telegram</string>
+    <string name="about_card_telegram">O nosso canal do Telegram</string>
     <string name="dark_theme">Escuro</string>
-    <string name="dark_theme_description">Crie um tema escuro a partir das cores do sistema. Ótimo para a noite.</string>
+    <string name="dark_theme_description">Crie um tema escuro a partir das cores do sistema. Bom para uso de noite.</string>
     <string name="light_theme">Claro</string>
-    <string name="light_theme_description">Crie um tema claro a partir das cores do sistema. Parece bom durante o dia.</string>
+    <string name="light_theme_description">Crie um tema claro a partir das cores do sistema. Bom para uso de dia.</string>
     <string name="setup_card_button">Configurar</string>
     <string name="settings_card_title">Definições</string>
     <string name="settings_card_use_gradient">Ativar gradiente (Telegram)</string>

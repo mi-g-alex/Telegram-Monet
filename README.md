@@ -1,9 +1,9 @@
 # Telegram Monet (Android 12 or above)
 
 <p>
-    <a href="https://github.com/c3r5b8/Telegram-Monet/stargazers"><img src="https://img.shields.io/github/stars/c3r5b8/Telegram-Monet?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship style=for-the-badge" alt=""></a>
-    <a href="https://github.com/c3r5b8/Telegram-Monet/issues"><img src="https://img.shields.io/github/issues/c3r5b8/Telegram-Monet?colorA=1e1e28&colorB=f7be95&style=for-the-badge" alt=""></a>
-    <a href="https://github.com/c3r5b8/Telegram-Monet/contributors"><img src="https://img.shields.io/github/contributors/c3r5b8/Telegram-Monet?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge" alt=""></a>
+    <a href="https://github.com/c3r5b8/Telegram-Monet/stargazers"><img src="https://img.shields.io/github/stars/c3r5b8/Telegram-Monet?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship style=for-the-badge"></a>
+    <a href="https://github.com/c3r5b8/Telegram-Monet/issues"><img src="https://img.shields.io/github/issues/c3r5b8/Telegram-Monet?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
+    <a href="https://github.com/c3r5b8/Telegram-Monet/contributors"><img src="https://img.shields.io/github/contributors/c3r5b8/Telegram-Monet?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
 </p>
 
 <img src=screen.gif alt=drawing height=772 />
