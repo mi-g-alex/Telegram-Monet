@@ -12,8 +12,8 @@ android {
         applicationId = "com.c3r5b8.telegram_monet"
         minSdk = 31
         targetSdk = 35
-        versionCode = 24072101
-        versionName = "10.14.0"
+        versionCode = 24072301
+        versionName = "10.14.5"
 
         resourceConfigurations.addAll(
             arrayOf(

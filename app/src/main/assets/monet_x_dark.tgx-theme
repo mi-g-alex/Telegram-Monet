@@ -275,6 +275,7 @@ shareSeparator: #0000
 
 <!--- BUBBLES --->
 bubble_chatSeparator: #0000
+bubble_messageSelection: #0003
 bubble_messageSelectionNoWallpaper: a2_700
 bubble_messageCheckOutline: n1_50
 bubble_messageCheckOutlineNoWallpaper: a1_100

@@ -30,6 +30,7 @@ fun MainScreen(
     val isGradient by remember { viewModel.isGradient }
     val isAvatarGradient by remember { viewModel.isAvatarGradient }
     val isNicknameColorful by remember { viewModel.isNicknameColorful }
+    val isAlterOutColor by remember { viewModel.isAlterOutColor }
     val context = LocalContext.current
 
     MainScreenComponent(
@@ -37,10 +38,12 @@ fun MainScreen(
         isGradient = isGradient,
         isAvatarGradient = isAvatarGradient,
         isNicknameColorful = isNicknameColorful,
+        isAlterOutColor = isAlterOutColor,
         setAmoled = { viewModel.setSettings(Constants.SHARED_IS_AMOLED, it) },
         setGradient = { viewModel.setSettings(Constants.SHARED_USE_GRADIENT, it) },
         setAvatarGradient = { viewModel.setSettings(Constants.SHARED_USE_GRADIENT_AVATARS, it) },
         setNicknameColorful = { viewModel.setSettings(Constants.SHARED_USE_COLORFUL_NICKNAME, it) },
+        setUseOldChatStyle = { viewModel.setSettings(Constants.SHARED_USE_OLD_CHAT_STYLE, it) },
         onShareTheme = { isTg, isLight -> viewModel.onShareTheme(context, isTg, isLight) },
         goHowUse = goHowUse
     )
@@ -52,10 +55,12 @@ private fun MainScreenComponent(
     isGradient: Boolean,
     isAvatarGradient: Boolean,
     isNicknameColorful: Boolean,
+    isAlterOutColor: Boolean,
     setAmoled: (value: Boolean) -> Unit,
     setGradient: (value: Boolean) -> Unit,
     setAvatarGradient: (value: Boolean) -> Unit,
     setNicknameColorful: (value: Boolean) -> Unit,
+    setUseOldChatStyle: (value: Boolean) -> Unit,
     onShareTheme: (isTelegram: Boolean, isLight: Boolean) -> Unit,
     goHowUse: () -> Unit
 ) {
@@ -110,10 +115,12 @@ private fun MainScreenComponent(
                     isGradient = isGradient,
                     isAvatarGradient = isAvatarGradient,
                     isNicknameColorful = isNicknameColorful,
+                    isAlterOutColor = isAlterOutColor,
                     setAmoled = setAmoled,
                     setGradient = setGradient,
                     setAvatarGradient = setAvatarGradient,
-                    setNicknameColorful = setNicknameColorful
+                    setNicknameColorful = setNicknameColorful,
+                    setUseAlterOutColor = setUseOldChatStyle
                 )
             }
 
@@ -134,11 +141,13 @@ private fun MainScreenPreview() {
         isGradient = false,
         isAvatarGradient = true,
         isNicknameColorful = false,
+        isAlterOutColor = true,
         setAmoled = { },
         setGradient = { },
         setAvatarGradient = { },
         setNicknameColorful = { },
-        onShareTheme = {_, _ ->},
+        setUseOldChatStyle = {},
+        onShareTheme = { _, _ -> },
         goHowUse = {}
     )
 }

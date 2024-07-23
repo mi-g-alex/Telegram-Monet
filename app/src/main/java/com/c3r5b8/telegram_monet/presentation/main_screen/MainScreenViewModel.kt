@@ -18,6 +18,7 @@ class MainScreenViewModel(
     var isGradient = mutableStateOf(false)
     var isAvatarGradient = mutableStateOf(false)
     var isNicknameColorful = mutableStateOf(false)
+    var isAlterOutColor = mutableStateOf(false)
 
     private val sharedPreferences: SharedPreferences =
         contextParam.getSharedPreferences(Constants.SHARED_PREF, Context.MODE_PRIVATE)
@@ -28,12 +29,15 @@ class MainScreenViewModel(
             isTelegram && isLight -> {
                 Constants.INPUT_FILE_TELEGRAM_LIGHT
             }
+
             isTelegram -> {
                 Constants.INPUT_FILE_TELEGRAM_DARK
             }
+
             !isTelegram && isLight -> {
                 Constants.INPUT_FILE_TELEGRAM_X_LIGHT
             }
+
             else -> {
                 Constants.INPUT_FILE_TELEGRAM_X_DARK
             }
@@ -43,18 +47,23 @@ class MainScreenViewModel(
             isTelegram && isLight -> {
                 Constants.OUTPUT_FILE_TELEGRAM_LIGHT
             }
+
             isTelegram && !isAmoled.value -> {
                 Constants.OUTPUT_FILE_TELEGRAM_DARK
             }
+
             isTelegram -> {
                 Constants.OUTPUT_FILE_TELEGRAM_AMOLED
             }
+
             !isTelegram && isLight -> {
                 Constants.OUTPUT_FILE_TELEGRAM_X_LIGHT
             }
+
             !isTelegram && !isAmoled.value -> {
                 Constants.OUTPUT_FILE_TELEGRAM_X_DARK
             }
+
             else -> {
                 Constants.OUTPUT_FILE_TELEGRAM_X_AMOLED
             }
@@ -68,6 +77,7 @@ class MainScreenViewModel(
                 isGradient = isGradient.value,
                 isAvatarGradient = isAvatarGradient.value,
                 isNicknameColorful = isNicknameColorful.value,
+                isAlterOutColor = isAlterOutColor.value,
                 inputFileName = inputFileName,
                 outputFileName = outputFileName,
             )
@@ -84,15 +94,22 @@ class MainScreenViewModel(
             Constants.SHARED_USE_GRADIENT -> isGradient.value = value
             Constants.SHARED_USE_COLORFUL_NICKNAME -> isNicknameColorful.value = value
             Constants.SHARED_USE_GRADIENT_AVATARS -> isAvatarGradient.value = value
+            Constants.SHARED_USE_OLD_CHAT_STYLE -> isAlterOutColor.value = value
         }
         sharedPreferences.edit().putBoolean(settings, value).apply()
     }
 
     private fun getSettings() {
-        isAmoled.value = sharedPreferences.getBoolean("isAmoledMode", false)
-        isGradient.value = sharedPreferences.getBoolean("useGradient", false)
-        isAvatarGradient.value = sharedPreferences.getBoolean("useGradientAvatars", false)
-        isNicknameColorful.value = sharedPreferences.getBoolean("useColorNick", true)
+        isAmoled.value =
+            sharedPreferences.getBoolean(Constants.SHARED_IS_AMOLED, false)
+        isGradient.value =
+            sharedPreferences.getBoolean(Constants.SHARED_USE_GRADIENT, false)
+        isAvatarGradient.value =
+            sharedPreferences.getBoolean(Constants.SHARED_USE_GRADIENT_AVATARS, false)
+        isNicknameColorful.value =
+            sharedPreferences.getBoolean(Constants.SHARED_USE_COLORFUL_NICKNAME, true)
+        isAlterOutColor.value =
+            sharedPreferences.getBoolean(Constants.SHARED_USE_OLD_CHAT_STYLE, true)
     }
 
 }

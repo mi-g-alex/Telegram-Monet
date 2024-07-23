@@ -1,8 +1,9 @@
 !
 name: "monet light"
 @
-bubbleOutline, lightStatusBar, parentTheme, replaceShadowsWithSeparators: 1
+bubbleOutline, lightStatusBar, replaceShadowsWithSeparators: 1
 bubbleOutlineSize, wallpaperId: 0
+parentTheme: 1
 #
 
 <!--- CONTENT --->
@@ -276,6 +277,7 @@ shareSeparator: #0000
 bubble_chatSeparator: #0000
 bubble_messageSelection: #0003
 bubble_messageSelectionNoWallpaper: n2_100
+bubble_messageCheckOutline: a1_600
 bubble_messageCheckOutlineNoWallpaper: a1_600
 
 bubbleIn_background: n1_0

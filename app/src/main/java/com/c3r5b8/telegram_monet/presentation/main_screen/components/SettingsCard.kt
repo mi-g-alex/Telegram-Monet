@@ -24,10 +24,12 @@ fun SettingsCard(
     isGradient: Boolean,
     isAvatarGradient: Boolean,
     isNicknameColorful: Boolean,
+    isAlterOutColor: Boolean,
     setAmoled: (value: Boolean) -> Unit,
     setGradient: (value: Boolean) -> Unit,
     setAvatarGradient: (value: Boolean) -> Unit,
     setNicknameColorful: (value: Boolean) -> Unit,
+    setUseAlterOutColor: (value: Boolean) -> Unit,
 ) {
 
     BasicCard(
@@ -37,34 +39,40 @@ fun SettingsCard(
     ) {
 
         SettingItem(
-            R.string.settings_card_switch_amoled,
+            stringResource(R.string.settings_card_switch_amoled),
             isAmoled,
             setAmoled
         )
 
         SettingItem(
-            R.string.settings_card_use_gradient,
+            stringResource(R.string.settings_card_use_gradient),
             isGradient,
             setGradient
         )
 
         SettingItem(
-            R.string.settings_card_use_gradient_avatars,
+            stringResource(R.string.settings_card_use_gradient_avatars),
             isAvatarGradient,
             setAvatarGradient
         )
 
         SettingItem(
-            R.string.settings_card_monet_nick,
+            stringResource(R.string.settings_card_monet_nick),
             isNicknameColorful,
             setNicknameColorful
+        )
+
+        SettingItem(
+            stringResource(R.string.settings_card_chat_old_style),
+            isAlterOutColor,
+            setUseAlterOutColor
         )
     }
 }
 
 @Composable
 private fun SettingItem(
-    @StringRes text: Int,
+    text: String,
     isChecked: Boolean,
     onClick: (state: Boolean) -> Unit,
 ) {
@@ -75,10 +83,11 @@ private fun SettingItem(
                 onClick(!isChecked)
             },
         verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.SpaceBetween
+        horizontalArrangement = Arrangement.SpaceEvenly
     ) {
         Text(
-            stringResource(text)
+            text = text,
+            modifier = Modifier.weight(1f)
         )
 
         Switch(
@@ -88,7 +97,7 @@ private fun SettingItem(
     }
 }
 
-@Preview
+@Preview(locale = "ru")
 @Composable
 private fun SettingsPreview() {
 
@@ -96,15 +105,27 @@ private fun SettingsPreview() {
     var isGradient by remember { mutableStateOf(true) }
     var isAvatarGradient by remember { mutableStateOf(false) }
     var isNicknameColorful by remember { mutableStateOf(true) }
+    var isOldChatStyle by remember { mutableStateOf(true) }
 
     SettingsCard(
         isAmoled = isAmoled,
         isGradient = isGradient,
         isAvatarGradient = isAvatarGradient,
         isNicknameColorful = isNicknameColorful,
-        setAmoled = { isAmoled = it},
-        setGradient = { isGradient = it},
-        setAvatarGradient = { isAvatarGradient = it},
-        setNicknameColorful = { isNicknameColorful = it}
+        isAlterOutColor = isOldChatStyle,
+        setAmoled = { isAmoled = it },
+        setGradient = { isGradient = it },
+        setAvatarGradient = { isAvatarGradient = it },
+        setNicknameColorful = { isNicknameColorful = it },
+        setUseAlterOutColor = { isOldChatStyle = it }
     )
+}
+
+@Preview
+@Composable
+private fun LongTextPreview() {
+    SettingItem(
+        "TEST VERY VERY VERY VERY VERY VERY VERY VERY VERY VERY VERY VERY VERY VERY VERY VERY VERY VERY VERY VERY VERY VERY VERY VERY LONG TEXT",
+        false,
+    ) { }
 }

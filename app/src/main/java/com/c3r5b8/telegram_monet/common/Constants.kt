@@ -25,4 +25,5 @@ object Constants {
     const val SHARED_USE_GRADIENT = "useGradient"
     const val SHARED_USE_GRADIENT_AVATARS = "useGradientAvatars"
     const val SHARED_USE_COLORFUL_NICKNAME = "useColorNick"
+    const val SHARED_USE_OLD_CHAT_STYLE = "useOldChatStyle"
 }
