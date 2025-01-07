@@ -1,6 +1,6 @@
 package com.c3r5b8.telegram_monet.presentation.main_screen.components
 
-import androidx.annotation.StringRes
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -16,7 +16,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.c3r5b8.telegram_monet.R
-import com.c3r5b8.telegram_monet.presentation.components.bounceClick
 
 @Composable
 fun SettingsCard(
@@ -79,7 +78,7 @@ private fun SettingItem(
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .bounceClick(0.9f) {
+            .clickable {
                 onClick(!isChecked)
             },
         verticalAlignment = Alignment.CenterVertically,

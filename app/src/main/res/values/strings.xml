@@ -24,7 +24,7 @@
     <string name="settings_card_use_gradient">Enable gradient (Telegram)</string>
     <string name="settings_card_use_gradient_avatars">Enable gradient for avatars</string>
     <string name="settings_card_monet_nick">Enable monet for nicknames</string>
-    <string name="settings_card_chat_old_style">Use alternative outgoing message style (β)</string>
+    <string name="settings_card_chat_old_style">Use alternative outgoing message style</string>
 
     <string name="how_to_use">How to use it?</string>
     <string name="something_went_wrong">Something went wrong.\nCheck your internet connection.</string>

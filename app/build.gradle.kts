@@ -12,13 +12,13 @@ android {
         applicationId = "com.c3r5b8.telegram_monet"
         minSdk = 31
         targetSdk = 35
-        versionCode = 24072301
-        versionName = "10.14.5"
+        versionCode = 25010701
+        versionName = "11.5.3"
 
         resourceConfigurations.addAll(
             arrayOf(
                 "ar", "bn_IN", "de", "es", "fa_IR", "fil", "fr", "hi", "hr", "in", "it", "iw",
-                "kab", "ml", "nl", "pl", "pt", "pt_BR", "ro", "ru", "tl", "tr_TR", "uk_UA", "uz",
+                "kab", "ja", "ml", "nl", "pl", "pt", "pt_BR", "ro", "ru", "tl", "tr_TR", "uk_UA", "uz",
                 "vi", "zh_CN"
             )
         )
@@ -84,7 +84,5 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.navigation.runtime.ktx)
     implementation(libs.androidx.navigation.compose)
-    implementation(libs.coil.compose)
-    implementation(libs.coil.gif)
     debugImplementation(libs.ui.tooling)
 }

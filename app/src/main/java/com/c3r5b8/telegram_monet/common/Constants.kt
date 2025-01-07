@@ -1,7 +1,7 @@
 package com.c3r5b8.telegram_monet.common
 object Constants {
 
-    const val URL_GIF = "https://raw.githubusercontent.com/mi-g-alex/Telegram-Monet/main/screen.gif"
+    const val URL_ABOUT = "https://github.com/mi-g-alex/Telegram-Monet/blob/main/README.md"
     const val URL_TELEGRAM = "https://t.me/tgmonet"
     const val URL_GITHUB = "https://github.com/mi-g-alex/Telegram-Monet"
 

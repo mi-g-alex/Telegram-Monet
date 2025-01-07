@@ -83,7 +83,5 @@ private fun CardButton(
 @Preview
 @Composable
 private fun AboutCardPreview() {
-
-    AboutCard(
-    )
+    AboutCard()
 }

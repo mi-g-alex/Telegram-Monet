@@ -1,5 +1,7 @@
 package com.c3r5b8.telegram_monet.presentation.main_screen
 
+import android.content.Intent
+import android.net.Uri
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -23,7 +25,6 @@ import com.c3r5b8.telegram_monet.presentation.main_screen.components.TopAppBar
 @Composable
 fun MainScreen(
     viewModel: MainScreenViewModel,
-    goHowUse: () -> Unit
 ) {
 
     val isAmoled by remember { viewModel.isAmoled }
@@ -45,7 +46,6 @@ fun MainScreen(
         setNicknameColorful = { viewModel.setSettings(Constants.SHARED_USE_COLORFUL_NICKNAME, it) },
         setUseOldChatStyle = { viewModel.setSettings(Constants.SHARED_USE_OLD_CHAT_STYLE, it) },
         onShareTheme = { isTg, isLight -> viewModel.onShareTheme(context, isTg, isLight) },
-        goHowUse = goHowUse
     )
 }
 
@@ -62,17 +62,22 @@ private fun MainScreenComponent(
     setNicknameColorful: (value: Boolean) -> Unit,
     setUseOldChatStyle: (value: Boolean) -> Unit,
     onShareTheme: (isTelegram: Boolean, isLight: Boolean) -> Unit,
-    goHowUse: () -> Unit
 ) {
 
     val scrollBehavior =
         TopAppBarDefaults.exitUntilCollapsedScrollBehavior(rememberTopAppBarState())
 
+    val localContext = LocalContext.current
+
     Scaffold(
         modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
         topBar = {
-            TopAppBar(scrollBehavior = scrollBehavior, goHowUse = goHowUse)
-        }
+            TopAppBar(scrollBehavior = scrollBehavior) {
+                val i = Intent(Intent.ACTION_VIEW)
+                i.data = Uri.parse(Constants.URL_ABOUT)
+                localContext.startActivity(i)
+            }
+         }
     ) { pad ->
 
         LazyColumn(
@@ -148,6 +153,5 @@ private fun MainScreenPreview() {
         setNicknameColorful = { },
         setUseOldChatStyle = {},
         onShareTheme = { _, _ -> },
-        goHowUse = {}
     )
 }

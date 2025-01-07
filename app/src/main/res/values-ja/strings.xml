@@ -24,7 +24,7 @@
   <string name="settings_card_use_gradient">グラデーションを有効化 (Telegram)</string>
   <string name="settings_card_use_gradient_avatars">アバターのグラデーションを有効化</string>
   <string name="settings_card_monet_nick">ニックネームの Monet を有効化</string>
-  <string name="settings_card_chat_old_style">別のメッセージ送信スタイルを使用する (β)</string>
+  <string name="settings_card_chat_old_style">別のメッセージ送信スタイルを使用する</string>
   <string name="how_to_use">使い方は?</string>
   <string name="something_went_wrong">何かが間違っています。\nインターネット接続を確認してください。</string>
   <!--Fast import-->
