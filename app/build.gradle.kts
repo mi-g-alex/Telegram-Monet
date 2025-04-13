@@ -13,7 +13,7 @@ android {
         minSdk = 31
         targetSdk = 35
         versionCode = 25010701
-        versionName = "11.5.3"
+        versionName = "11.7.0"
 
         resourceConfigurations.addAll(
             arrayOf(
@@ -84,5 +84,6 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.navigation.runtime.ktx)
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.oneui6.material3.dynamic.color.compose)
     debugImplementation(libs.ui.tooling)
 }
