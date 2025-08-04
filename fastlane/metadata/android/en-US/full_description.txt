@@ -1,0 +1,1 @@
+<p>With this application, you can create themes for Tg and TgX clients. It uses Android Material3 Color.</p>
