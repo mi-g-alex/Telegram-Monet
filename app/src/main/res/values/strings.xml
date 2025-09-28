@@ -4,34 +4,30 @@
     <string name="app_name" translatable="false">TgMonet Theme</string>
     <string name="app_name_short" translatable="false">TG Monet</string>
     <string name="toolbar_title">Theme</string>
+
     <!--About Card -->
     <string name="about_card_description">Simple Telegram Monet themes generator.</string>
     <string name="about_card_title" translatable="false">Tg Monet Theme</string>
     <string name="about_card_telegram">Our Telegram Channel</string>
+
     <!--Dark Theme Card -->
     <string name="dark_theme">Dark</string>
     <string name="settings_card_switch_amoled" translatable="false">Amoled mode</string>
     <string name="dark_theme_description">Make dark theme from system shades. Great for the night.</string>
+
     <!--Light Theme Card -->
     <string name="light_theme">Light</string>
     <string name="light_theme_description">Make light theme from system shades. Looks good during the day.</string>
+
     <!--Other -->
-    <string name="setup_card_button">Set up</string>
     <string name="setup_telegram" translatable="false">Telegram</string>
     <string name="setup_telegram_x" translatable="false">Telegram X</string>
     <string name="about_card_github" translatable="false">GitHub</string>
+
+    <string name="how_to_use">How to use it?</string>
+    <string name="settings_card_chat_old_style">Use alternative outgoing message style</string>
+    <string name="settings_card_monet_nick">Enable monet for nicknames</string>
     <string name="settings_card_title">Settings</string>
     <string name="settings_card_use_gradient">Enable gradient (Telegram)</string>
     <string name="settings_card_use_gradient_avatars">Enable gradient for avatars</string>
-    <string name="settings_card_monet_nick">Enable monet for nicknames</string>
-    <string name="settings_card_chat_old_style">Use alternative outgoing message style</string>
-
-    <string name="how_to_use">How to use it?</string>
-    <string name="something_went_wrong">Something went wrong.\nCheck your internet connection.</string>
-
-    <!--Fast import-->
-    <string name="fast_import_choose_method">What to use?</string>
-    <string name="fast_import_description">The app has detected Telegram apps that supports fast theme importing.</string>
-    <string name="fast_import_method_fast_import">Fast import</string>
-    <string name="fast_import_method_regular">Regular (Sharing)</string>
 </resources>

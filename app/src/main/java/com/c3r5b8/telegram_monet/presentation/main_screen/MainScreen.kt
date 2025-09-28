@@ -1,37 +1,41 @@
 package com.c3r5b8.telegram_monet.presentation.main_screen
 
 import android.content.Intent
-import android.net.Uri
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.staggeredgrid.LazyVerticalStaggeredGrid
+import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridCells
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.rememberTopAppBarState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.c3r5b8.telegram_monet.R
 import com.c3r5b8.telegram_monet.common.Constants
 import com.c3r5b8.telegram_monet.presentation.main_screen.components.AboutCard
 import com.c3r5b8.telegram_monet.presentation.main_screen.components.CreateThemeCard
 import com.c3r5b8.telegram_monet.presentation.main_screen.components.SettingsCard
 import com.c3r5b8.telegram_monet.presentation.main_screen.components.TopAppBar
+import androidx.core.net.toUri
 
 @Composable
 fun MainScreen(
-    viewModel: MainScreenViewModel,
+    viewModel: MainScreenViewModel = MainScreenViewModel(LocalContext.current),
 ) {
+    val isAmoled by viewModel.isAmoled.collectAsState()
+    val isGradient by viewModel.isGradient.collectAsState()
+    val isAvatarGradient by viewModel.isAvatarGradient.collectAsState()
+    val isNicknameColorful by viewModel.isNicknameColorful.collectAsState()
+    val isAlterOutColor by viewModel.isAlterOutColor.collectAsState()
 
-    val isAmoled by remember { viewModel.isAmoled }
-    val isGradient by remember { viewModel.isGradient }
-    val isAvatarGradient by remember { viewModel.isAvatarGradient }
-    val isNicknameColorful by remember { viewModel.isNicknameColorful }
-    val isAlterOutColor by remember { viewModel.isAlterOutColor }
     val context = LocalContext.current
 
     MainScreenComponent(
@@ -74,16 +78,17 @@ private fun MainScreenComponent(
         topBar = {
             TopAppBar(scrollBehavior = scrollBehavior) {
                 val i = Intent(Intent.ACTION_VIEW)
-                i.data = Uri.parse(Constants.URL_ABOUT)
+                i.data = Constants.URL_ABOUT.toUri()
                 localContext.startActivity(i)
             }
          }
     ) { pad ->
 
-        LazyColumn(
+        LazyVerticalStaggeredGrid(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(pad)
+                .padding(pad),
+            columns = StaggeredGridCells.Adaptive(400.dp),
         ) {
 
             item {

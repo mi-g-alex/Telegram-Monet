@@ -6,14 +6,15 @@ plugins {
 
 android {
     namespace = "com.c3r5b8.telegram_monet"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.c3r5b8.telegram_monet"
         minSdk = 31
-        targetSdk = 35
-        versionCode = 25041301
-        versionName = "11.7.0"
+        targetSdk = 36
+
+        versionCode = 25092801
+        versionName = "12.0.0"
 
         resourceConfigurations.addAll(
             arrayOf(
@@ -26,10 +27,26 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = project.findProperty("RELEASE_STORE_FILE")?.let { file(it) }
+            storePassword = project.findProperty("RELEASE_STORE_PASSWORD") as String?
+            keyAlias = project.findProperty("RELEASE_KEY_ALIAS") as String?
+            keyPassword = project.findProperty("RELEASE_KEY_PASSWORD") as String?
+        }
+        getByName("debug") {
+            storeFile = file(layout.buildDirectory.dir("../testkey.keystore"))
+            storePassword = "testkey"
+            keyAlias = "testkey"
+            keyPassword = "testkey"
+        }
+    }
+
     buildTypes {
-        release {
+        getByName("release") {
             isMinifyEnabled = true
             isShrinkResources = true
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -62,15 +79,6 @@ android {
     dependenciesInfo.includeInApk = false
     dependenciesInfo.includeInBundle = false
 
-    signingConfigs {
-        getByName("debug") {
-            storeFile = file(layout.buildDirectory.dir("../testkey.keystore"))
-            storePassword = "testkey"
-            keyAlias = "testkey"
-            keyPassword = "testkey"
-        }
-    }
-
 }
 
 dependencies {
@@ -82,8 +90,5 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.navigation.runtime.ktx)
-    implementation(libs.androidx.navigation.compose)
-    implementation(libs.oneui6.material3.dynamic.color.compose)
     debugImplementation(libs.ui.tooling)
 }

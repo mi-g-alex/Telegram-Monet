@@ -1,35 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <!--App Names -->
-  <string name="app_name" translatable="false">TgMonet Theme</string>
-  <string name="app_name_short" translatable="false">TG Monet</string>
+  <!-- App name -->
   <string name="toolbar_title">テーマ</string>
-  <!--About Card -->
+
+  <!-- About card -->
   <string name="about_card_description">シンプルな Telegram Monet テーマジェネレーターです。</string>
-  <string name="about_card_title" translatable="false">Tg Monet Theme</string>
   <string name="about_card_telegram">Telegram のチャンネル</string>
-  <!--Dark Theme Card -->
+
+  <!-- Dark theme card -->
   <string name="dark_theme">ダーク</string>
-  <string name="settings_card_switch_amoled" translatable="false">AMOLED モード</string>
-  <string name="dark_theme_description">システムシェードからダークテーマを生成します。\n夜にぴったりです。</string>
-  <!--Light Theme Card -->
+  <string name="dark_theme_description">システムシェードからダークテーマを生成します。夜にぴったりです。</string>
+  <string name="settings_card_switch_amoled">AMOLED モード</string>
+
+  <!-- Light theme card -->
   <string name="light_theme">ライト</string>
-  <string name="light_theme_description">システムシェードからライトテーマを生成します。\n日中におすすめです。</string>
-  <!--Other -->
-  <string name="setup_card_button">セットアップ</string>
-  <string name="setup_telegram" translatable="false">Telegram</string>
-  <string name="setup_telegram_x" translatable="false">Telegram X</string>
-  <string name="about_card_github" translatable="false">GitHub</string>
+  <string name="light_theme_description">システムシェードからライトテーマを生成します。日中におすすめです。</string>
+
+  <!-- Others -->
+  <string name="how_to_use">使い方は?</string>
+  <string name="settings_card_chat_old_style">別のメッセージ送信スタイルを使用する</string>
+  <string name="settings_card_monet_nick">ニックネームの Monet を有効化</string>
   <string name="settings_card_title">設定</string>
   <string name="settings_card_use_gradient">グラデーションを有効化 (Telegram)</string>
   <string name="settings_card_use_gradient_avatars">アバターのグラデーションを有効化</string>
-  <string name="settings_card_monet_nick">ニックネームの Monet を有効化</string>
-  <string name="settings_card_chat_old_style">別のメッセージ送信スタイルを使用する</string>
-  <string name="how_to_use">使い方は?</string>
-  <string name="something_went_wrong">何かが間違っています。\nインターネット接続を確認してください。</string>
-  <!--Fast import-->
-  <string name="fast_import_choose_method">何を使いますか?</string>
-  <string name="fast_import_description">高速なテーマのインポート機能をサポートする Telegram アプリを検出しました。</string>
-  <string name="fast_import_method_fast_import">高速でインポート</string>
-  <string name="fast_import_method_regular">通常 (共有)</string>
+
 </resources>

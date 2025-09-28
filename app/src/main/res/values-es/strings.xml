@@ -7,7 +7,6 @@
     <string name="dark_theme_description">Haga un tema oscuro a partir de tonos del sistema. Genial para la noche.</string>
     <string name="light_theme">Claro</string>
     <string name="light_theme_description">Haga un tema claro a partir de tonos del sistema. Genial para el día.</string>
-    <string name="setup_card_button">Configurar</string>
     <string name="settings_card_title">Ajustes</string>
     <string name="settings_card_use_gradient">Habilitar gradiente (Telegram)</string>
     <string name="settings_card_use_gradient_avatars">Habilitar degradado para avatares</string>

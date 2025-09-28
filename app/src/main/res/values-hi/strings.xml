@@ -7,7 +7,6 @@
     <string name="dark_theme_description">सिस्टम शेड्स से बनाएं डार्क थीम। रात के लिए बढ़िया</string>
     <string name="light_theme">लाइट</string>
     <string name="light_theme_description">सिस्टम शेड्स से लाइट थीम बनाएं। दिन के लिए बढ़िया</string>
-    <string name="setup_card_button">सेट करें</string>
     <string name="settings_card_title">समायोजन</string>
     <string name="settings_card_use_gradient">ग्रेडिएंट सक्षम करें (टेलीग्राम)</string>
     <string name="settings_card_use_gradient_avatars">अवतारों के लिए ढाल सक्षम करें</string>

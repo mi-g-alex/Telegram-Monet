@@ -7,7 +7,6 @@
     <string name="dark_theme_description">Creați o temă întunecată din nuanțe de sistem. Bun pentru noapte.</string>
     <string name="light_theme">Luminată</string>
     <string name="light_theme_description">Creați o temă luminată din nuanțe de sistem. Bun pentru zi.</string>
-    <string name="setup_card_button">Setează</string>
     <string name="settings_card_title">Setări</string>
     <string name="settings_card_use_gradient">Activați gradientul (Telegram)</string>
     <string name="settings_card_use_gradient_avatars">Activați gradientul pentru avatare</string>

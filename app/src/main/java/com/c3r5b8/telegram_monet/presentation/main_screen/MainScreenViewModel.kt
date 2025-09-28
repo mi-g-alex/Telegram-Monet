@@ -9,16 +9,29 @@ import com.c3r5b8.telegram_monet.common.Constants
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import androidx.core.content.edit
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 
 class MainScreenViewModel(
-    contextParam: Context
+	contextParam: Context,
 ) : ViewModel() {
 
-    var isAmoled = mutableStateOf(false)
-    var isGradient = mutableStateOf(false)
-    var isAvatarGradient = mutableStateOf(false)
-    var isNicknameColorful = mutableStateOf(false)
-    var isAlterOutColor = mutableStateOf(false)
+    private val _isAmoled = MutableStateFlow(false)
+    val isAmoled: StateFlow<Boolean> = _isAmoled.asStateFlow()
+
+    private val _isGradient = MutableStateFlow(false)
+    val isGradient: StateFlow<Boolean> = _isGradient.asStateFlow()
+
+    private val _isAvatarGradient = MutableStateFlow(false)
+    val isAvatarGradient: StateFlow<Boolean> = _isAvatarGradient.asStateFlow()
+
+    private val _isNicknameColorful = MutableStateFlow(false)
+    val isNicknameColorful: StateFlow<Boolean> = _isNicknameColorful.asStateFlow()
+
+    private val _isAlterOutColor = MutableStateFlow(false)
+    val isAlterOutColor: StateFlow<Boolean> = _isAlterOutColor.asStateFlow()
 
     private val sharedPreferences: SharedPreferences =
         contextParam.getSharedPreferences(Constants.SHARED_PREF, Context.MODE_PRIVATE)
@@ -90,25 +103,25 @@ class MainScreenViewModel(
 
     fun setSettings(settings: String, value: Boolean) {
         when (settings) {
-            Constants.SHARED_IS_AMOLED -> isAmoled.value = value
-            Constants.SHARED_USE_GRADIENT -> isGradient.value = value
-            Constants.SHARED_USE_COLORFUL_NICKNAME -> isNicknameColorful.value = value
-            Constants.SHARED_USE_GRADIENT_AVATARS -> isAvatarGradient.value = value
-            Constants.SHARED_USE_OLD_CHAT_STYLE -> isAlterOutColor.value = value
+            Constants.SHARED_IS_AMOLED -> _isAmoled.value = value
+            Constants.SHARED_USE_GRADIENT -> _isGradient.value = value
+            Constants.SHARED_USE_COLORFUL_NICKNAME -> _isNicknameColorful.value = value
+            Constants.SHARED_USE_GRADIENT_AVATARS -> _isAvatarGradient.value = value
+            Constants.SHARED_USE_OLD_CHAT_STYLE -> _isAlterOutColor.value = value
         }
-        sharedPreferences.edit().putBoolean(settings, value).apply()
+        sharedPreferences.edit { putBoolean(settings, value) }
     }
 
     private fun getSettings() {
-        isAmoled.value =
+        _isAmoled.value =
             sharedPreferences.getBoolean(Constants.SHARED_IS_AMOLED, false)
-        isGradient.value =
+        _isGradient.value =
             sharedPreferences.getBoolean(Constants.SHARED_USE_GRADIENT, false)
-        isAvatarGradient.value =
+        _isAvatarGradient.value =
             sharedPreferences.getBoolean(Constants.SHARED_USE_GRADIENT_AVATARS, false)
-        isNicknameColorful.value =
+        _isNicknameColorful.value =
             sharedPreferences.getBoolean(Constants.SHARED_USE_COLORFUL_NICKNAME, true)
-        isAlterOutColor.value =
+        _isAlterOutColor.value =
             sharedPreferences.getBoolean(Constants.SHARED_USE_OLD_CHAT_STYLE, true)
     }
 

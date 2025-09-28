@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- App name -->
     <string name="toolbar_title">Tema</string>
+
+    <!-- About card -->
     <string name="about_card_description">Gerador simples de temas monet para o Telegram.</string>
     <string name="about_card_telegram">Nosso canal do Telegram</string>
+
+    <!-- Dark theme card -->
     <string name="dark_theme">Escuro</string>
     <string name="dark_theme_description">Crie um tema escuro a partir das cores do sistema. Ótimo para a noite.</string>
+    <string name="settings_card_switch_amoled">Modo AMOLED</string>
+
+    <!-- Light theme card -->
     <string name="light_theme">Claro</string>
     <string name="light_theme_description">Crie um tema claro a partir das cores do sistema. Ótimo para o dia.</string>
-    <string name="setup_card_button">Configurar</string>
+
+    <!-- Others -->
+    <string name="how_to_use">Como usá-lo?</string>
+    <string name="settings_card_chat_old_style">Usar estilo de mensagem de saída alternativo</string>
+    <string name="settings_card_monet_nick">Ativar monet para apelidos</string>
     <string name="settings_card_title">Configurações</string>
     <string name="settings_card_use_gradient">Ativar gradiente (Telegram)</string>
     <string name="settings_card_use_gradient_avatars">Ativar gradiente para avatares</string>
-    <string name="settings_card_monet_nick">Ativar monet para apelidos</string>
-    <string name="settings_card_chat_old_style">Usar estilo de mensagem de saída alternativo</string>
-    <string name="how_to_use">Como usá-lo?</string>
-    <string name="something_went_wrong">Algo deu errado.\nVerifique a sua conexão com a internet.</string>
-    <string name="fast_import_choose_method">O que usar?</string>
-    <string name="fast_import_description">O app detectou apps do Telegram que suportam a importação rápida de temas.</string>
-    <string name="fast_import_method_fast_import">Importação rápida</string>
-    <string name="fast_import_method_regular">Regular (Compartilhamento)</string>
+
 </resources>

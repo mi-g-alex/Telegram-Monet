@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - .github/workflows/android.yml
+      - .github/workflows/debug.yml
       - app/**
       - build.gradle.kts
       - gradle.properties
@@ -13,7 +13,7 @@ on:
       - settings.gradle.kts
   pull_request:
     paths:
-      - .github/workflows/android.yml
+      - .github/workflows/debug.yml
       - app/**
       - build.gradle.kts
       - gradle.properties
@@ -50,5 +50,5 @@ jobs:
       - name: Upload debug apk
         uses: actions/upload-artifact@v4
         with:
-          name: app-debug
-          path: app/build/outputs/apk/debug
+          name: app-debug.apk
+          path: app/build/outputs/apk/debug/app-debug.apk

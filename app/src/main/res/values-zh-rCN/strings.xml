@@ -2,16 +2,15 @@
 <resources>
     <string name="toolbar_title">主题</string>
     <string name="about_card_description">一个简单的 Telegram Monet 主题生成器</string>
-    <string name="about_card_telegram">我们的Telegram 频道</string>
+    <string name="about_card_telegram">我们的 Telegram 频道</string>
     <string name="dark_theme">深色</string>
     <string name="dark_theme_description">深色主题晚上观感更好</string>
     <string name="light_theme">浅色</string>
     <string name="light_theme_description">浅色主题白天看着更舒适</string>
-    <string name="setup_card_button">设置</string>
     <string name="settings_card_title">设置</string>
     <string name="settings_card_use_gradient">启用渐变（Telegram）</string>
     <string name="settings_card_use_gradient_avatars">为头像启用渐变</string>
     <string name="settings_card_monet_nick">为昵称启用 Monet</string>
     <string name="settings_card_chat_old_style">使用其他发送信息样式</string>
-    <string name="settings_card_switch_amoled" translatable="false">纯黑模式</string>
+    <string name="settings_card_switch_amoled">纯黑模式</string>
 </resources>

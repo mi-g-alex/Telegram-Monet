@@ -7,7 +7,6 @@
     <string name="dark_theme_description">Napravi tamnu temu od sistemskih nijansi. Odlično za noć.</string>
     <string name="light_theme">Svijetla</string>
     <string name="light_theme_description">Napravi svijetlu temu od sistemskih nijansi. Izgleda dobro tokom dana.</string>
-    <string name="setup_card_button">Postavi</string>
     <string name="settings_card_title">Postavke</string>
     <string name="settings_card_use_gradient">Omogući gradijent (Telegram)</string>
     <string name="settings_card_use_gradient_avatars">Omogući gradijent za avatare</string>

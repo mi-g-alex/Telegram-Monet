@@ -7,7 +7,6 @@
     <string name="dark_theme_description">ساخت مضمون تیره از رنگ های تصویر پس زمینه. مناسب برای شب</string>
     <string name="light_theme">روشن</string>
     <string name="light_theme_description">ساخت مضمون روشن از رنگ های تصویر پس زمینه. مناسب برای روز</string>
-    <string name="setup_card_button">نصب</string>
     <string name="settings_card_title">تنظیمات</string>
     <string name="settings_card_use_gradient">فعال کردن گرادینت (تلگرام)</string>
     <string name="settings_card_use_gradient_avatars">فعال کردن گرادیان برای تصاویر</string>

@@ -7,7 +7,6 @@
     <string name="dark_theme_description">Tizim shaderlari yordamida qora team yarating. Kechki vaqt uchun juda mos kelade.</string>
     <string name="light_theme">Yorqin tema</string>
     <string name="light_theme_description">Tizim shaderlari yordamida yorqin team yarating. Kun davomida yaxshi ko\'rinadi.</string>
-    <string name="setup_card_button">O\'rnatish</string>
     <string name="settings_card_title">Sozlamalar</string>
     <string name="settings_card_use_gradient">Gradientni yoqish (Telegram)</string>
     <string name="settings_card_use_gradient_avatars">Avatarlar uchun gradientni yoqish</string>

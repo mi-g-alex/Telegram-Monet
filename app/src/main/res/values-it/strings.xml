@@ -7,7 +7,6 @@
     <string name="dark_theme_description">Crea un tema scuro usando le tonalità del sistema. Ottimo per la notte.</string>
     <string name="light_theme">Chiaro</string>
     <string name="light_theme_description">Crea un tema chiaro usando le tonalità del sistema. Gradevole durante il giorno.</string>
-    <string name="setup_card_button">Imposta</string>
     <string name="settings_card_title">Impostazioni</string>
     <string name="settings_card_use_gradient">Abilita sfumatura (Telegram)</string>
     <string name="settings_card_use_gradient_avatars">Abilita gradiente per avatar</string>
