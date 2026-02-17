@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
   <!-- App name -->
   <string name="toolbar_title">テーマ</string>
@@ -19,6 +19,7 @@
   <!-- Others -->
   <string name="how_to_use">使い方は?</string>
   <string name="settings_card_chat_old_style">別のメッセージ送信スタイルを使用する</string>
+  <string name="settings_card_use_divider">区切り線を有効化</string>
   <string name="settings_card_monet_nick">ニックネームの Monet を有効化</string>
   <string name="settings_card_title">設定</string>
   <string name="settings_card_use_gradient">グラデーションを有効化 (Telegram)</string>

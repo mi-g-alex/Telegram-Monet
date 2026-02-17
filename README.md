@@ -44,3 +44,4 @@
 - [Ukrainian](https://t.me/the_dise)
 - [Uzbek](https://t.me/FerNikoMF)
 - [Vietnamese](https://t.me/masarou)
+- [Japanese](https://t.me/ot_inc)
