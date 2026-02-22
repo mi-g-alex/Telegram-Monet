@@ -86,24 +86,14 @@ fun PaletteCard(
     var paletteToDelete by remember { mutableStateOf<PaletteEntity?>(null) }
 
     if (paletteToDelete != null) {
-        AlertDialog(
-            onDismissRequest = { paletteToDelete = null },
-            title = { Text(stringResource(R.string.palette_card_delete_title)) },
-            text = { Text(paletteToDelete!!.name) },
-            confirmButton = {
-                TextButton(onClick = {
-                    onDeletePalette(paletteToDelete!!)
-                    paletteToDelete = null
-                    dismissPreview()
-                }) {
-                    Text(stringResource(R.string.palette_card_delete_confirm))
-                }
+        DeletePaletteDialog(
+            paletteName = paletteToDelete!!.name,
+            onConfirm = {
+                onDeletePalette(paletteToDelete!!)
+                paletteToDelete = null
+                dismissPreview()
             },
-            dismissButton = {
-                TextButton(onClick = { paletteToDelete = null }) {
-                    Text(stringResource(R.string.palette_card_delete_cancel))
-                }
-            }
+            onDismiss = { paletteToDelete = null },
         )
     }
 
@@ -118,144 +108,243 @@ fun PaletteCard(
         else
             ColorScheme.fromName(previewEntity!!.scheme)
 
-        ModalBottomSheet(
-            onDismissRequest = { previewIsSystem = false; previewEntity = null },
+        PalettePreviewSheet(
             sheetState = sheetState,
-        ) {
-            Column(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .verticalScroll(rememberScrollState())
-                    .padding(horizontal = 16.dp)
-                    .padding(bottom = 32.dp),
-                verticalArrangement = Arrangement.spacedBy(16.dp)
-            ) {
-                val (a1, a2, a3) = remember(previewArgb, previewScheme) { paletteExampleTriple(previewArgb, previewScheme) }
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    PaletteCircle(
-                        topColor = a1,
-                        bottomLeftColor = a2,
-                        bottomRightColor = a3,
-                        circleSize = 64.dp,
-                    )
-                    Spacer(modifier = Modifier.width(16.dp))
-                    Column {
-                        Text(previewName, fontSize = 20.sp, fontWeight = FontWeight.Medium)
-                        if (!previewIsSystem) {
-                            Text(
-                                text = stringResource(previewScheme.resName),
-                                fontSize = 13.sp,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            )
-                        }
-                    }
-                }
-
-                val palettes = remember(previewArgb, previewScheme) { getTonalPalettes(previewArgb, previewScheme) }
-                TonalPaletteStrips(palettes = palettes)
-
-				Column(
-					modifier = Modifier.fillMaxWidth().wrapContentHeight(),
-					verticalArrangement = Arrangement.spacedBy(8.dp)
-				) {
-					if (previewEntity != null) {
-						Row(
-							modifier = Modifier.fillMaxWidth(),
-							horizontalArrangement = Arrangement.spacedBy(8.dp)
-						) {
-							OutlinedButton(
-								onClick = { paletteToDelete = previewEntity },
-								modifier = Modifier.weight(1f)
-							) {
-								Text(stringResource(R.string.palette_card_delete_confirm))
-							}
-							OutlinedButton(
-								onClick = {
-									onEditPalette(previewEntity!!)
-									dismissPreview()
-								},
-								modifier = Modifier.weight(1f),
-							) {
-								Text(stringResource(R.string.palette_card_edit))
-							}
-						}
-					}
-					Button(
-						onClick = {
-							onSelectPalette(if (previewIsSystem) -1 else previewEntity!!.id)
-							dismissPreview()
-						},
-						modifier = Modifier.fillMaxWidth()
-					) {
-						Text(stringResource(R.string.palette_card_apply))
-					}
-				}
-            }
-        }
+            previewArgb = previewArgb,
+            previewName = previewName,
+            previewScheme = previewScheme,
+            isSystem = previewIsSystem,
+            onDismiss = { previewIsSystem = false; previewEntity = null },
+            onApply = {
+                onSelectPalette(if (previewIsSystem) -1 else previewEntity!!.id)
+                dismissPreview()
+            },
+            onDelete = { paletteToDelete = previewEntity },
+            onEdit = {
+                onEditPalette(previewEntity!!)
+                dismissPreview()
+            },
+        )
     }
 
-    // Main card
     BasicCard(
         title = R.string.palette_card_title,
         description = R.string.palette_card_title,
         icon = R.drawable.palette_icon,
     ) {
-        Row(
+        PaletteRow(
+            systemColors = Triple(systemA1, systemA2, systemA3),
+            allPalettes = allPalettes,
+            selectedPaletteId = selectedPaletteId,
+            onSystemClick = { previewIsSystem = true },
+            onPaletteClick = { previewEntity = it },
+            onAddClick = onOpenImagePalette,
+        )
+    }
+}
+
+@Composable
+private fun DeletePaletteDialog(
+    paletteName: String,
+    onConfirm: () -> Unit,
+    onDismiss: () -> Unit,
+) {
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(stringResource(R.string.palette_card_delete_title)) },
+        text = { Text(paletteName) },
+        confirmButton = {
+            TextButton(onClick = onConfirm) {
+                Text(stringResource(R.string.palette_card_delete_confirm))
+            }
+        },
+        dismissButton = {
+            TextButton(onClick = onDismiss) {
+                Text(stringResource(R.string.palette_card_delete_cancel))
+            }
+        }
+    )
+}
+
+@Composable
+private fun PalettePreviewSheet(
+    sheetState: androidx.compose.material3.SheetState,
+    previewArgb: Int,
+    previewName: String,
+    previewScheme: ColorScheme,
+    isSystem: Boolean,
+    onDismiss: () -> Unit,
+    onApply: () -> Unit,
+    onDelete: () -> Unit,
+    onEdit: () -> Unit,
+) {
+    ModalBottomSheet(
+        onDismissRequest = onDismiss,
+        sheetState = sheetState,
+    ) {
+        Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(top = 16.dp)
-                .horizontalScroll(rememberScrollState()),
-            horizontalArrangement = Arrangement.spacedBy(10.dp),
-            verticalAlignment = Alignment.CenterVertically,
+                .verticalScroll(rememberScrollState())
+                .padding(horizontal = 16.dp)
+                .padding(bottom = 32.dp),
+            verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            // System color circle
-            LabeledPaletteCircle(
-                topColor = systemA1,
-                bottomLeftColor = systemA2,
-                bottomRightColor = systemA3,
-                isSelected = selectedPaletteId == -1,
-                onClick = { previewIsSystem = true },
-                label = stringResource(R.string.palette_card_system_label),
+            PalettePreviewHeader(
+                previewArgb = previewArgb,
+                previewName = previewName,
+                previewScheme = previewScheme,
+                isSystem = isSystem,
             )
 
-            // Saved palette circles
-            allPalettes.forEach { palette ->
-                val paletteScheme = remember(palette.scheme) { ColorScheme.fromName(palette.scheme) }
-                val (a1, a2, a3) = remember(palette.argbColor, paletteScheme) {
-                    paletteExampleTriple(palette.argbColor, paletteScheme)
-                }
-                LabeledPaletteCircle(
-                    topColor = a1,
-                    bottomLeftColor = a2,
-                    bottomRightColor = a3,
-                    isSelected = selectedPaletteId == palette.id,
-                    onClick = { previewEntity = palette },
-                    label = palette.name,
-                )
-            }
+            val palettes = remember(previewArgb, previewScheme) { getTonalPalettes(previewArgb, previewScheme) }
+            TonalPaletteStrips(palettes = palettes)
 
-            // Add button
-            Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Box(
-                    modifier = Modifier
-                        .size(48.dp)
-                        .clip(CircleShape)
-                        .background(MaterialTheme.colorScheme.secondaryContainer)
-                        .combinedClickable(onClick = onOpenImagePalette),
-                    contentAlignment = Alignment.Center,
-                ) {
-                    Icon(
-                        imageVector = Icons.Filled.Add,
-                        contentDescription = stringResource(R.string.palette_card_add_label),
-                        tint = MaterialTheme.colorScheme.onSecondaryContainer,
-                    )
-                }
+            PalettePreviewActions(
+                isSystem = isSystem,
+                onApply = onApply,
+                onDelete = onDelete,
+                onEdit = onEdit,
+            )
+        }
+    }
+}
+
+@Composable
+private fun PalettePreviewHeader(
+    previewArgb: Int,
+    previewName: String,
+    previewScheme: ColorScheme,
+    isSystem: Boolean,
+) {
+    val (a1, a2, a3) = remember(previewArgb, previewScheme) { paletteExampleTriple(previewArgb, previewScheme) }
+
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        PaletteCircle(
+            topColor = a1,
+            bottomLeftColor = a2,
+            bottomRightColor = a3,
+            circleSize = 64.dp,
+        )
+        Spacer(modifier = Modifier.width(16.dp))
+        Column {
+            Text(previewName, fontSize = 20.sp, fontWeight = FontWeight.Medium)
+            if (!isSystem) {
                 Text(
-                    text = stringResource(R.string.palette_card_add_label),
-                    fontSize = 10.sp,
-                    modifier = Modifier.padding(top = 4.dp)
+                    text = stringResource(previewScheme.resName),
+                    fontSize = 13.sp,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
         }
+    }
+}
+
+@Composable
+private fun PalettePreviewActions(
+    isSystem: Boolean,
+    onApply: () -> Unit,
+    onDelete: () -> Unit,
+    onEdit: () -> Unit,
+) {
+    Column(
+        modifier = Modifier.fillMaxWidth().wrapContentHeight(),
+        verticalArrangement = Arrangement.spacedBy(8.dp)
+    ) {
+        if (!isSystem) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                OutlinedButton(
+                    onClick = onDelete,
+                    modifier = Modifier.weight(1f)
+                ) {
+                    Text(stringResource(R.string.palette_card_delete_confirm))
+                }
+                OutlinedButton(
+                    onClick = onEdit,
+                    modifier = Modifier.weight(1f),
+                ) {
+                    Text(stringResource(R.string.palette_card_edit))
+                }
+            }
+        }
+        Button(
+            onClick = onApply,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text(stringResource(R.string.palette_card_apply))
+        }
+    }
+}
+
+@Composable
+private fun PaletteRow(
+    systemColors: Triple<Color, Color, Color>,
+    allPalettes: List<PaletteEntity>,
+    selectedPaletteId: Int,
+    onSystemClick: () -> Unit,
+    onPaletteClick: (PaletteEntity) -> Unit,
+    onAddClick: () -> Unit,
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(top = 16.dp)
+            .horizontalScroll(rememberScrollState()),
+        horizontalArrangement = Arrangement.spacedBy(10.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        LabeledPaletteCircle(
+            topColor = systemColors.first,
+            bottomLeftColor = systemColors.second,
+            bottomRightColor = systemColors.third,
+            isSelected = selectedPaletteId == -1,
+            onClick = onSystemClick,
+            label = stringResource(R.string.palette_card_system_label),
+        )
+
+        allPalettes.forEach { palette ->
+            val paletteScheme = remember(palette.scheme) { ColorScheme.fromName(palette.scheme) }
+            val (a1, a2, a3) = remember(palette.argbColor, paletteScheme) {
+                paletteExampleTriple(palette.argbColor, paletteScheme)
+            }
+            LabeledPaletteCircle(
+                topColor = a1,
+                bottomLeftColor = a2,
+                bottomRightColor = a3,
+                isSelected = selectedPaletteId == palette.id,
+                onClick = { onPaletteClick(palette) },
+                label = palette.name,
+            )
+        }
+
+        AddPaletteButton(onClick = onAddClick)
+    }
+}
+
+@Composable
+private fun AddPaletteButton(onClick: () -> Unit) {
+    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+        Box(
+            modifier = Modifier
+                .size(48.dp)
+                .clip(CircleShape)
+                .background(MaterialTheme.colorScheme.secondaryContainer)
+                .combinedClickable(onClick = onClick),
+            contentAlignment = Alignment.Center,
+        ) {
+            Icon(
+                imageVector = Icons.Filled.Add,
+                contentDescription = stringResource(R.string.palette_card_add_label),
+                tint = MaterialTheme.colorScheme.onSecondaryContainer,
+            )
+        }
+        Text(
+            text = stringResource(R.string.palette_card_add_label),
+            fontSize = 10.sp,
+            modifier = Modifier.padding(top = 4.dp)
+        )
     }
 }

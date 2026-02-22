@@ -9,6 +9,7 @@
 
     <!--Dark Theme Card -->
     <string name="dark_theme">Тёмная</string>
+    <string name="settings_card_switch_amoled">Amoled режим</string>
     <string name="dark_theme_description">Создай тёмную тему из системных оттенков. Отлично подходит для ночи.</string>
 
     <!--Light Theme Card -->
@@ -49,15 +50,15 @@
 
     <!--Scheme selector -->
     <string name="scheme_selector_title">Цветовая схема</string>
-    <string name="scheme_name_tonal_spot">Tonal Spot</string>
-    <string name="scheme_name_fidelity">Fidelity</string>
-    <string name="scheme_name_videlity">Videlity</string>
-    <string name="scheme_name_neutral">Нейтральная</string>
-    <string name="scheme_name_expressive">Экспрессивная</string>
+    <string name="scheme_name_tonal_spot">Тональное пятно</string>
+    <string name="scheme_name_fidelity">Точный</string>
+    <string name="scheme_name_videlity">Яркий</string>
+    <string name="scheme_name_neutral">Нейтральный</string>
+    <string name="scheme_name_expressive">Выразительный</string>
     <string name="scheme_name_fruit_salad">Фруктовый салат</string>
-    <string name="scheme_name_rainbow">Радуга</string>
-    <string name="scheme_name_content">Контент</string>
-    <string name="scheme_name_monochrome">Монохром</string>
+    <string name="scheme_name_rainbow">Радужный</string>
+    <string name="scheme_name_content">Содержательный</string>
+    <string name="scheme_name_monochrome">Монохромный</string>
 
     <!--Palette preview -->
     <string name="palette_card_apply">Применить</string>

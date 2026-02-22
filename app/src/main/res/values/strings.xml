@@ -12,7 +12,7 @@
 
     <!--Dark Theme Card -->
     <string name="dark_theme">Dark</string>
-    <string name="settings_card_switch_amoled" translatable="false">Amoled mode</string>
+    <string name="settings_card_switch_amoled">Amoled mode</string>
     <string name="dark_theme_description">Make dark theme from system shades. Great for the night.</string>
 
     <!--Light Theme Card -->

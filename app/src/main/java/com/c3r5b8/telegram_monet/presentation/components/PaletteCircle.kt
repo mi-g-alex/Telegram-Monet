@@ -81,9 +81,9 @@ fun TonalPaletteStrips(
                 PALETTE_TONES.forEach { tone ->
                     Box(
                         modifier = Modifier
-                            .weight(1f)
-                            .height(28.dp)
-                            .background(Color(palette.tone(tone).toLong() or 0xFF000000L))
+							.weight(1f)
+							.height(28.dp)
+							.background(Color(palette.tone(tone).toLong() or 0xFF000000L))
                     )
                 }
             }
@@ -102,6 +102,12 @@ fun LabeledPaletteCircle(
     onClick: (() -> Unit)? = null,
 ) {
     Column(
+		modifier = Modifier
+			.then(
+				onClick?.let {
+					Modifier.combinedClickable(onClick = it)
+				} ?: Modifier
+			),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.spacedBy(4.dp),
     ) {
@@ -134,17 +140,17 @@ fun SimpleColorCircle(
 ) {
     Box(
         modifier = modifier
-            .size(size)
-            .clip(CircleShape)
-            .background(Color(argb))
-            .then(if (onClick != null) Modifier.combinedClickable(onClick = onClick) else Modifier),
+			.size(size)
+			.clip(CircleShape)
+			.background(Color(argb))
+			.then(if (onClick != null) Modifier.combinedClickable(onClick = onClick) else Modifier),
         contentAlignment = Alignment.Center,
     ) {
         if (isSelected) {
             Box(
                 modifier = Modifier
-                    .fillMaxSize()
-                    .background(Color.Black.copy(alpha = 0.3f)),
+					.fillMaxSize()
+					.background(Color.Black.copy(alpha = 0.3f)),
             )
             Icon(
                 modifier = Modifier.size(size * 0.5f),
@@ -169,13 +175,13 @@ fun PaletteCircle(
 ) {
     Box(
         modifier = modifier
-            .size(circleSize)
-            .clip(CircleShape)
-            .then(
-                if (onClick != null || onLongClick != null)
-                    Modifier.combinedClickable(onClick = onClick ?: {}, onLongClick = onLongClick)
-                else Modifier
-            ),
+			.size(circleSize)
+			.clip(CircleShape)
+			.then(
+				if (onClick != null || onLongClick != null)
+					Modifier.combinedClickable(onClick = onClick ?: {}, onLongClick = onLongClick)
+				else Modifier
+			),
         contentAlignment = Alignment.Center,
     ) {
         Canvas(modifier = Modifier.fillMaxSize()) {
