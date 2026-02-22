@@ -17,7 +17,6 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 
 class MainScreenViewModel(
@@ -55,14 +54,6 @@ class MainScreenViewModel(
 	val allPalettes: StateFlow<List<PaletteEntity>> = paletteRepository.getAllPalettes()
 		.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), emptyList())
 
-	// null = system Monet; non-null = selected saved palette
-	val selectedPalette: StateFlow<PaletteEntity?> = combine(
-		_selectedPaletteId,
-		allPalettes,
-	) { id, palettes ->
-		if (id == -1) null else palettes.find { it.id == id }
-	}.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
-
 	fun selectPalette(paletteId: Int) {
 		_selectedPaletteId.value = paletteId
 		sharedPreferences.edit {
@@ -96,7 +87,7 @@ class MainScreenViewModel(
 			else -> Constants.OUTPUT_FILE_TELEGRAM_X_AMOLED
 		}
 
-		val palette = selectedPalette.value
+		val palette = allPalettes.value.find { it.id == _selectedPaletteId.value }
 		val customSeedColor = palette?.argbColor ?: 0
 		val customScheme = palette?.let { ColorScheme.fromName(it.scheme) } ?: ColorScheme.TONAL_SPOT
 
