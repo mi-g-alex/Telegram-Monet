@@ -1,5 +1,6 @@
 pluginManagement {
     repositories {
+        gradlePluginPortal()
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
@@ -21,3 +22,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Telegram Monet"
 include(":app")
+include(":materialcolorlib")

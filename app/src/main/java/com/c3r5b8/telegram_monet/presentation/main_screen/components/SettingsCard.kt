@@ -109,9 +109,11 @@ private fun SettingItem(
 		)
 	}
 	if (addDivider) {
-		HorizontalDivider(modifier = Modifier
-			.fillMaxWidth()
-			.padding(vertical = 2.dp))
+		HorizontalDivider(
+			modifier = Modifier
+				.fillMaxWidth()
+				.padding(vertical = 2.dp)
+		)
 	}
 }
 

@@ -1,70 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!-- Fallback palette for Android < 12 (API < 31).
+     Uses the Material Design 3 baseline purple tonal palette.
+     On Android 12+ these names are overridden by values-v31/monet_colors.xml
+     which aliases the real system Monet colours. -->
 <resources>
-    <color name="system_neutral1_0">@android:color/system_neutral1_0</color>
-    <color name="system_neutral1_10">@android:color/system_neutral1_10</color>
-    <color name="system_neutral1_50">@android:color/system_neutral1_50</color>
-    <color name="system_neutral1_100">@android:color/system_neutral1_100</color>
-    <color name="system_neutral1_200">@android:color/system_neutral1_200</color>
-    <color name="system_neutral1_300">@android:color/system_neutral1_300</color>
-    <color name="system_neutral1_400">@android:color/system_neutral1_400</color>
-    <color name="system_neutral1_500">@android:color/system_neutral1_500</color>
-    <color name="system_neutral1_600">@android:color/system_neutral1_600</color>
-    <color name="system_neutral1_700">@android:color/system_neutral1_700</color>
-    <color name="system_neutral1_800">@android:color/system_neutral1_800</color>
-    <color name="system_neutral1_900">@android:color/system_neutral1_900</color>
-    <color name="system_neutral1_1000">@android:color/system_neutral1_1000</color>
-    <color name="system_neutral2_0">@android:color/system_neutral2_0</color>
-    <color name="system_neutral2_10">@android:color/system_neutral2_10</color>
-    <color name="system_neutral2_50">@android:color/system_neutral2_50</color>
-    <color name="system_neutral2_100">@android:color/system_neutral2_100</color>
-    <color name="system_neutral2_200">@android:color/system_neutral2_200</color>
-    <color name="system_neutral2_300">@android:color/system_neutral2_300</color>
-    <color name="system_neutral2_400">@android:color/system_neutral2_400</color>
-    <color name="system_neutral2_500">@android:color/system_neutral2_500</color>
-    <color name="system_neutral2_600">@android:color/system_neutral2_600</color>
-    <color name="system_neutral2_700">@android:color/system_neutral2_700</color>
-    <color name="system_neutral2_800">@android:color/system_neutral2_800</color>
-    <color name="system_neutral2_900">@android:color/system_neutral2_900</color>
-    <color name="system_neutral2_1000">@android:color/system_neutral2_1000</color>
-    <color name="system_accent1_0">@android:color/system_accent1_0</color>
-    <color name="system_accent1_10">@android:color/system_accent1_10</color>
-    <color name="system_accent1_50">@android:color/system_accent1_50</color>
-    <color name="system_accent1_100">@android:color/system_accent1_100</color>
-    <color name="system_accent1_200">@android:color/system_accent1_200</color>
-    <color name="system_accent1_300">@android:color/system_accent1_300</color>
-    <color name="system_accent1_400">@android:color/system_accent1_400</color>
-    <color name="system_accent1_500">@android:color/system_accent1_500</color>
-    <color name="system_accent1_600">@android:color/system_accent1_600</color>
-    <color name="system_accent1_700">@android:color/system_accent1_700</color>
-    <color name="system_accent1_800">@android:color/system_accent1_800</color>
-    <color name="system_accent1_900">@android:color/system_accent1_900</color>
-    <color name="system_accent1_1000">@android:color/system_accent1_1000</color>
-    <color name="system_accent2_0">@android:color/system_accent2_0</color>
-    <color name="system_accent2_10">@android:color/system_accent2_10</color>
-    <color name="system_accent2_50">@android:color/system_accent2_50</color>
-    <color name="system_accent2_100">@android:color/system_accent2_100</color>
-    <color name="system_accent2_200">@android:color/system_accent2_200</color>
-    <color name="system_accent2_300">@android:color/system_accent2_300</color>
-    <color name="system_accent2_400">@android:color/system_accent2_400</color>
-    <color name="system_accent2_500">@android:color/system_accent2_500</color>
-    <color name="system_accent2_600">@android:color/system_accent2_600</color>
-    <color name="system_accent2_700">@android:color/system_accent2_700</color>
-    <color name="system_accent2_800">@android:color/system_accent2_800</color>
-    <color name="system_accent2_900">@android:color/system_accent2_900</color>
-    <color name="system_accent2_1000">@android:color/system_accent2_1000</color>
-    <color name="system_accent3_0">@android:color/system_accent3_0</color>
-    <color name="system_accent3_10">@android:color/system_accent3_10</color>
-    <color name="system_accent3_50">@android:color/system_accent3_50</color>
-    <color name="system_accent3_100">@android:color/system_accent3_100</color>
-    <color name="system_accent3_200">@android:color/system_accent3_200</color>
-    <color name="system_accent3_300">@android:color/system_accent3_300</color>
-    <color name="system_accent3_400">@android:color/system_accent3_400</color>
-    <color name="system_accent3_500">@android:color/system_accent3_500</color>
-    <color name="system_accent3_600">@android:color/system_accent3_600</color>
-    <color name="system_accent3_700">@android:color/system_accent3_700</color>
-    <color name="system_accent3_800">@android:color/system_accent3_800</color>
-    <color name="system_accent3_900">@android:color/system_accent3_900</color>
-    <color name="system_accent3_1000">@android:color/system_accent3_1000</color>
+    <!-- Neutral 1 (primary neutral) -->
+    <color name="system_neutral1_0">#FFFFFFFF</color>
+    <color name="system_neutral1_10">#FFFFFBFF</color>
+    <color name="system_neutral1_50">#FFF4EFF4</color>
+    <color name="system_neutral1_100">#FFE6E0E9</color>
+    <color name="system_neutral1_200">#FFCAC4D0</color>
+    <color name="system_neutral1_300">#FFAEA9B4</color>
+    <color name="system_neutral1_400">#FF938F99</color>
+    <color name="system_neutral1_500">#FF79747E</color>
+    <color name="system_neutral1_600">#FF605D62</color>
+    <color name="system_neutral1_700">#FF484649</color>
+    <color name="system_neutral1_800">#FF313033</color>
+    <color name="system_neutral1_900">#FF1C1B1F</color>
+    <color name="system_neutral1_1000">#FF000000</color>
+
+    <!-- Neutral 2 (neutral variant) -->
+    <color name="system_neutral2_0">#FFFFFFFF</color>
+    <color name="system_neutral2_10">#FFFFFBFF</color>
+    <color name="system_neutral2_50">#FFF5EEFA</color>
+    <color name="system_neutral2_100">#FFE7E0EC</color>
+    <color name="system_neutral2_200">#FFCAC4D0</color>
+    <color name="system_neutral2_300">#FFAEA9B4</color>
+    <color name="system_neutral2_400">#FF938F99</color>
+    <color name="system_neutral2_500">#FF79747E</color>
+    <color name="system_neutral2_600">#FF605D72</color>
+    <color name="system_neutral2_700">#FF49454F</color>
+    <color name="system_neutral2_800">#FF322F37</color>
+    <color name="system_neutral2_900">#FF1D1A22</color>
+    <color name="system_neutral2_1000">#FF000000</color>
+
+    <!-- Accent 1 (primary) -->
+    <color name="system_accent1_0">#FFFFFFFF</color>
+    <color name="system_accent1_10">#FFFFF8FF</color>
+    <color name="system_accent1_50">#FFF6EDFF</color>
+    <color name="system_accent1_100">#FFEADDFF</color>
+    <color name="system_accent1_200">#FFD0BCFF</color>
+    <color name="system_accent1_300">#FFB69DF8</color>
+    <color name="system_accent1_400">#FF9A82DB</color>
+    <color name="system_accent1_500">#FF7F67BE</color>
+    <color name="system_accent1_600">#FF6650A4</color>
+    <color name="system_accent1_700">#FF4F378B</color>
+    <color name="system_accent1_800">#FF381E72</color>
+    <color name="system_accent1_900">#FF21005D</color>
+    <color name="system_accent1_1000">#FF000000</color>
+
+    <!-- Accent 2 (secondary) -->
+    <color name="system_accent2_0">#FFFFFFFF</color>
+    <color name="system_accent2_10">#FFFFF8FF</color>
+    <color name="system_accent2_50">#FFF6EDFF</color>
+    <color name="system_accent2_100">#FFE8DEF8</color>
+    <color name="system_accent2_200">#FFCCC2DC</color>
+    <color name="system_accent2_300">#FFB0A7C0</color>
+    <color name="system_accent2_400">#FF958DA5</color>
+    <color name="system_accent2_500">#FF7A7289</color>
+    <color name="system_accent2_600">#FF625B71</color>
+    <color name="system_accent2_700">#FF4A4458</color>
+    <color name="system_accent2_800">#FF332D41</color>
+    <color name="system_accent2_900">#FF1D192B</color>
+    <color name="system_accent2_1000">#FF000000</color>
+
+    <!-- Accent 3 (tertiary) -->
+    <color name="system_accent3_0">#FFFFFFFF</color>
+    <color name="system_accent3_10">#FFFFF8FF</color>
+    <color name="system_accent3_50">#FFFFECF0</color>
+    <color name="system_accent3_100">#FFFFD8E4</color>
+    <color name="system_accent3_200">#FFEFB8C8</color>
+    <color name="system_accent3_300">#FFD29DAC</color>
+    <color name="system_accent3_400">#FFB58392</color>
+    <color name="system_accent3_500">#FF986977</color>
+    <color name="system_accent3_600">#FF7D5260</color>
+    <color name="system_accent3_700">#FF633B48</color>
+    <color name="system_accent3_800">#FF4A2532</color>
+    <color name="system_accent3_900">#FF31111D</color>
+    <color name="system_accent3_1000">#FF000000</color>
 
     <color name="monetRedLight">#ffb3261e</color>
     <color name="monetRedDark">#fff2b8b5</color>

@@ -4,8 +4,12 @@ import android.content.Context
 import androidx.core.content.ContextCompat.getColor
 import com.c3r5b8.telegram_monet.R
 
-fun changeTextTelegram(file: String, applicationContext : Context): String {
-    val monetList = mapOf(
+fun changeTextTelegram(
+    file: String,
+    applicationContext: Context,
+    customColors: Map<String, Int> = emptyMap(),
+): String {
+    val monetList = mutableMapOf(
         "a1_0" to getColor(applicationContext, R.color.system_accent1_0),
         "a1_200" to getColor(applicationContext, R.color.system_accent1_200),
         "a1_300" to getColor(applicationContext, R.color.system_accent1_300),
@@ -76,7 +80,8 @@ fun changeTextTelegram(file: String, applicationContext : Context): String {
         "monetRedCall" to getColor(applicationContext, R.color.colorCallRed),
         "monetGreenCall" to getColor(applicationContext, R.color.colorCallGreen),
     )
-    var themeText = file.replace("\$", "")
+    monetList.putAll(customColors)
+    var themeText = file.replace("$", "")
     monetList.forEach {
         themeText = themeText.replace(it.key, it.value.toString())
     }

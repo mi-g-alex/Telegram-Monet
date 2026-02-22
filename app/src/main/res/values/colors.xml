@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- On Android 12+ these are overridden by values-v31/colors.xml. -->
 <resources>
-  <color name="launcher_icon_background">@android:color/system_accent1_100</color>
-  <color name="launcher_icon">@android:color/system_neutral2_700</color>
+    <color name="launcher_icon_background">#FFEADDFF</color>
+    <color name="launcher_icon">#FF49454F</color>
 </resources>
