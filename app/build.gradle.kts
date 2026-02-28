@@ -17,8 +17,7 @@ android {
         minSdk = 26
         targetSdk = 36
 
-		val formatter = DateTimeFormatter.ofPattern("yyMMddHH")
-        versionCode = LocalDateTime.now().format(formatter).toInt()
+		versionCode = 26022821
         versionName = "12.4.0"
 
         resourceConfigurations.addAll(
