@@ -12,7 +12,7 @@ import scheme.SchemeRainbow
 import scheme.SchemeTonalSpot
 import scheme.SchemeVibrant
 
-val PALETTE_TONES = listOf(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 100)
+val PALETTE_TONES = listOf(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 99, 100)
 private val ANDROID_TO_HCT_TONE = PALETTE_TONES.associateBy { 1000 - it * 10 }
 
 private const val DEFAULT_CONTRAST = 0.0

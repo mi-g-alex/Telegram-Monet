@@ -1,6 +1,8 @@
 package com.c3r5b8.telegram_monet.adapters
 
 import android.content.Context
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.toColorLong
 import androidx.core.content.ContextCompat.getColor
 import com.c3r5b8.telegram_monet.R
 
@@ -81,7 +83,12 @@ fun changeTextTelegram(
         "monetGreenCall" to getColor(applicationContext, R.color.colorCallGreen),
     )
     monetList.putAll(customColors)
+    val a2_700_2 = (monetList["a2_700"]!! and 0x00FFFFFF) or (0x80 shl 24)
+    val n2_100_2 = (monetList["n2_100"]!! and 0x00FFFFFF) or (0x80 shl 24)
     var themeText = file.replace("$", "")
+
+	themeText = themeText.replace(Regex("chat_selectedBackground=a2_700"), "chat_selectedBackground=$a2_700_2")
+	themeText = themeText.replace(Regex("chat_selectedBackground=n2_100"), "chat_selectedBackground=$n2_100_2")
     monetList.forEach {
         themeText = themeText.replace(it.key, it.value.toString())
     }
