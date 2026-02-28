@@ -9,19 +9,59 @@
 
     <!--Dark Theme Card -->
     <string name="dark_theme">Тёмная</string>
+    <string name="settings_card_switch_amoled">Amoled режим</string>
     <string name="dark_theme_description">Создай тёмную тему из системных оттенков. Отлично подходит для ночи.</string>
 
     <!--Light Theme Card -->
     <string name="light_theme">Светлая</string>
-    <string name="light_theme_description">Создайте свелую тему из системных оттенков. Отлично подходит для светлого времени суток.</string>
+    <string name="light_theme_description">Создай светлую тему из системных оттенков. Отлично подходит для светлого времени суток.</string>
 
     <!--Other -->
     <string name="how_to_use">Как использовать?</string>
-    <string name="settings_card_chat_old_style">Альтернативный цвет исходящих сообщений</string>
+    <string name="settings_card_chat_old_style">Альтернативный стиль исходящих сообщений</string>
     <string name="settings_card_use_divider">Включить разделитель</string>
     <string name="settings_card_monet_nick">Использовать Monet для ников</string>
     <string name="settings_card_title">Настройки</string>
     <string name="settings_card_use_gradient">Включить градиент (Telegram)</string>
     <string name="settings_card_use_gradient_avatars">Включить градиент для аватарок</string>
 
+    <!--Palette Card -->
+    <string name="palette_card_title">Палитра</string>
+    <string name="palette_card_system_label">По умолчанию</string>
+    <string name="palette_card_delete_title">Удалить палитру?</string>
+    <string name="palette_card_delete_confirm">Удалить</string>
+    <string name="palette_card_delete_cancel">Отмена</string>
+    <string name="palette_card_add_label">Создать</string>
+
+    <!--Image Palette Screen -->
+    <string name="image_palette_title">Новая палитра</string>
+    <string name="image_palette_edit_title">Редактировать палитру</string>
+    <string name="image_palette_choose">Изображение</string>
+    <string name="image_palette_change">Изменить</string>
+    <string name="image_palette_extracted_colors">Извлечённые цвета</string>
+    <string name="image_palette_tonal_palette">Тональная палитра</string>
+    <string name="image_palette_name">Название</string>
+    <string name="image_palette_name_hint">Название палитры</string>
+    <string name="image_palette_save">Сохранить палитру</string>
+
+    <!--Color picker -->
+    <string name="image_palette_choose_color">Цвет</string>
+    <string name="image_palette_manual_apply">Применить</string>
+
+    <!--Scheme selector -->
+    <string name="scheme_selector_title">Цветовая схема</string>
+    <string name="scheme_name_tonal_spot">Тональное пятно</string>
+    <string name="scheme_name_fidelity">Точный</string>
+    <string name="scheme_name_videlity">Яркий</string>
+    <string name="scheme_name_neutral">Нейтральный</string>
+    <string name="scheme_name_expressive">Выразительный</string>
+    <string name="scheme_name_fruit_salad">Фруктовый салат</string>
+    <string name="scheme_name_rainbow">Радужный</string>
+    <string name="scheme_name_content">Содержательный</string>
+    <string name="scheme_name_monochrome">Монохромный</string>
+
+    <!--Palette preview -->
+    <string name="palette_card_apply">Применить</string>
+    <string name="palette_card_edit">Изменить</string>
+    <string name="palette_card_rename_title">Переименовать палитру</string>
 </resources>

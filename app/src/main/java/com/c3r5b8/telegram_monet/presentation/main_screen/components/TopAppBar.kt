@@ -16,33 +16,33 @@ import com.c3r5b8.telegram_monet.R
 
 @Composable
 fun TopAppBar(
-    scrollBehavior: TopAppBarScrollBehavior,
-    goHowUse: () -> Unit
+	scrollBehavior: TopAppBarScrollBehavior,
+	goHowUse: () -> Unit,
 ) {
-    LargeTopAppBar(
-        title = {
-            Text(
-                text = stringResource(R.string.app_name),
-                maxLines = 1,
-                overflow = TextOverflow.Ellipsis
-            )
-        },
-        actions = {
-            IconButton(onClick = { goHowUse() }) {
-                Icon(
-                    painterResource(R.drawable.how_to_use_icon),
-                    stringResource(R.string.how_to_use)
-                )
-            }
-        },
-        scrollBehavior = scrollBehavior
-    )
+	LargeTopAppBar(
+		title = {
+			Text(
+				text = stringResource(R.string.app_name),
+				maxLines = 1,
+				overflow = TextOverflow.Ellipsis
+			)
+		},
+		actions = {
+			IconButton(onClick = { goHowUse() }) {
+				Icon(
+					painterResource(R.drawable.how_to_use_icon),
+					stringResource(R.string.how_to_use)
+				)
+			}
+		},
+		scrollBehavior = scrollBehavior
+	)
 }
 
 @Preview
 @Composable
 private fun TopAppBarPreview() {
-    TopAppBar(
-        TopAppBarDefaults.exitUntilCollapsedScrollBehavior(rememberTopAppBarState())
-    ){}
+	TopAppBar(
+		TopAppBarDefaults.exitUntilCollapsedScrollBehavior(rememberTopAppBarState())
+	) {}
 }

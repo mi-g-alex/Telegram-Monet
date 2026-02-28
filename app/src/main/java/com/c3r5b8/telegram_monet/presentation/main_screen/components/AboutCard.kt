@@ -25,63 +25,62 @@ fun AboutCard(
 
 ) {
 
-    val localContext = LocalContext.current
+	val localContext = LocalContext.current
 
-    val openLink: (link: String) -> Unit =  { link ->
-        val i = Intent(Intent.ACTION_VIEW)
-        i.data = Uri.parse(link)
-        localContext.startActivity(i)
-    }
+	val openLink: (link: String) -> Unit = { link ->
+		val i = Intent(Intent.ACTION_VIEW)
+		i.data = Uri.parse(link)
+		localContext.startActivity(i)
+	}
 
-    BasicCard(
-        title = R.string.about_card_title,
-        icon = R.drawable.about_icon,
-        description = R.string.about_card_description
-    ) {
+	BasicCard(
+		title = R.string.about_card_title,
+		icon = R.drawable.about_icon,
+		description = R.string.about_card_description
+	) {
 
-        Text(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = 12.dp),
-            text = stringResource(R.string.about_card_description),
-            fontSize = 14.sp
-        )
+		Text(
+			modifier = Modifier
+				.fillMaxWidth()
+				.padding(vertical = 12.dp),
+			text = stringResource(R.string.about_card_description),
+			fontSize = 14.sp
+		)
 
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            verticalAlignment = Alignment.CenterVertically,
-        ) {
-            CardButton(R.string.about_card_telegram) {
-                openLink(Constants.URL_TELEGRAM)
-            }
-            CardButton(R.string.about_card_github) {
-                openLink(Constants.URL_GITHUB)
-            }
-        }
+		Row(
+			modifier = Modifier.fillMaxWidth(),
+			verticalAlignment = Alignment.CenterVertically,
+		) {
+			CardButton(R.string.about_card_telegram) {
+				openLink(Constants.URL_TELEGRAM)
+			}
+			CardButton(R.string.about_card_github) {
+				openLink(Constants.URL_GITHUB)
+			}
+		}
 
-    }
+	}
 }
 
 
 @Composable
 private fun CardButton(
-    @StringRes text: Int,
-    onClick: () -> Unit,
+	@StringRes text: Int,
+	onClick: () -> Unit,
 ) {
-    Button(
-        modifier = Modifier.padding(end = 8.dp),
-        onClick = { onClick() }
-    ) {
-        Text(
-            stringResource(text)
-        )
-    }
+	Button(
+		modifier = Modifier.padding(end = 8.dp),
+		onClick = { onClick() }
+	) {
+		Text(
+			stringResource(text)
+		)
+	}
 }
-
 
 
 @Preview
 @Composable
 private fun AboutCardPreview() {
-    AboutCard()
+	AboutCard()
 }

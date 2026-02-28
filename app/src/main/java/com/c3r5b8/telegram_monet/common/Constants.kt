@@ -27,4 +27,5 @@ object Constants {
     const val SHARED_USE_COLORFUL_NICKNAME = "useColorNick"
     const val SHARED_USE_OLD_CHAT_STYLE = "useOldChatStyle"
     const val SHARED_USE_USE_DIVIDER = "useDivider"
+    const val SHARED_SELECTED_PALETTE_ID = "selectedPaletteId"
 }

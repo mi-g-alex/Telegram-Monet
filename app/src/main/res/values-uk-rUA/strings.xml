@@ -1,14 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--App Names -->
     <string name="toolbar_title">Тема</string>
+
+    <!--About Card -->
     <string name="about_card_description">Простий генератор Monet тем для Telegram.</string>
     <string name="about_card_telegram">Наш Telegram канал</string>
-    <string name="dark_theme">Темна тема</string>
-    <string name="dark_theme_description">Створити темну тему із системних відтінків. Чудово виглядає вночі.</string>
-    <string name="light_theme">Світла тема </string>
-    <string name="light_theme_description">Створити світлу тему із системних відтінків.  Добре виглядає вдень.</string>
+
+    <!--Dark Theme Card -->
+    <string name="dark_theme">Темна</string>
+    <string name="settings_card_switch_amoled">Amoled режим</string>
+    <string name="dark_theme_description">Створи темну тему із системних відтінків. Чудово виглядає вночі.</string>
+
+    <!--Light Theme Card -->
+    <string name="light_theme">Світла</string>
+    <string name="light_theme_description">Створи світлу тему із системних відтінків. Добре виглядає вдень.</string>
+
+    <!--Other -->
+    <string name="how_to_use">Як використовувати?</string>
+    <string name="settings_card_chat_old_style">Альтернативний стиль вихідних повідомлень</string>
+    <string name="settings_card_use_divider">Увімкнути роздільник</string>
+    <string name="settings_card_monet_nick">Увімкнути Monet для нікнеймів</string>
     <string name="settings_card_title">Налаштування</string>
     <string name="settings_card_use_gradient">Увімкнути градієнт (Telegram)</string>
-    <string name="settings_card_use_gradient_avatars">Включити градієнт для аватарів</string>
-    <string name="settings_card_use_divider">Включити роздільник</string>
+    <string name="settings_card_use_gradient_avatars">Увімкнути градієнт для аватарів</string>
+
+    <!--Palette Card -->
+    <string name="palette_card_title">Палітра</string>
+    <string name="palette_card_system_label">За замовчуванням</string>
+    <string name="palette_card_delete_title">Видалити палітру?</string>
+    <string name="palette_card_delete_confirm">Видалити</string>
+    <string name="palette_card_delete_cancel">Скасувати</string>
+    <string name="palette_card_add_label">Створити</string>
+
+    <!--Image Palette Screen -->
+    <string name="image_palette_title">Нова палітра</string>
+    <string name="image_palette_edit_title">Редагувати палітру</string>
+    <string name="image_palette_choose">Зображення</string>
+    <string name="image_palette_change">Змінити</string>
+    <string name="image_palette_extracted_colors">Видобуті кольори</string>
+    <string name="image_palette_tonal_palette">Тональна палітра</string>
+    <string name="image_palette_name">Назва</string>
+    <string name="image_palette_name_hint">Назва палітри</string>
+    <string name="image_palette_save">Зберегти палітру</string>
+
+    <!--Color picker -->
+    <string name="image_palette_choose_color">Колір</string>
+    <string name="image_palette_manual_apply">Застосувати</string>
+
+    <!--Scheme selector -->
+    <string name="scheme_selector_title">Колірна схема</string>
+    <string name="scheme_name_tonal_spot">Тональна пляма</string>
+    <string name="scheme_name_fidelity">Точний</string>
+    <string name="scheme_name_videlity">Яскравий</string>
+    <string name="scheme_name_neutral">Нейтральний</string>
+    <string name="scheme_name_expressive">Виразний</string>
+    <string name="scheme_name_fruit_salad">Фруктовий салат</string>
+    <string name="scheme_name_rainbow">Веселковий</string>
+    <string name="scheme_name_content">Змістовний</string>
+    <string name="scheme_name_monochrome">Монохромний</string>
+
+    <!--Palette preview -->
+    <string name="palette_card_apply">Застосувати</string>
+    <string name="palette_card_edit">Змінити</string>
+    <string name="palette_card_rename_title">Перейменувати палітру</string>
 </resources>
