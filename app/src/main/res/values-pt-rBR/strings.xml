@@ -1,28 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- App name -->
+    <!--App Names -->
     <string name="toolbar_title">Tema</string>
 
-    <!-- About card -->
+    <!--About Card -->
     <string name="about_card_description">Gerador simples de temas monet para o Telegram.</string>
     <string name="about_card_telegram">Nosso canal do Telegram</string>
 
-    <!-- Dark theme card -->
+    <!--Dark Theme Card -->
     <string name="dark_theme">Escuro</string>
-    <string name="dark_theme_description">Crie um tema escuro a partir das cores do sistema. Ótimo para a noite.</string>
     <string name="settings_card_switch_amoled">Modo AMOLED</string>
+    <string name="dark_theme_description">Crie um tema escuro a partir das cores do sistema. Ótimo para a noite.</string>
 
-    <!-- Light theme card -->
+    <!--Light Theme Card -->
     <string name="light_theme">Claro</string>
     <string name="light_theme_description">Crie um tema claro a partir das cores do sistema. Ótimo para o dia.</string>
 
-    <!-- Others -->
-    <string name="how_to_use">Como usá-lo?</string>
+    <!--Other -->
+    <string name="how_to_use">Como usar?</string>
     <string name="settings_card_chat_old_style">Usar estilo de mensagem de saída alternativo</string>
+    <string name="settings_card_use_divider">Ativar divisor</string>
     <string name="settings_card_monet_nick">Ativar monet para apelidos</string>
     <string name="settings_card_title">Configurações</string>
     <string name="settings_card_use_gradient">Ativar gradiente (Telegram)</string>
     <string name="settings_card_use_gradient_avatars">Ativar gradiente para avatares</string>
 
+    <!--Palette Card -->
+    <string name="palette_card_title">Paleta personalizada</string>
+    <string name="palette_card_system_label">Padrão</string>
+    <string name="palette_card_delete_title">Excluir paleta?</string>
+    <string name="palette_card_delete_confirm">Excluir</string>
+    <string name="palette_card_delete_cancel">Cancelar</string>
+    <string name="palette_card_add_label">Novo</string>
+
+    <!--Image Palette Screen -->
+    <string name="image_palette_title">Nova paleta</string>
+    <string name="image_palette_edit_title">Editar paleta</string>
+    <string name="image_palette_choose">Escolher imagem</string>
+    <string name="image_palette_change">Alterar</string>
+    <string name="image_palette_extracted_colors">Cores extraídas</string>
+    <string name="image_palette_tonal_palette">Paleta tonal</string>
+    <string name="image_palette_name">Nome</string>
+    <string name="image_palette_name_hint">Nome da paleta</string>
+    <string name="image_palette_save">Salvar paleta</string>
+
+    <!--Color Picker -->
+    <string name="image_palette_choose_color">Escolher cor</string>
+    <string name="image_palette_manual_apply">Aplicar</string>
+
+    <!--Scheme Selector -->
+    <string name="scheme_selector_title">Esquema de cores</string>
+    <string name="scheme_name_tonal_spot">Ponto tonal</string>
+    <string name="scheme_name_fidelity">Fidelidade</string>
+    <string name="scheme_name_videlity">Vibrante</string>
+    <string name="scheme_name_neutral">Neutro</string>
+    <string name="scheme_name_expressive">Expressivo</string>
+    <string name="scheme_name_fruit_salad">Salada de frutas</string>
+    <string name="scheme_name_rainbow">Arco-íris</string>
+    <string name="scheme_name_content">Conteúdo</string>
+    <string name="scheme_name_monochrome">Monocromático</string>
+
+    <!--Palette Preview -->
+    <string name="palette_card_apply">Aplicar</string>
+    <string name="palette_card_edit">Editar</string>
+    <string name="palette_card_rename_title">Renomear paleta</string>
 </resources>
