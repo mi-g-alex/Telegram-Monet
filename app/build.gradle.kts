@@ -1,6 +1,3 @@
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
-
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -17,7 +14,7 @@ android {
         minSdk = 26
         targetSdk = 36
 
-		versionCode = 26022821
+		versionCode = 26053001
         versionName = "12.4.0"
 
         resourceConfigurations.addAll(

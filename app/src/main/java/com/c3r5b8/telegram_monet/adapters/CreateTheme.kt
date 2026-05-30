@@ -22,6 +22,38 @@ fun createTheme(
 	customSeedColor: Int = 0,
 	customScheme: ColorScheme = ColorScheme.TONAL_SPOT,
 ) {
+	val generatedTheme = buildThemeContent(
+		context = context,
+		isTelegram = isTelegram,
+		isAmoled = isAmoled,
+		isGradient = isGradient,
+		isAvatarGradient = isAvatarGradient,
+		isNicknameColorful = isNicknameColorful,
+		isAlterOutColor = isAlterOutColor,
+		isUseDivider = isUseDivider,
+		inputFileName = inputFileName,
+		customSeedColor = customSeedColor,
+		customScheme = customScheme,
+	)
+
+	File(context.filesDir, outputFileName).writeText(text = generatedTheme)
+
+	shareTheme(context, outputFileName)
+}
+
+fun buildThemeContent(
+	context: Context,
+	isTelegram: Boolean,
+	isAmoled: Boolean,
+	isGradient: Boolean,
+	isAvatarGradient: Boolean,
+	isNicknameColorful: Boolean,
+	isAlterOutColor: Boolean,
+	isUseDivider: Boolean,
+	inputFileName: String,
+	customSeedColor: Int = 0,
+	customScheme: ColorScheme = ColorScheme.TONAL_SPOT,
+): String {
 	val reader = BufferedReader(InputStreamReader(context.assets.open(inputFileName)))
 	var themeImport = ""
 	val listMain = reader.readLines().toMutableList()
@@ -105,14 +137,9 @@ fun createTheme(
 
 	val customColors = if (customSeedColor != 0) generateMonetColors(customSeedColor, customScheme) else emptyMap()
 
-	val generatedTheme =
-		if (isTelegram) {
-			changeTextTelegram(themeImport, context, customColors)
-		} else {
-			changeTextTelegramX(themeImport, context, customColors)
-		}
-
-	File(context.filesDir, outputFileName).writeText(text = generatedTheme)
-
-	shareTheme(context, outputFileName)
+	return if (isTelegram) {
+		changeTextTelegram(themeImport, context, customColors)
+	} else {
+		changeTextTelegramX(themeImport, context, customColors)
+	}
 }

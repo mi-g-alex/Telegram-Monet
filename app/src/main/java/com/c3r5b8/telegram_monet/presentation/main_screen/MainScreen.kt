@@ -63,6 +63,7 @@ fun MainScreen(
 		onDeletePalette = { viewModel.deletePalette(it) },
 		onEditPalette = onEditPalette,
 		onShareTheme = { isTg, isLight -> viewModel.onShareTheme(context, isTg, isLight) },
+		onSaveTheme = { isTg, isLight -> viewModel.onSaveTheme(context, isTg, isLight) },
 		onOpenImagePalette = onOpenImagePalette,
 	)
 }
@@ -87,6 +88,7 @@ private fun MainScreenComponent(
 	onDeletePalette: (PaletteEntity) -> Unit,
 	onEditPalette: (Int) -> Unit,
 	onShareTheme: (isTelegram: Boolean, isLight: Boolean) -> Unit,
+	onSaveTheme: (isTelegram: Boolean, isLight: Boolean) -> Unit,
 	onOpenImagePalette: () -> Unit,
 ) {
 	val scrollBehavior =
@@ -118,7 +120,9 @@ private fun MainScreenComponent(
 					description = R.string.light_theme_description,
 					icon = R.drawable.theme_icon_light,
 					onTelegramClick = { onShareTheme(true, true) },
-					onTelegramXClick = { onShareTheme(false, true) }
+					onTelegramXClick = { onShareTheme(false, true) },
+					onTelegramLongClick = { onSaveTheme(true, true) },
+					onTelegramXLongClick = { onSaveTheme(false, true) },
 				)
 			}
 
@@ -128,7 +132,9 @@ private fun MainScreenComponent(
 					description = R.string.dark_theme_description,
 					icon = R.drawable.theme_icon_dark,
 					onTelegramClick = { onShareTheme(true, false) },
-					onTelegramXClick = { onShareTheme(false, false) }
+					onTelegramXClick = { onShareTheme(false, false) },
+					onTelegramLongClick = { onSaveTheme(true, false) },
+					onTelegramXLongClick = { onSaveTheme(false, false) },
 				)
 			}
 
@@ -189,6 +195,7 @@ private fun MainScreenPreview() {
 		onDeletePalette = {},
 		onEditPalette = {},
 		onShareTheme = { _, _ -> },
+		onSaveTheme = { _, _ -> },
 		onOpenImagePalette = {},
 	)
 }

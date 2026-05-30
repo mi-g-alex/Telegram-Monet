@@ -4,7 +4,9 @@ import android.content.Context
 import android.content.SharedPreferences
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.c3r5b8.telegram_monet.adapters.buildThemeContent
 import com.c3r5b8.telegram_monet.adapters.createTheme
+import com.c3r5b8.telegram_monet.adapters.saveThemeToDownloads
 import com.c3r5b8.telegram_monet.common.ColorScheme
 import com.c3r5b8.telegram_monet.common.Constants
 import com.c3r5b8.telegram_monet.data.local.entity.PaletteEntity
@@ -71,21 +73,8 @@ class MainScreenViewModel(
 	}
 
 	fun onShareTheme(context: Context, isTelegram: Boolean, isLight: Boolean) {
-		val inputFileName = when {
-			isTelegram && isLight -> Constants.INPUT_FILE_TELEGRAM_LIGHT
-			isTelegram -> Constants.INPUT_FILE_TELEGRAM_DARK
-			!isTelegram && isLight -> Constants.INPUT_FILE_TELEGRAM_X_LIGHT
-			else -> Constants.INPUT_FILE_TELEGRAM_X_DARK
-		}
-
-		val outputFileName = when {
-			isTelegram && isLight -> Constants.OUTPUT_FILE_TELEGRAM_LIGHT
-			isTelegram && !isAmoled.value -> Constants.OUTPUT_FILE_TELEGRAM_DARK
-			isTelegram -> Constants.OUTPUT_FILE_TELEGRAM_AMOLED
-			!isTelegram && isLight -> Constants.OUTPUT_FILE_TELEGRAM_X_LIGHT
-			!isTelegram && !isAmoled.value -> Constants.OUTPUT_FILE_TELEGRAM_X_DARK
-			else -> Constants.OUTPUT_FILE_TELEGRAM_X_AMOLED
-		}
+		val inputFileName = resolveInputFileName(isTelegram, isLight)
+		val outputFileName = resolveOutputFileName(isTelegram, isLight)
 
 		val palette = allPalettes.value.find { it.id == _selectedPaletteId.value }
 		val customSeedColor = palette?.argbColor ?: 0
@@ -107,6 +96,48 @@ class MainScreenViewModel(
 				customScheme = customScheme,
 			)
 		}
+	}
+
+	fun onSaveTheme(context: Context, isTelegram: Boolean, isLight: Boolean) {
+		val inputFileName = resolveInputFileName(isTelegram, isLight)
+		val outputFileName = resolveOutputFileName(isTelegram, isLight)
+
+		val palette = allPalettes.value.find { it.id == _selectedPaletteId.value }
+		val customSeedColor = palette?.argbColor ?: 0
+		val customScheme = palette?.let { ColorScheme.fromName(it.scheme) } ?: ColorScheme.TONAL_SPOT
+
+		CoroutineScope(Dispatchers.IO).launch {
+			val content = buildThemeContent(
+				context = context,
+				isTelegram = isTelegram,
+				isAmoled = isAmoled.value,
+				isGradient = isGradient.value,
+				isAvatarGradient = isAvatarGradient.value,
+				isNicknameColorful = isNicknameColorful.value,
+				isAlterOutColor = isAlterOutColor.value,
+				isUseDivider = isUseDivider.value,
+				inputFileName = inputFileName,
+				customSeedColor = customSeedColor,
+				customScheme = customScheme,
+			)
+			saveThemeToDownloads(context, outputFileName, content)
+		}
+	}
+
+	private fun resolveInputFileName(isTelegram: Boolean, isLight: Boolean): String = when {
+		isTelegram && isLight -> Constants.INPUT_FILE_TELEGRAM_LIGHT
+		isTelegram -> Constants.INPUT_FILE_TELEGRAM_DARK
+		!isTelegram && isLight -> Constants.INPUT_FILE_TELEGRAM_X_LIGHT
+		else -> Constants.INPUT_FILE_TELEGRAM_X_DARK
+	}
+
+	private fun resolveOutputFileName(isTelegram: Boolean, isLight: Boolean): String = when {
+		isTelegram && isLight -> Constants.OUTPUT_FILE_TELEGRAM_LIGHT
+		isTelegram && !isAmoled.value -> Constants.OUTPUT_FILE_TELEGRAM_DARK
+		isTelegram -> Constants.OUTPUT_FILE_TELEGRAM_AMOLED
+		!isTelegram && isLight -> Constants.OUTPUT_FILE_TELEGRAM_X_LIGHT
+		!isTelegram && !isAmoled.value -> Constants.OUTPUT_FILE_TELEGRAM_X_DARK
+		else -> Constants.OUTPUT_FILE_TELEGRAM_X_AMOLED
 	}
 
 	init {
