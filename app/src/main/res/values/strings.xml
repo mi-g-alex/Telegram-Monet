@@ -6,18 +6,18 @@
     <string name="toolbar_title">Theme</string>
 
     <!--About Card -->
-    <string name="about_card_description">Simple Telegram Monet themes generator.</string>
-    <string name="about_card_title" translatable="false">Tg Monet Theme</string>
-    <string name="about_card_telegram">Our Telegram Channel</string>
+    <string name="about_card_description">Simple Monet theme generator for Telegram.</string>
+    <string name="about_card_title" translatable="false">TgMonet Theme</string>
+    <string name="about_card_telegram">Our Telegram channel</string>
 
     <!--Dark Theme Card -->
     <string name="dark_theme">Dark</string>
     <string name="settings_card_switch_amoled">Amoled mode</string>
-    <string name="dark_theme_description">Make dark theme from system shades. Great for the night.</string>
+    <string name="dark_theme_description">Create a dark theme from system colors. Great for the nighttime.</string>
 
     <!--Light Theme Card -->
     <string name="light_theme">Light</string>
-    <string name="light_theme_description">Make light theme from system shades. Looks good during the day.</string>
+    <string name="light_theme_description">Create a light theme from system colors. Great for the daytime.</string>
 
     <!--Other -->
     <string name="setup_telegram" translatable="false">Telegram</string>
@@ -27,10 +27,10 @@
     <string name="save_to_downloads_success">Saved: %1$s</string>
     <string name="save_to_downloads_failed">Save failed</string>
 
-    <string name="how_to_use">How to use it?</string>
+    <string name="how_to_use">How to use?</string>
     <string name="settings_card_chat_old_style">Use alternative outgoing message style</string>
-    <string name="settings_card_use_divider">Enable divider</string>
-    <string name="settings_card_monet_nick">Enable monet for nicknames</string>
+    <string name="settings_card_use_divider">Enable dividers</string>
+    <string name="settings_card_monet_nick">Enable Monet for nicknames</string>
     <string name="settings_card_title">Settings</string>
     <string name="settings_card_use_gradient">Enable gradient (Telegram)</string>
     <string name="settings_card_use_gradient_avatars">Enable gradient for avatars</string>
@@ -54,24 +54,23 @@
     <string name="image_palette_name_hint">Palette name</string>
     <string name="image_palette_save">Save palette</string>
 
-    <!--Color picker -->
+    <!--Color Picker -->
     <string name="image_palette_choose_color">Choose color</string>
     <string name="image_palette_manual_apply">Apply</string>
 
-    <!--Scheme selector -->
+    <!--Scheme Selector -->
     <string name="scheme_selector_title">Color scheme</string>
-    <string name="scheme_name_tonal_spot">Tonal Spot</string>
+    <string name="scheme_name_tonal_spot">Tonal spot</string>
     <string name="scheme_name_fidelity">Fidelity</string>
-    <string name="scheme_name_videlity">Videlity</string>
+    <string name="scheme_name_videlity">Vibrant</string>
     <string name="scheme_name_neutral">Neutral</string>
     <string name="scheme_name_expressive">Expressive</string>
-    <string name="scheme_name_fruit_salad">Fruit Salad</string>
+    <string name="scheme_name_fruit_salad">Fruit salad</string>
     <string name="scheme_name_rainbow">Rainbow</string>
     <string name="scheme_name_content">Content</string>
     <string name="scheme_name_monochrome">Monochrome</string>
 
-
-    <!--Palette preview -->
+    <!--Palette Preview -->
     <string name="palette_card_apply">Apply</string>
     <string name="palette_card_edit">Edit</string>
     <string name="palette_card_rename_title">Rename palette</string>

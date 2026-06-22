@@ -7,15 +7,15 @@ plugins {
 
 android {
     namespace = "com.c3r5b8.telegram_monet"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.c3r5b8.telegram_monet"
         minSdk = 26
-        targetSdk = 36
+        targetSdk = 37
 
-		versionCode = 26053001
-        versionName = "12.4.0"
+		versionCode = 26062251
+        versionName = "12.8.1"
 
         resourceConfigurations.addAll(
             arrayOf(
