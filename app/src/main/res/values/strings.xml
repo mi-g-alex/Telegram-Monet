@@ -23,10 +23,9 @@
     <string name="setup_telegram" translatable="false">Telegram</string>
     <string name="setup_telegram_x" translatable="false">Telegram X</string>
     <string name="about_card_github" translatable="false">GitHub</string>
-    <string name="long_press_to_save_hint">Long press — save to %1$s</string>
+    <string name="long_press_to_save_hint">Long press to save to %1$s</string>
     <string name="save_to_downloads_success">Saved: %1$s</string>
     <string name="save_to_downloads_failed">Save failed</string>
-
     <string name="how_to_use">How to use?</string>
     <string name="settings_card_chat_old_style">Use alternative outgoing message style</string>
     <string name="settings_card_use_divider">Enable dividers</string>
