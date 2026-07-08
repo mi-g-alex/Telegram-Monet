@@ -108,17 +108,15 @@ fun buildThemeContent(
 			.replace("divider=n1_900", "divider=n1_700")
 	}
 
-	if (isTelegram && isNicknameColorful)
-		themeImport = themeImport.replace(
-			"\nend",
-			"\navatar_nameInMessageBlue=a1_400\n" +
-					"avatar_nameInMessageCyan=a1_400\n" +
-					"avatar_nameInMessageGreen=a1_400\n" +
-					"avatar_nameInMessageOrange=a1_400\n" +
-					"avatar_nameInMessagePink=a1_400\n" +
-					"avatar_nameInMessageRed=a1_400\n" +
-					"avatar_nameInMessageViolet=a1_400\nend"
-		)
+	if (isTelegram && isNicknameColorful) {
+		themeImport += "\navatar_nameInMessageBlue=a1_400\n" +
+				"avatar_nameInMessageCyan=a1_400\n" +
+				"avatar_nameInMessageGreen=a1_400\n" +
+				"avatar_nameInMessageOrange=a1_400\n" +
+				"avatar_nameInMessagePink=a1_400\n" +
+				"avatar_nameInMessageRed=a1_400\n" +
+				"avatar_nameInMessageViolet=a1_400\n"
+	}
 	if (isTelegram && isAvatarGradient) {
 		themeImport = themeImport
 			.replace("avatar_backgroundBlue=n2_800", "avatar_backgroundBlue=n2_700")

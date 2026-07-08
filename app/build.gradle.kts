@@ -12,10 +12,10 @@ android {
     defaultConfig {
         applicationId = "com.c3r5b8.telegram_monet"
         minSdk = 26
-        targetSdk = 37
+        targetSdk = 36
 
-		versionCode = 26062251
-        versionName = "12.8.1"
+		versionCode = 26070801
+        versionName = "12.8.2"
 
         resourceConfigurations.addAll(
             arrayOf(
