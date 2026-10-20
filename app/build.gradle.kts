@@ -7,7 +7,11 @@ plugins {
 
 android {
     namespace = "com.c3r5b8.telegram_monet"
-    compileSdk = 37
+    compileSdk {
+        version = release(37) {
+            minorApiLevel = 0
+        }
+    }
 
     defaultConfig {
         applicationId = "com.c3r5b8.telegram_monet"

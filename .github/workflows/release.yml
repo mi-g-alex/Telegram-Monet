@@ -1,25 +1,9 @@
 name: TGMonet Release
 
 on:
-  workflow_dispatch:
   push:
-    paths:
-      - .github/workflows/release.yml
-      - app/**
-      - build.gradle.kts
-      - gradle.properties
-      - gradlew
-      - gradlew.bat
-      - settings.gradle.kts
-  pull_request:
-    paths:
-      - .github/workflows/release.yml
-      - app/**
-      - build.gradle.kts
-      - gradle.properties
-      - gradlew
-      - gradlew.bat
-      - settings.gradle.kts
+    branches:
+      - main
 
 jobs:
   build_debug_apk:
